@@ -1,0 +1,31 @@
+$linkColor : #c62828;
+
+
+html { 
+    height: 100%; 
+}
+
+body {
+    background: beige;
+    min-height:100%; 
+    position:relative; 
+    padding-bottom: 150px;
+}
+
+footer { 
+    position: absolute; 
+    left: 0 ; 
+    right: 0; 
+    bottom: 0; 
+    height: 130px;
+}
+
+a {
+    box-shadow: none;
+    text-decoration: none;
+    color: $linkColor;
+    transition: all 0.2s;
+    &:hover {
+        opacity: 0.75;
+    }
+}
