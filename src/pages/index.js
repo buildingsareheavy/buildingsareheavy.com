@@ -6,7 +6,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import { rhythm } from '../utils/typography'
 
-class BlogIndex extends React.Component {
+class IndexPage extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(this,'props.data.site.siteMetadata.description')
@@ -43,7 +43,7 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default IndexPage
 
 export const pageQuery = graphql`
   query {

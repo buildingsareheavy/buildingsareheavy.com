@@ -1,8 +1,17 @@
-#This is a log of what I do each day / time I commit.
+# This is a log of what I do each day / time I commit.
 
 ---
 
-##2018-10-11 > Thursday
+## 2018-10-14 > Sunday
+
+I refactored `layout.js` and created a `global` folder to include a separate `header.js` and `footer.js`.
+
+I built out the main navigation and header, but it's proving difficult with making styled components. I know I can fix that problem with creating a set of variables and then make a media query for each component with said variables, but that's still repeating the query every time for every variable instead of just wrapping everything in a media query once via SCSS. It also seems like progressive enhancements are going to get convoluted easily.
+
+
+---
+
+## 2018-10-11 > Thursday
 
 Today I deprecated the [original Gatsby site](https://github.com/buildingsareheavy/Buildings-Are-Heavy-deprecated-) and set up a fresh install of v2 with the Gatsby [starter blog](https://github.com/gatsbyjs/gatsby-starter-blog). It gave me a big leg up on my todo list, like adding `previous` and `next` links to the end of blog posts and setting up stuff for fonts and images that kind of went over my head intially. But after looking at the two different versions, it makes a lot more sense now.
 
