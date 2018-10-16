@@ -5,10 +5,15 @@ import { rhythm, scale } from '../../utils/typography'
 import styled from 'styled-components'
 
 
-const NavTitle = styled.h1`
-border-right: 2px solid black;
+const NavContainer = styled.div`
+border-bottom: 1px solid black;
 margin-bottom: ${rhythm(1.5)};
-margin-top: 0;
+`
+
+const NavTitle = styled.h1`
+border-right: 1px solid black;
+margin-left: ${rhythm(0.25)};
+margin-bottom: ${rhythm(0.25)};
 ${scale(1.5)};
 a {
   color: inherit;
@@ -17,14 +22,15 @@ a {
 
 const NavItems= styled.ul`
 li {
-  list-style: none;
+  ${scale(0.4)};
+  margin: 0 0 0 -5px;
 }
   a {
     color: inherit;
     display: inline;
     text-decoration: none;
     margin: 0 5px;
-    padding: 10px;
+    padding: 5px 10px;
     &:hover {
       background: gold;
     }
@@ -45,7 +51,7 @@ const NavHalf = styled.div`
 const Header = () => (
   // React fragments allow a component to return multiple elements
   <React.Fragment>
-    <div>
+    <NavContainer>
   <NavHalf>
     <NavTitle>
       <Link to={'/'}>
@@ -60,13 +66,8 @@ const Header = () => (
       <li><Link to={'/blog/'}>Blog</Link></li>
       <li><Link to={'/portfolio/'}>Portfolio</Link></li>
     </NavItems>
-   
-    
-
-
-
   </NavHalf>
-  </div>
+  </NavContainer>
   </React.Fragment>
 )
 

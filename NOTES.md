@@ -2,7 +2,35 @@
 
 ---
 
-## 2018-10-14 > Sunday
+### 2018-10-15 > Monday
+
+I moved `<Helmet>` from the index page to `layout.js`. I noticed it was getting called inside of `<Layout>` anyways, but... in the `blog-post.js`  it also gets called and adds `${post.frontmatter.title} ` to the title. I need to figure out how to write the proper `if` statement and then I can just incorporate `<Helmet>` inside `<Layout>`. Anyways, for now I just added `<Helmet>` to the *blog* and *portfolio* pages.
+
+I cannot figure out how to add `props` inside the CSS of a styled component and then put that inside another component (see: `cta.js`), but it will work using react's `styled={{ }}`. 
+
+I also discovered how to create a component that is reusable inside other components and use props (example below is from `cta.js`).
+
+```
+
+const CTA = props => (
+    <CTAContainer style={{
+        backgroundImage: `url(${props.bg})`
+    }}>
+    {props.content}
+    </CTAContainer>
+  )
+
+```
+
+
+I also finished wireframing the homepage, and everything is functional. I need to make sure to import images as variables so React can read them. 
+
+Overall I had a few hiccups today, especially stumbling over components and figuring how to balance stuff with styled components, but I am getting there. Small strides everyday. As long as I keep a log of what to go back to, I can keep the momentum going, and that means I can feel good about things, and not feel overwhelmed.
+
+
+---
+
+### 2018-10-14 > Sunday
 
 I refactored `layout.js` and created a `global` folder to include a separate `header.js` and `footer.js`.
 
@@ -11,7 +39,7 @@ I built out the main navigation and header, but it's proving difficult with maki
 
 ---
 
-## 2018-10-11 > Thursday
+### 2018-10-11 > Thursday
 
 Today I deprecated the [original Gatsby site](https://github.com/buildingsareheavy/Buildings-Are-Heavy-deprecated-) and set up a fresh install of v2 with the Gatsby [starter blog](https://github.com/gatsbyjs/gatsby-starter-blog). It gave me a big leg up on my todo list, like adding `previous` and `next` links to the end of blog posts and setting up stuff for fonts and images that kind of went over my head intially. But after looking at the two different versions, it makes a lot more sense now.
 
