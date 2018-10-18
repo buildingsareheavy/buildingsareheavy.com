@@ -9,6 +9,10 @@ Here is a running list so I can see progress, and check older things I've done.
 - [ ] Add styling to first 3 blog posts.
 - [ ] Add pagination for blog posts.
 - [x] Add frontmatter for: subtitle, published, portfolio, portfolioOrder.
+- [ ] Refactor `blog.js` and `blog-page.js` to have components
+- [ ] Refactor `blog.js` and `blog-page.js` to have styled components (and remove whats being affected from `index.scss`).
+- [ ] Add redirects, because a lot of URLs have changed.
+- [ ] Find out how to make `featImage` accept gif files.
 
 ---
 
@@ -38,7 +42,6 @@ Here is a running list so I can see progress, and check older things I've done.
 - [ ] Copy everything over from my original repo
 - [x] Deprecate original repo
 - [x] Add this repo to Netlify
-
 
 ---
 

@@ -1,4 +1,4 @@
-$linkColor : #c62828;
+$linkColor : #222;
 
 
 html { 
@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    background: beige;
+    background: #fff;
     min-height:100%; 
     position:relative; 
     padding-bottom: 150px;
@@ -34,9 +34,12 @@ ul {
     list-style: none;
 }
 
+.blog-post {
+    border-bottom : 1px solid black;
+}
+
 @supports (display: grid) {
     div.blog-post {
-        border-bottom : 1px solid black;
         padding: 1rem 0 ;
         display: grid;
         grid-gap: 1rem;
@@ -44,7 +47,7 @@ ul {
         .blog-cell {
             // display: flex;
         }
-        .gatsby-image-wrapper {
+        .blog-image {
             flex: 1 0 auto;
             order: -1;
         }

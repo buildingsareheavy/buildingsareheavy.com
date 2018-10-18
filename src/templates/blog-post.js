@@ -21,8 +21,12 @@ class BlogPostTemplate extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
+        <Img sizes={post.frontmatter.featImage.childImageSharp.sizes} />
+        <div style={{
+          textAlign: 'center'
+        }}>
         <h1>{post.frontmatter.title}</h1>
-        <p
+        <small
           style={{
             ...scale(-1 / 5),
             display: 'block',
@@ -31,8 +35,10 @@ class BlogPostTemplate extends React.Component {
           }}
         >
           {post.frontmatter.date}
-        </p>
-        <Img sizes={node.frontmatter.featImage.childImageSharp.sizes} />
+        </small>
+        <p>{post.frontmatter.subtitle}</p>
+        </div>
+        <hr/>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
@@ -87,14 +93,15 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD MMMM, YYYY")
+        subtitle
         featImage {
           childImageSharp {
-            sizes(maxWidth: 720) {
-              ...GatsbyImageSharpSizes
-            }
+              sizes(maxWidth: 630) {
+                  ...GatsbyImageSharpSizes
+              }
           }
-        }
+      }
       }
     }
   }

@@ -14,8 +14,21 @@ portfolioOrder: (interger)
 
 I was able to create the blogQuery to say  `portfolio: { eq: null }` so if I don't declare *portfolio* at all, then it means it's a blog post :)
 
+**Push #2**
+
+I wanted to see what would happen if I pushed to the repo with errors on the dev environment to deploy and it failed, which is really good to know.
+
+I had some trouble getting the `featImage` to show up but it turns out I was overthinking it. I looked at the source of [this article I previous mentioned](https://codebushi.com/gatsby-featured-images/) and it was all right there. I guess somewhere I misses some syntax for the GraphQL query, but anyways now it's working.
+
+I haven't been that strict building out the blog backend, but I figured as long as I can get it built, and comment where necessary, I can refactor things to be a lot cleaner, once I go live. I don't want to keep stumbling over every single step and get stuck on build out for a month.
+
+I also migrated all (It was only 15) blog posts with images over. It was more data entry and copy and pasting, but I got to rename images and add better alt tags, which got me thinking, "why didn't I write anything to accompany my photos?!" So I kind of want to go back and write some context, even if it's just for myself.
+
+I couldn't figure out why the `featImage` wouldn't accept a gif file, but I will just add it to the growing list of things to go back and refactor. I also added some codepen iframes, which makes me wonder what Gatsby does with thier plugin regarding iframes. It also made me look back at my old codepen. I really need to fork them and consolidate everything together in one, becuase they still very much fit my aesthetic. 
+
 
 ---
+
 
 ### 2018-10-15 > Monday
 
@@ -45,6 +58,7 @@ Overall I had a few hiccups today, especially stumbling over components and figu
 
 ---
 
+
 ### 2018-10-14 > Sunday
 
 I refactored `layout.js` and created a `global` folder to include a separate `header.js` and `footer.js`.
@@ -53,6 +67,7 @@ I built out the main navigation and header, but it's proving difficult with maki
 
 
 ---
+
 
 ### 2018-10-11 > Thursday
 
@@ -68,6 +83,8 @@ I cleaned up `components/layout.js` with *styled components* and WOW, it makes s
 
 I am feeling really good about building out this site! I haven't *really* gotten into too much component, props, and styled component stuff yet... but we all gotta start somewhere.
 
+
 ---
+
 
 END

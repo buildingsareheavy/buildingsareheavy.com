@@ -28,6 +28,7 @@ class BlogPage extends React.Component {
         {get(this, 'props.data.allMarkdownRemark.edges').map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
+            
             <div 
             className="blog-post"
             key={node.fields.slug}
@@ -42,16 +43,23 @@ class BlogPage extends React.Component {
                   {title}
                 </Link>
               </h3>
-              {/* <small>{node.frontmatter.date}</small> */}
+              <small>{node.frontmatter.date}</small>
               <p style={{
                 marginBottom: rhythm(1 / 2),
               }}>{node.frontmatter.subtitle}</p>
               {/* <p dangerouslySetInnerHTML={{ __html: node.excerpt }} /> */}
               </div>
+              <Link className="blog-image" to={node.fields.slug}>
               <Img sizes={node.frontmatter.featImage.childImageSharp.sizes} />
+              </Link>
             </div>
+            
           )
         })}
+        <br/>
+        <p style={{
+          textAlign: "center"
+        }}>END</p>
 
       </Layout>
     )
