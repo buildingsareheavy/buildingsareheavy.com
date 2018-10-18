@@ -33,3 +33,25 @@ a {
 ul {
     list-style: none;
 }
+
+@supports (display: grid) {
+    div.blog-post {
+        border-bottom : 1px solid black;
+        padding: 1rem 0 ;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 2fr 3fr;
+        .blog-cell {
+            // display: flex;
+        }
+        .gatsby-image-wrapper {
+            flex: 1 0 auto;
+            order: -1;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        div.blog-post {
+            display: block;
+        }
+    }
+}

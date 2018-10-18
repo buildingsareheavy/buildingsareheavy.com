@@ -2,6 +2,21 @@
 
 ---
 
+### 2018-10-17 > Wednesday
+
+I spent some time today struggling with adding a featured image to the blog page and getting it to show up. Finally I let go of what I thought I was doing and found [this article](https://codebushi.com/gatsby-featured-images/) that explained I need to also install [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/) and use the `<Img />` component. Once I got that down, I was able to recreate the query I had in the old repo for all the new frontmatter info:
+
+* subtitle (all)
+* published (boolean)
+
+* portfolio: (boolean)
+portfolioOrder: (interger)
+
+I was able to create the blogQuery to say  `portfolio: { eq: null }` so if I don't declare *portfolio* at all, then it means it's a blog post :)
+
+
+---
+
 ### 2018-10-15 > Monday
 
 I moved `<Helmet>` from the index page to `layout.js`. I noticed it was getting called inside of `<Layout>` anyways, but... in the `blog-post.js`  it also gets called and adds `${post.frontmatter.title} ` to the title. I need to figure out how to write the proper `if` statement and then I can just incorporate `<Helmet>` inside `<Layout>`. Anyways, for now I just added `<Helmet>` to the *blog* and *portfolio* pages.

@@ -4,6 +4,13 @@ Here is a running list so I can see progress, and check older things I've done.
 
 ---
 
+### 2018-10-17 > Wednesday
+
+- [ ] Add styling to first 3 blog posts.
+- [ ] Add pagination for blog posts.
+- [x] Add frontmatter for: subtitle, published, portfolio, portfolioOrder.
+
+---
 
 ### 2018-10-15 > Monday
 

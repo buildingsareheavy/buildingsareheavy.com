@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 import { rhythm, scale } from '../utils/typography'
@@ -20,27 +21,34 @@ class BlogPage extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
-      
-      
-      Other content goes here....
 
+        <h2>Blog</h2>
 
-        {/* it should be: "posts.map(({ node }) =>" but for some reason it isn't accepting a variable */}
+        {/* it should be: "posts.map(({ node }) =>" but for some reason it isn't accepting any variable */}
         {get(this, 'props.data.allMarkdownRemark.edges').map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
-            <div key={node.fields.slug}>
-              <h2
+            <div 
+            className="blog-post"
+            key={node.fields.slug}
+            >
+            <div>
+              <h3
                 style={{
-                  marginBottom: rhythm(1 / 4),
+                  marginBottom: rhythm(1 / 8),
                 }}
               >
                 <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
                   {title}
                 </Link>
-              </h2>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              </h3>
+              {/* <small>{node.frontmatter.date}</small> */}
+              <p style={{
+                marginBottom: rhythm(1 / 2),
+              }}>{node.frontmatter.subtitle}</p>
+              {/* <p dangerouslySetInnerHTML={{ __html: node.excerpt }} /> */}
+              </div>
+              <Img sizes={node.frontmatter.featImage.childImageSharp.sizes} />
             </div>
           )
         })}
@@ -63,7 +71,17 @@ export const blogQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { 
+        fields: [frontmatter___date], order: DESC 
+      }
+      filter: { 
+        frontmatter: { 
+            published: { eq: true } 
+            portfolio: { eq: null }
+          } 
+      }
+      ) {
       edges {
         node {
           excerpt
@@ -73,6 +91,16 @@ export const blogQuery = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+            subtitle
+            published
+            portfolio
+            featImage {
+              childImageSharp {
+                sizes(maxWidth: 720) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
           }
         }
       }

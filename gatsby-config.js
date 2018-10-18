@@ -21,7 +21,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 920,
             },
           },
           {
@@ -48,8 +48,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Buildings Are Heavy`,
+        short_name: `Buildings Are Heavy`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -66,7 +66,8 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
+    `gatsby-image`
   ],
 }
 
