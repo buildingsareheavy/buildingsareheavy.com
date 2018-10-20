@@ -44,9 +44,9 @@ ul {
         display: grid;
         grid-gap: 1rem;
         grid-template-columns: 2fr 3fr;
-        .blog-cell {
-            // display: flex;
-        }
+        // .blog-cell {
+        //     display: flex;
+        // }
         .blog-image {
             flex: 1 0 auto;
             order: -1;

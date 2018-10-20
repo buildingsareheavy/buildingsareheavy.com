@@ -1,8 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link,graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 import { rhythm, scale } from '../utils/typography'
@@ -21,24 +21,26 @@ class BlogPostTemplate extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
-        <Img sizes={post.frontmatter.featImage.childImageSharp.sizes} />
-        <div style={{
-          textAlign: 'center'
-        }}>
-        <h1>{post.frontmatter.title}</h1>
-        <small
+        {/* <Img sizes={post.frontmatter.featImage.childImageSharp.sizes} /> */}
+        <div
           style={{
-            ...scale(-1 / 5),
-            display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            textAlign: 'center',
           }}
         >
-          {post.frontmatter.date}
-        </small>
-        <p>{post.frontmatter.subtitle}</p>
+          <h1>{post.frontmatter.title}</h1>
+          <small
+            style={{
+              ...scale(-1 / 5),
+              display: 'block',
+              marginBottom: rhythm(1),
+              marginTop: rhythm(-1),
+            }}
+          >
+            {post.frontmatter.date}
+          </small>
+          <p>{post.frontmatter.subtitle}</p>
         </div>
-        <hr/>
+        <hr />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
@@ -56,20 +58,18 @@ class BlogPostTemplate extends React.Component {
           }}
         >
           <li>
-            {
-              previous &&
+            {previous && (
               <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
-            }
+            )}
           </li>
           <li>
-            {
-              next &&
+            {next && (
               <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
-            }
+            )}
           </li>
         </ul>
       </Layout>
@@ -97,11 +97,11 @@ export const pageQuery = graphql`
         subtitle
         featImage {
           childImageSharp {
-              sizes(maxWidth: 630) {
-                  ...GatsbyImageSharpSizes
-              }
+            sizes(maxWidth: 630) {
+              ...GatsbyImageSharpSizes
+            }
           }
-      }
+        }
       }
     }
   }

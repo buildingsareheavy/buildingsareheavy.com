@@ -7,20 +7,18 @@ import Layout from '../components/layout'
 import { rhythm, scale } from '../utils/typography'
 
 const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-const siteDescription = get(this,'props.data.site.siteMetadata.description')
-
+const siteDescription = get(this, 'props.data.site.siteMetadata.description')
 
 class PortfolioPage extends React.Component {
   render() {
-
     return (
       <Layout location={this.props.location}>
-      <Helmet
+        <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
-      Portfolio page goes here....
+        Portfolio page goes here....
       </Layout>
     )
   }

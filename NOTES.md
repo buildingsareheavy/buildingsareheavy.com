@@ -2,6 +2,24 @@
 
 ---
 
+### 2018-10-19 > Friday
+
+I didn't have a lot of time to work today but last night I read up on *ESLint* and *Prettier* so I set up some basic configurations, like spacing, indentation, and double quotes to single quotes. So, I went back and reformatted everything, and it did clean up some things. 
+
+I also decided to remove the featured image on blog posts, becuase for some reason it doesn't make as much sense with this layout. Also if I am going to use the same templating for portfolio pieces it's just easier. (I know I can just write an if statement).
+
+
+---
+
+
+### 2018-10-18 > Thursday
+
+Before I begin, I want to say that's weird that the site didn't deploy because there was one post that didn't have a `featImage` in the frontmatter (it was `/my-second-post`). I guess it's because I dont have any pages calling that page to throw me an error. So I guess, even though I dont have a direct link, the URL would still work and crash. That's really good, I guess just maybe difficult to track down.
+
+
+---
+
+
 ### 2018-10-17 > Wednesday
 
 I spent some time today struggling with adding a featured image to the blog page and getting it to show up. Finally I let go of what I thought I was doing and found [this article](https://codebushi.com/gatsby-featured-images/) that explained I need to also install [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/) and use the `<Img />` component. Once I got that down, I was able to recreate the query I had in the old repo for all the new frontmatter info:

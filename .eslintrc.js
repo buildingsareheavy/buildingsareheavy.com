@@ -15,5 +15,11 @@ module.exports = {
       "experimentalObjectRestSpread": true,
       "jsx": true,
     },
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": ["error", { "singleQuote": true }]
+    }
   }
 }

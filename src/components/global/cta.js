@@ -4,7 +4,6 @@ import React from 'react'
 import { rhythm, scale } from '../../utils/typography'
 import styled from 'styled-components'
 
-
 const CTAContainer = styled.div`
     padding: ${rhythm(1.5)};
     text-align: center;
@@ -15,12 +14,14 @@ const CTAContainer = styled.div`
 `
 
 const CTA = props => (
-    <CTAContainer style={{
-        backgroundImage: `url(${props.bg})`
-    }}>
+  <CTAContainer
+    style={{
+      backgroundImage: `url(${props.bg})`,
+    }}
+  >
     {/* props.bg is not working inside styled component CSS  */}
     {props.content}
-    </CTAContainer>
-  )
+  </CTAContainer>
+)
 
 export default CTA

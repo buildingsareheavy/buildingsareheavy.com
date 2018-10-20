@@ -1,36 +1,28 @@
 import Typography from 'typography'
 
 const typography = new Typography({
-  baseFontSize: "18px",
+  baseFontSize: '18px',
   baseLineHeight: 1.45,
   googleFonts: [
     {
       name: 'Karla',
-      styles: [
-        '400',
-  ],
+      styles: ['400'],
     },
     {
       name: 'Big Caslon',
-      styles: [
-        '400'
-  ],
+      styles: ['400'],
     },
   ],
   headerFontFamily: [
-    "Tiempos Headline Black", // Not working right now
-    "sans-serif"
+    'Tiempos Headline Black', // Not working right now
+    'sans-serif',
   ],
-  bodyFontFamily: [
-    "Karla", 
-    "serif"
-  ],
+  bodyFontFamily: ['Karla', 'serif'],
   overrideThemeStyles: () => ({
     h2: {
       fontFamily: ['Big Caslon', 'serif'].join(','),
-    }
-  })
-  
+    },
+  }),
 })
 
 // Hot reload typography in development.

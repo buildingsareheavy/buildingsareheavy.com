@@ -9,12 +9,13 @@ import HeroSection from '../components/about/section-hero'
 import BioSection from '../components/about/section-bio'
 import ConnectSection from '../components/about/section-connect'
 
-
 class IndexPage extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const siteDescription = get(this,'props.data.site.siteMetadata.description')
-    
+    const siteDescription = get(
+      this,
+      'props.data.site.siteMetadata.description'
+    )
 
     return (
       <Layout location={this.props.location}>
@@ -24,11 +25,9 @@ class IndexPage extends React.Component {
           title={siteTitle}
         />
 
-      
         <HeroSection />
         <BioSection />
         <ConnectSection />
-
       </Layout>
     )
   }
