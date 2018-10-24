@@ -1,10 +1,10 @@
 ---
 title: Hot Sulphur Springs, Colorado
-date: "2017-07-05"
+date: '2017-07-05'
 
-subtitle: "Coming back to Colorado has been good. Getting out of Denver has been great. Bathing in hot springs during the heat of summer has been the best."
+subtitle: 'Coming back to Colorado has been good. Getting out of Denver has been great. Bathing in hot springs during the heat of summer has been the best.'
 published: true
-featImage: "./cover.jpg"
+featImage: './cover.jpg'
 ---
 
 ![Semi-private pool with handrail](./semi-private-pool-with-handrail.jpg)

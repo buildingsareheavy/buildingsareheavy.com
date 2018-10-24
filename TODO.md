@@ -4,6 +4,13 @@ Here is a running list so I can see progress, and check older things I've done.
 
 ---
 
+### 2018-10-23 > Tuesday
+
+- [ ] Refactor `portfolio.js` to have components
+- [ ] Refactor `portfolio.js` to have styled components (and remove whats being affected from `index.scss`).
+
+---
+
 ### 2018-10-17 > Wednesday
 
 - [ ] Add styling to first 3 blog posts.
@@ -36,10 +43,10 @@ Here is a running list so I can see progress, and check older things I've done.
 - [x] Make header global (incorporated into `layout.js`)
 - [x] Create footer and make it sticky (same as header)
 - [x] Add navigation
-- [ ] Make separate portfolio templating
+- [x] Make separate portfolio templating
 - [x] Install `SASS` and `Styled Components`
 - [ ] Edit manifest (see: `gatsby-config.js`)
-- [ ] Copy everything over from my original repo
+- [x] Copy everything over from my original repo
 - [x] Deprecate original repo
 - [x] Add this repo to Netlify
 

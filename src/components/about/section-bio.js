@@ -22,7 +22,13 @@ const TechSkill = props => (
 
 const BioSection = () => (
   <BioContainer>
-    <h2>About</h2>
+    <h2
+      style={{
+        marginBottom: rhythm(1 / 2),
+      }}
+    >
+      About
+    </h2>
     <p>
       Ethan Bradford Barrett is a front-end web developer and designer.{' '}
       <Link to="/cv/">View full CV here</Link>.

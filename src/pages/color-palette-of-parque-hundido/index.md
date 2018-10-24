@@ -1,10 +1,10 @@
 ---
 title: The Color Palette of Parque Hundido
-date: "2017-05-22"
+date: '2017-05-22'
 
-subtitle: "Capturing a short walk through a park made for running (and biking)."
+subtitle: 'Capturing a short walk through a park made for running (and biking).'
 published: true
-featImage: "./cover.jpg"
+featImage: './cover.jpg'
 ---
 
 ![Tropical Leaves](./tropical-leaves.jpg)

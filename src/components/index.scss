@@ -33,26 +33,29 @@ ul {
   list-style: none;
 }
 
-.blog-post {
+.blog-post,
+.portfolio-post {
   border-bottom: 1px solid black;
 }
 
 @supports (display: grid) {
-  div.blog-post {
-    padding: 1rem 0;
+  div.blog-post,
+  div.portfolio-post {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 2fr 3fr;
     // .blog-cell {
     //     display: flex;
     // }
-    .blog-image {
+    .blog-image,
+    .portfolio-image {
       flex: 1 0 auto;
       order: -1;
     }
   }
   @media screen and (max-width: 700px) {
-    div.blog-post {
+    div.blog-post,
+    div.portfolio-post {
       display: block;
     }
   }

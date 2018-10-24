@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
-// import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 import { rhythm, scale } from '../utils/typography'
@@ -14,6 +13,13 @@ class BlogPostTemplate extends React.Component {
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
 
+    let titleInfo
+    if (post.frontmatter.portfolio == true) {
+      titleInfo = <Fragment>{post.frontmatter.portfolioTag}</Fragment>
+    } else {
+      titleInfo = <Fragment>{post.frontmatter.date}</Fragment>
+    }
+
     return (
       <Layout location={this.props.location}>
         <Helmet
@@ -21,12 +27,8 @@ class BlogPostTemplate extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
-        {/* <Img sizes={post.frontmatter.featImage.childImageSharp.sizes} /> */}
-        <div
-          style={{
-            textAlign: 'center',
-          }}
-        >
+
+        <div style={{ textAlign: 'center' }}>
           <h1>{post.frontmatter.title}</h1>
           <small
             style={{
@@ -36,18 +38,14 @@ class BlogPostTemplate extends React.Component {
               marginTop: rhythm(-1),
             }}
           >
-            {post.frontmatter.date}
+            {/* {post.frontmatter.date} */}
+            {titleInfo}
           </small>
           <p>{post.frontmatter.subtitle}</p>
         </div>
-        <hr />
+        <hr style={{ background: 'black', marginTop: rhythm(1.5) }} />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-
+        <hr style={{ marginBottom: rhythm(1) }} />
         <ul
           style={{
             display: 'flex',
@@ -95,13 +93,9 @@ export const pageQuery = graphql`
         title
         date(formatString: "DD MMMM, YYYY")
         subtitle
-        featImage {
-          childImageSharp {
-            sizes(maxWidth: 630) {
-              ...GatsbyImageSharpSizes
-            }
-          }
-        }
+        portfolio
+        portfolioOrder
+        portfolioTag
       }
     }
   }

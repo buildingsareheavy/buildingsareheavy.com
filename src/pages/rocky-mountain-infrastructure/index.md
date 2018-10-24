@@ -1,10 +1,10 @@
 ---
 title: Rocky Mountain Infrastructure
-date: "2017-09-07"
+date: '2017-09-07'
 
-subtitle: "A very loose study on how we build into the mountains and cut through our environment."
+subtitle: 'A very loose study on how we build into the mountains and cut through our environment.'
 published: true
-featImage: "./cover.jpg"
+featImage: './cover.jpg'
 ---
 
 ![Tunnel going through a mountain](./tunnel-near-glenwood-springs.jpg)

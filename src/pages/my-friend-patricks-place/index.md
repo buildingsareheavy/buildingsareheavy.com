@@ -1,10 +1,10 @@
 ---
 title: My Friend Patrick’s Place
-date: "2017-08-30"
+date: '2017-08-30'
 
-subtitle: "A friend that I’ve known since second grade recently purchased a house, and lives with a roommate and his girlfriend."
+subtitle: 'A friend that I’ve known since second grade recently purchased a house, and lives with a roommate and his girlfriend.'
 published: true
-featImage: "./cover.jpg"
+featImage: './cover.jpg'
 ---
 
 ![Floral wallpaper](./floral-wallpaper.jpg)

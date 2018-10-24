@@ -1,10 +1,10 @@
 ---
 title: A Few Photos of Colonia Juárez
-date: "2017-03-08"
+date: '2017-03-08'
 
-subtitle: "A short collection of photos taken throughout the day walking through Colonia Juárez, Mexico City."
+subtitle: 'A short collection of photos taken throughout the day walking through Colonia Juárez, Mexico City.'
 published: true
-featImage: "./cover.jpg"
+featImage: './cover.jpg'
 ---
 
 ![Concrete building with large tree in front](./lots-of-windows-with-leaves-in-foreground.jpg)

@@ -1,19 +1,19 @@
 ---
 title: Urban Obstructions
-date: "2018-09-29"
+date: '2018-09-29'
 
 subtitle: Obstructed views of Mexico City with emphases of yellows of oranges.
 published: true
-featImage: "./cover.jpg"
+featImage: './cover.jpg'
 ---
 
 It has been almost a year since I have posted something formally on my blog. I have been taking photos regularly but have not had the desire to sit down and edit; mostly from hesitation when I moved back to Denver and immediately had a solo show at OKHI. That was a year and a half ago, and this is now, and now I’m back in Denver.
 
 This small series broke many personal rules I’ve been holding onto since college:
 
-+ • Never photograph people
-+ • Editing is subtractive
-+ • Take the subject out of context
+- • Never photograph people
+- • Editing is subtractive
+- • Take the subject out of context
 
 ---
 

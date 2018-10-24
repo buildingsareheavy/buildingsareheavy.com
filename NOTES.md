@@ -2,7 +2,15 @@
 
 ---
 
-### 2018-10-23 > Monday
+### 2018-10-23 > Tuesday
+
+Finally added all the portfolio pages, but I still need to add better images (cough, gifs, cough) and text. I set up the `portfolio.js` based off of the `blog.js` layout and set up an `if` statement inside the `return()` on `blog-post.js`. It was actually super simple. I need to make it a component, but for now it's good to go. 
+
+Not much else to write about, I just need to keep plugging away. Next step is to review and solidify my CV to figure out exactly what is on the `about` page, and get this thing live. I need more writing for the portfolio items too.
+
+---
+
+### 2018-10-22 > Monday
 
 I really didn't do anything for the project today. I did fix the author user.email on my local git so contributions showed up correctly which is a big win, and also added auto-formatting for Markdown, CSS, SCSS, PHP and HTML. It all feels really good to clean up shop, especially since I haven't really configured VSCode since I got this new MacBook, but I don't want to keep procrastinating. I can see the progress and know that it's not that much further to go to make this project live. I need to keep rolling, it's getting close.
 

@@ -1,10 +1,10 @@
 ---
 title: Walking Along Adolfo Prieto
-date: "2017-04-10"
+date: '2017-04-10'
 
-subtitle: "Six Photographs taken during a walk from Parque Acacias to Viaducto."
+subtitle: 'Six Photographs taken during a walk from Parque Acacias to Viaducto.'
 published: true
-featImage: "./cover.jpg"
+featImage: './cover.jpg'
 ---
 
 ![Street facing window looking into a courtyard with a VW beetle parked in the driveway](./window-looking-into-vw-beetle.jpg)

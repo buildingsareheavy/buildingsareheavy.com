@@ -1,10 +1,10 @@
 ---
 title: All The Cool Kids Live In Querétaro
-date: "2017-03-29"
+date: '2017-03-29'
 
-subtitle: "A few photos from around one of my favorite cities in Mexico, Santiago de Querétaro."
+subtitle: 'A few photos from around one of my favorite cities in Mexico, Santiago de Querétaro.'
 published: true
-featImage: "./cover.jpg"
+featImage: './cover.jpg'
 ---
 
 ![Bridge](./diagonal-bridge-view.jpg)

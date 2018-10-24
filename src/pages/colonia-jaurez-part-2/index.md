@@ -1,10 +1,10 @@
 ---
 title: Colonia Juárez, Mexico City (Pt. 2)
-date: "2017-09-25"
+date: '2017-09-25'
 
-subtitle: "I’ve been missing Mexico City every day since I’ve left, and now more than ever I want to return and be a part of the community."
+subtitle: 'I’ve been missing Mexico City every day since I’ve left, and now more than ever I want to return and be a part of the community.'
 published: true
-featImage: "./cover.jpg"
+featImage: './cover.jpg'
 ---
 
 Colonia Juárez is in interesting place. Within it is Zona Rosa, an old tourist district mixed with Korean community, gay & trans culture, amidst the financial district and much more. It has many of the city’s major avenues bordering and cutting through the neighborhood, and is in between the hipster, yuppie and cultural hub of the city. To say the least, there is a lot going on.
@@ -18,7 +18,6 @@ From what I’ve been hearing, nobody is quiet sure what to do, and maybe not su
 I feel hopeless. I feel privileged. This is the moment where I know I can, and did return to the United States. I have done nothing but feel safe in Colorado. I feel guilty, but I know guilt brings nothing. All I know to offer are a few photos of my everyday while living there. I don’t know how to feel.
 
 If you are interested in donating to help Mexico City recover from the recent earthquake I would like to recommend this link to the volunteer rescue brigade “Topos” – [www.topos.mx](http://www.topos.mx)
-
 
 ![Many satellite dishes and other things on rooftop](./many-satellite-dishes-on-roof.jpg)
 

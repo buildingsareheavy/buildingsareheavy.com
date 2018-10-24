@@ -1,10 +1,10 @@
 ---
 title: An Hour at City Park, Denver
-date: "2017-08-23"
+date: '2017-08-23'
 
 subtitle: Photographing two separate days biking through the park that felt like the same 10 minutes.
 published: true
-featImage: "./cover.jpg"
+featImage: './cover.jpg'
 ---
 
 ![A lot of geese chilling out in the lake](./a-lot-of-geese-in-the-lake.jpg)

@@ -1,10 +1,10 @@
 ---
 title: Colorful Commerce City
-date: "2017-10-02"
+date: '2017-10-02'
 
-subtitle: "Mostly known for it’s oil refinery and ugly houses, Commerce City has some nice industrial architecture."
+subtitle: 'Mostly known for it’s oil refinery and ugly houses, Commerce City has some nice industrial architecture.'
 published: true
-featImage: "./cover.jpg"
+featImage: './cover.jpg'
 ---
 
 ![Wind direction tube on a pole](./wind-direction.jpg)

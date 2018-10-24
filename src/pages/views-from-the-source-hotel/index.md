@@ -1,10 +1,10 @@
 ---
 title: Views From The Source Hotel
-date: "2017-09-18"
+date: '2017-09-18'
 
-subtitle: "Using the (currently under construction) rooftop of the Source Hotel to tour the timeline of Denver’s existing architecture."
+subtitle: 'Using the (currently under construction) rooftop of the Source Hotel to tour the timeline of Denver’s existing architecture.'
 published: true
-featImage: "./cover.jpg"
+featImage: './cover.jpg'
 ---
 
 ![White modern commercial building](./white-building.jpg)

@@ -21,13 +21,27 @@ class BlogPage extends React.Component {
           title={siteTitle}
         />
 
-        <h2>Blog</h2>
+        <h2
+          style={{
+            marginBottom: rhythm(1 / 2),
+          }}
+        >
+          Blog
+        </h2>
 
         {/* it should be: "posts.map(({ node }) =>" but for some reason it isn't accepting any variable */}
         {get(this, 'props.data.allMarkdownRemark.edges').map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
-            <div className="blog-post" key={node.fields.slug}>
+            <div
+              className="blog-post"
+              // more styles in style.scss
+              style={{
+                paddingTop: rhythm(1.25),
+                paddingBottom: rhythm(1.25),
+              }}
+              key={node.fields.slug}
+            >
               <div>
                 <h3
                   style={{
@@ -41,6 +55,7 @@ class BlogPage extends React.Component {
                 <small>{node.frontmatter.date}</small>
                 <p
                   style={{
+                    marginTop: rhythm(1 / 4),
                     marginBottom: rhythm(1 / 2),
                   }}
                 >

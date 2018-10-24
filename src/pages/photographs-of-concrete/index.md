@@ -1,10 +1,10 @@
 ---
 title: Photographs of Concrete
-date: "2017-03-13"
+date: '2017-03-13'
 
-subtitle: "A black and white series of concrete structures, mostly around Colonia Juárez, Mexico City."
+subtitle: 'A black and white series of concrete structures, mostly around Colonia Juárez, Mexico City.'
 published: true
-featImage: "./cover.jpg"
+featImage: './cover.jpg'
 ---
 
 ![H shaped residential building](./reforma-27-by-alberto-kalach.jpg)
