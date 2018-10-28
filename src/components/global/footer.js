@@ -3,17 +3,15 @@ import React from 'react'
 
 import { rhythm, scale } from '../../utils/typography'
 import styled from 'styled-components'
-import FooterSVG from './assets/footer-above.svg'
+import FooterSVG from './assets/footer-bg.svg'
 
 const FooterSticky = styled.footer`
   text-align: center;
-  background: black;
   padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
   color: beige;
-  ::before {
-    content: '';
-     background-image: url('${FooterSVG}');
-  }
+  background-image: url('${FooterSVG}');
+  background-repeat: no-repeat;
+  background-size: cover;
   p {
     margin: 0 auto;
   }

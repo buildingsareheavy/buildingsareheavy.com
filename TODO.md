@@ -4,6 +4,12 @@ Here is a running list so I can see progress, and check older things I've done.
 
 ---
 
+### 2018-10-28 > Sunday
+
+- [ ] Convert all CSS instances of `black` into a variable `$color-black` or something, that is `#242424`.
+
+---
+
 ### 2018-10-27 > Saturday
 
 - [ ] Refactor styles in About page and all it's components

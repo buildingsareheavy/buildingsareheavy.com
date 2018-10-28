@@ -2,6 +2,14 @@
 
 ---
 
+### 2018-10-28 > Sunday
+
+Since SVG is supported universally now, I was totally overthinking the footer problem. I just made the whole background the SVG and it's good to go! So simple :)
+
+I also added snytax for styled-components, becuase it was getting really annoying to only see everything in one color. #roughlife
+
+---
+
 ### 2018-10-27 > Saturday
 
 I did all the styling for the about page, and it's looking really nice. I still need to go back and do the mobile styling but hey, one step at a time. Also my CSS is kind of all over the place. I have some in styled components and some in scss and some in react style. I will clean that up soon when I refactor with proper components.
