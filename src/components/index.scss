@@ -30,12 +30,17 @@ a {
   }
 }
 
-ul {
-  list-style: none;
+p {
+  a {
+    color: blue;
+  }
 }
 
-li {
-  margin-bottom: 0;
+ul {
+  list-style: none;
+  li {
+    margin-bottom: 0;
+  }
 }
 
 // Blog & Portfolio pages
@@ -131,11 +136,20 @@ li {
 
 @supports (display: grid) {
   div.grid-connect {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    .cell {
+      li {
+        font-family: monospace;
+      }
+    }
   }
-  .cell:nth-child(2) {
-    align-self: center;
-    font-family: monospace;
+  @media screen and (min-width: 700px) {
+    div.grid-connect {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      .cell:nth-child(2) {
+        width: 100%;
+        align-self: center;
+      }
+    }
   }
 }
