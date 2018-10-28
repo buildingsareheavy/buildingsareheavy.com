@@ -2,9 +2,21 @@
 
 ---
 
+### 2018-10-27 > Saturday
+
+I did all the styling for the about page, and it's looking really nice. I still need to go back and do the mobile styling but hey, one step at a time. Also my CSS is kind of all over the place. I have some in styled components and some in scss and some in react style. I will clean that up soon when I refactor with proper components.
+
+I think my brain is burnt because the only thing left to style is the footer. I need to add the SVG to it but `::before` isn't working. I mean I can get it to show, but it's not getting styled correctly.
+
+I still need to rewrite the content for the about page, but it's just a few minor tweaks.
+
+It's all coming along rather nicely. I am not going to worry about styling the first 3 blog posts or any of the portfolio pieces. At least not yet. I really want to get this thing live!
+
+---
+
 ### 2018-10-23 > Tuesday
 
-Finally added all the portfolio pages, but I still need to add better images (cough, gifs, cough) and text. I set up the `portfolio.js` based off of the `blog.js` layout and set up an `if` statement inside the `return()` on `blog-post.js`. It was actually super simple. I need to make it a component, but for now it's good to go. 
+Finally added all the portfolio pages, but I still need to add better images (cough, gifs, cough) and text. I set up the `portfolio.js` based off of the `blog.js` layout and set up an `if` statement inside the `return()` on `blog-post.js`. It was actually super simple. I need to make it a component, but for now it's good to go.
 
 Not much else to write about, I just need to keep plugging away. Next step is to review and solidify my CV to figure out exactly what is on the `about` page, and get this thing live. I need more writing for the portfolio items too.
 

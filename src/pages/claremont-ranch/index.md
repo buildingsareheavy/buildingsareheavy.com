@@ -1,5 +1,5 @@
 ---
-title: Claremont Ranch Animal Hospital
+title: Claremont Ranch
 date: '2015-05-28'
 
 subtitle: 'Placeholder text.'

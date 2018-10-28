@@ -4,6 +4,14 @@ Here is a running list so I can see progress, and check older things I've done.
 
 ---
 
+### 2018-10-27 > Saturday
+
+- [ ] Refactor styles in About page and all it's components
+- [x] Add styling to About page
+- [ ] Add styling to footer (add SVG above)
+
+---
+
 ### 2018-10-23 > Tuesday
 
 - [ ] Refactor `portfolio.js` to have components
@@ -18,7 +26,7 @@ Here is a running list so I can see progress, and check older things I've done.
 - [x] Add frontmatter for: subtitle, published, portfolio, portfolioOrder.
 - [ ] Refactor `blog.js` and `blog-page.js` to have components
 - [ ] Refactor `blog.js` and `blog-page.js` to have styled components (and remove whats being affected from `index.scss`).
-- [ ] Add redirects, because a lot of URLs have changed.
+- [ ] Add redirects from Wordpress site, because a lot of URLs have changed.
 - [ ] Find out how to make `featImage` accept gif files.
 
 ---
@@ -27,7 +35,7 @@ Here is a running list so I can see progress, and check older things I've done.
 
 - [ ] Fix `Tiempos` font in Chrome.
 - [ ] Add links inside CTA font-family to typography.js
-- [ ] Import images and SVGs as variables, instead of hard coding.
+- [x] Import images and SVGs as variables, instead of hard coding.
 
 ---
 

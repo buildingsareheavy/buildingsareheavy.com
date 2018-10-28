@@ -1,23 +1,17 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Hero from './assets/hero.svg'
 
 import { rhythm, scale } from '../../utils/typography'
 import styled from 'styled-components'
 
 const HeroContainer = styled.div`
-  border: 1px solid black;
-  height: 50vh;
-  text-align: center;
-  margin-top: -1px;
-  p {
-    padding-top: 22vh;
-  }
+  height: 60vh;
+  background: url('${Hero}') no-repeat center;
+  background-size: contain;
+  margin: ${rhythm(2)} auto;
 `
 
-const HeroSection = () => (
-  <HeroContainer>
-    <p>This is where the hero logo will go.</p>
-  </HeroContainer>
-)
+const HeroSection = () => <HeroContainer />
 
 export default HeroSection
