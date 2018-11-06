@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import CTA from '../global/cta'
 import BioBackground from './assets/bio-background.svg'
 import ViewPortfolio from './assets/view-portfolio.svg'
-import Portrait from './assets/portrait.jpg'
+import Portrait from './assets/portrait2.jpg'
 
 const BioContainer = styled.div`
   background: url('${BioBackground}') no-repeat center;
@@ -77,7 +77,7 @@ const BioSection = () => (
       </ul>
     </div>
 
-    <div className="cell">
+    <div className="cell bio-cta">
       <CTA
         bg={ViewPortfolio}
         content={<Link to="/portfolio">View Portfolio</Link>}

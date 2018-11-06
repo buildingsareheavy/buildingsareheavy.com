@@ -4,6 +4,12 @@ Here is a running list so I can see progress, and check older things I've done.
 
 ---
 
+### 2018-11-05 > Monday
+
+- [ ] Fix _prev_ and _next_ for blog vs portfolio.
+
+---
+
 ### 2018-10-28 > Sunday
 
 - [ ] Convert all CSS instances of `black` into a variable `$color-black` or something, that is `#242424`.

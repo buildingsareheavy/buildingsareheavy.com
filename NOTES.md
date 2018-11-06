@@ -2,6 +2,12 @@
 
 ---
 
+### 2018-11-05 > Monday
+
+I haven't really done anything meaningful and I know that what really needs to be done right now is figuring out portfolio pieces. I keep finding ways to procrastinate, but I am making it way more complicated than I realize. My goal is to get through at least 25% - 50% tonight. Let's see how it goes!
+
+---
+
 ### 2018-10-28 > Sunday
 
 Since SVG is supported universally now, I was totally overthinking the footer problem. I just made the whole background the SVG and it's good to go! So simple :)

@@ -65,7 +65,7 @@ ul {
       order: -1;
     }
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 767px) {
     div.blog-post,
     div.portfolio-post {
       display: block;
@@ -81,7 +81,13 @@ ul {
       padding: 1.5rem 0;
     }
   }
-  @media screen and (min-width: 700px) {
+  .bio-cta {
+    div {
+      padding-top: 55px;
+      padding-right: 22px;
+    }
+  }
+  @media screen and (min-width: 768px) {
     div.grid-bio {
       display: grid;
       grid-template-columns: 1fr 2fr 2fr 1fr 1fr 2fr;
@@ -142,13 +148,29 @@ ul {
       }
     }
   }
-  @media screen and (min-width: 700px) {
+  // on desktop
+  @media screen and (min-width: 768px) {
     div.grid-connect {
       display: grid;
       grid-template-columns: 2fr 1fr;
       .cell:nth-child(2) {
         width: 100%;
         align-self: center;
+      }
+    }
+  }
+  // on tablets
+  @media screen and (max-width: 767px) {
+    div.grid-connect {
+      .cell:nth-child(2) {
+        ul {
+          padding: 20px;
+          margin-right: 50px;
+          li {
+            margin: 0 auto;
+            max-width: 120px;
+          }
+        }
       }
     }
   }
