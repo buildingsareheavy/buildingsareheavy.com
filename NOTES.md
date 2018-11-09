@@ -2,6 +2,12 @@
 
 ---
 
+### 2018-11-08 > Thursday
+
+I found out how to use global styling using _styled-components_ and now I can use js variables like `rhythm` now, so that's super nice! The article is [here](https://medium.com/styled-components/styled-components-getting-started-c9818acbcbbd) for reference. Now all the styled are in `/global/global-styles.js` and use `injectGlobal`. I still kind of think _js-in-css_ is kind of dumb, but I suppose there are some benefits to really make advanced things cleaner.
+
+---
+
 ### 2018-11-05 > Monday
 
 I haven't really done anything meaningful and I know that what really needs to be done right now is figuring out portfolio pieces. I keep finding ways to procrastinate, but I am making it way more complicated than I realize. My goal is to get through at least 25% - 50% tonight. Let's see how it goes!

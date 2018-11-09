@@ -5,6 +5,7 @@ import { rhythm, scale } from '../utils/typography'
 import './index.scss'
 import styled from 'styled-components'
 
+import GlobalStyles from './global/global-styles.js'
 import Header from './global/header'
 import Footer from './global/footer'
 
