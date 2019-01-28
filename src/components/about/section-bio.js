@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import CTA from '../global/cta'
 import BioBackground from './assets/bio-background.svg'
 import ViewPortfolio from './assets/view-portfolio.svg'
-import Portrait from './assets/portrait2.jpg'
+import Portrait from './assets/portrait3.jpg'
 
 const BioContainer = styled.div`
   background: url('${BioBackground}') no-repeat center;
@@ -16,6 +16,34 @@ const BioContainer = styled.div`
   span {
     font-weight: 900;
   }
+`
+
+const KeySkillList = styled.ul`
+  li {
+    font-style: italic;
+  }
+`
+
+const TechSkillList = styled.ul`
+  li {
+    font-style: italic;
+    span {
+      font-style: normal;
+    }
+  }
+`
+const BioImage = styled.img`
+  clip-path: polygon(
+    23% 6%,
+    11% 33%,
+    2% 70%,
+    5% 88%,
+    72% 99%,
+    93% 89%,
+    94% 53%,
+    96% 13%,
+    81% 3%
+  );
 `
 
 const TechSkill = props => (
@@ -42,39 +70,37 @@ const BioSection = () => (
           marginBottom: rhythm(1 / 2),
         }}
       >
-        Ethan Bradford Barrett is a front-end web developer and designer.{' '}
-        <Link to="/cv/">View full CV here</Link>.
+        My name is Ethan Bradford Barrett and I'm a front-end web developer and
+        designer based in Denver, CO, USA. You can view my{' '}
+        <Link to="/cv/">full CV here</Link>.
       </p>
       <p>
-        This is his biography. He studied at Rocky Mountain College of Art +
-        Design, majoring in Fine Arts, with an emphasis in Photo / Video and
-        Sculpture.
+        I studied at Rocky Mountain College of Art + Design, majoring in Fine
+        Arts, with an emphasis in Photo / Video and Sculpture.
       </p>
     </div>
     <div className="cell">
-      <img src={Portrait} />
+      <BioImage src={Portrait} />
     </div>
     <div className="cell">
       <h3>Key Skills:</h3>
-      <ul>
-        <li>Front-end Development</li>
-        <li>Graphic Design</li>
-        <li>Sales</li>
-      </ul>
+      <KeySkillList>
+        <li>Front-End Development</li>
+        <li>Graphic and Web Design</li>
+      </KeySkillList>
     </div>
     <div className="cell">
       <h3>Technical Skills:</h3>
-      <ul>
-        <TechSkill label="OS" list="MacOS, Linux" />
-        <TechSkill label="Scripting Languages" list="Javascript, PHP" />
-        <TechSkill label="Versio Control" list="Git, Github, Bitbucket" />
-        <TechSkill label="Frameworks" list="Bootstrap, Divi, React" />
-        <TechSkill label="Other Skills" list="CSS, Sass, JQuery, AJAX" />
+      <TechSkillList>
         <TechSkill
           label="Design Tools"
-          list="Photoshop, Illustrator, Figma, Sketch"
+          list="Figma, Illustrator, Photoshop, Sketch"
         />
-      </ul>
+        <TechSkill label="Frameworks" list="Bootstrap, Divi, React" />
+        <TechSkill label="Scripting Languages" list="Javascript, PHP" />
+        <TechSkill label="Version Control" list="Git, Github, Bitbucket" />
+        <TechSkill label="Other Skills" list="AJAX, CSS, Gulp, HTML5, JQuery, JSON, REST API, Sass, XML" />
+      </TechSkillList>
     </div>
 
     <div className="cell bio-cta">

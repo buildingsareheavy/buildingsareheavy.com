@@ -29,14 +29,14 @@ const ConnectSection = () => (
     <div className="cell">
       <h3>Connect:</h3>
       <p>
-        If I have a new post on my <Link to="/blog/">blog</Link>, I will always
-        post on{' '}
+        When I post something on my <Link to="/blog/">blog</Link>, I will make
+        sure to share something about it on my{' '}
         <a href="https://www.instagram.com/buildingsareheavy/">Instagram</a>.
       </p>
       <p>
-        I have my most recent projects on my{' '}
-        <a href="https://github.com/buildingsareheavy">Github</a>, and host all
-        my daily-projectson my{' '}
+        I have all my most recent projects on my{' '}
+        <a href="https://github.com/buildingsareheavy">Github</a>, as well as
+        host my daily projects on{' '}
         <a href="https://codepen.io/buildingsareheavy/#">Codepen</a>.
       </p>
       <p>

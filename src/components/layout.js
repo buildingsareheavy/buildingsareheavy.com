@@ -3,7 +3,9 @@ import { Link } from 'gatsby'
 
 import { rhythm, scale } from '../utils/typography'
 import './index.scss'
-import styled from 'styled-components'
+import styled, { injectGlobal } from 'styled-components'
+import '../fonts/TiemposHeadline-Black.otf'
+import '../fonts/TiemposHeadline-Bold.otf'
 
 import GlobalStyles from './global/global-styles.js'
 import Header from './global/header'

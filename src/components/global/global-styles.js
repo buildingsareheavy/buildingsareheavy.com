@@ -2,7 +2,8 @@ import styled, { injectGlobal } from 'styled-components'
 
 injectGlobal`
 $linkColor: #222;
-//Global
+
+
 
 html {
   height: 100%;
