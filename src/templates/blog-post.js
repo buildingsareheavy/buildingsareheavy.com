@@ -14,11 +14,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
 
     let titleInfo
-    if (post.frontmatter.portfolio == true) {
-      titleInfo = <Fragment>{post.frontmatter.portfolioTag}</Fragment>
-    } else {
-      titleInfo = <Fragment>{post.frontmatter.date}</Fragment>
-    }
+    titleInfo = <Fragment>{post.frontmatter.date}</Fragment>
 
     return (
       <Layout location={this.props.location}>
@@ -93,9 +89,6 @@ export const pageQuery = graphql`
         title
         date(formatString: "DD MMMM, YYYY")
         subtitle
-        portfolio
-        portfolioOrder
-        portfolioTag
       }
     }
   }

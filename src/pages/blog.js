@@ -94,9 +94,7 @@ export const blogQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: {
-        frontmatter: { published: { eq: true }, portfolio: { eq: null } }
-      }
+      filter: { frontmatter: { published: { eq: true } } }
     ) {
       edges {
         node {
@@ -109,7 +107,6 @@ export const blogQuery = graphql`
             title
             subtitle
             published
-            portfolio
             featImage {
               childImageSharp {
                 sizes(maxWidth: 720) {
