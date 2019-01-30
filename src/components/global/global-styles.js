@@ -1,4 +1,5 @@
 import styled, { injectGlobal } from 'styled-components'
+import { rhythm, scale } from '../../utils/typography'
 
 injectGlobal`
 $linkColor: #222;
@@ -54,6 +55,15 @@ ul {
   border-bottom: 1px solid black;
 }
 
+.portfolio-post {
+    padding-top: ${rhythm(1.25)};
+    padding-bottom: ${rhythm(1.25)};
+  p {
+    margin-top: ${rhythm(1 / 4)};
+    margin-bottom: ${rhythm(1 / 2)};
+  }
+}
+
 @supports (display: grid) {
   div.blog-post,
   div.portfolio-post {
@@ -67,6 +77,7 @@ ul {
     .portfolio-image {
       flex: 1 0 auto;
       order: -1;
+      margin-bottom: 0;
     }
   }
   @media screen and (max-width: 767px) {

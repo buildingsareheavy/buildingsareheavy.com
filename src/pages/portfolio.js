@@ -11,6 +11,8 @@ import PortfolioItem from '../components/portfolio/portfolio-item'
 const siteTitle = get(this, 'props.data.site.siteMetadata.title')
 const siteDescription = get(this, 'props.data.site.siteMetadata.description')
 
+import AnimatingMuseums from '../components/portfolio/assets/animating-museums.jpg'
+
 const TechSkill = props => (
   <li>
     <span>{props.label}: </span>
@@ -27,21 +29,26 @@ class PortfolioPage extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
-        <h2
-          style={{
-            marginBottom: rhythm(1 / 2),
-          }}
-        >
-          Portfolio
-        </h2>
-        <PortfolioItem />
-        <p
-          style={{
-            textAlign: 'center',
-          }}
-        >
-          END
-        </p>
+        <h2 style={{ marginBottom: rhythm(1 / 2) }}>Portfolio</h2>
+        <p style={{ textAlign: 'center' }}>Coming Soon</p>
+        {/* <PortfolioItem
+          title="Test 1"
+          descriptionOne="This is what the project is. This is more text to fill more than a line of text to see what it looks like....."
+          descriptionTwo="This is what I did in the project."
+          image={AnimatingMuseums}
+          imageText="Alt Text"
+        />
+
+        <PortfolioItem
+          title="Test 2"
+          descriptionOne="This is what the project is."
+          descriptionTwo="This is what I did in the project."
+          image={AnimatingMuseums}
+          imageText="Alt Text"
+        /> */}
+
+        <br />
+        <p style={{ textAlign: 'center' }}>END</p>
       </Layout>
     )
   }
