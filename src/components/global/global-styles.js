@@ -2,9 +2,6 @@ import styled, { injectGlobal } from 'styled-components'
 import { rhythm, scale } from '../../utils/typography'
 
 injectGlobal`
-$linkColor: #222;
-
-
 
 html {
   height: 100%;
@@ -25,10 +22,10 @@ footer {
   height: 130px;
 }
 
-a {
+a, a:visited {
   box-shadow: none;
   text-decoration: none;
-  color: $linkColor;
+  color: tomato;
   transition: all 0.2s;
   &:hover {
     opacity: 0.75;
@@ -36,8 +33,8 @@ a {
 }
 
 p {
-  a {
-    color: blue;
+  a, a:visited {
+    color: tomato;
   }
 }
 
@@ -68,7 +65,7 @@ ul {
   div.blog-post,
   div.portfolio-post {
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
     grid-template-columns: 2fr 3fr;
     // .blog-cell {
     //     display: flex;

@@ -16,10 +16,13 @@ const ConnectContainer = styled.div`
 const ConnectList = styled.ul`
   margin-top: 30px;
   li {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #333;
     width: 70%;
     :last-child {
       border-bottom: none;
+    }
+    a {
+      color: #333;
     }
   }
 `
@@ -31,13 +34,33 @@ const ConnectSection = () => (
       <p>
         When I post something on my <Link to="/blog/">blog</Link>, I will make
         sure to share something about it on my{' '}
-        <a href="https://www.instagram.com/buildingsareheavy/">Instagram</a>.
+        <a
+          href="https://www.instagram.com/buildingsareheavy/"
+          target="_blank"
+          rel="noopener"
+        >
+          Instagram
+        </a>
+        .
       </p>
       <p>
         I have all my most recent projects on my{' '}
-        <a href="https://github.com/buildingsareheavy">Github</a>, as well as
-        host my daily projects on{' '}
-        <a href="https://codepen.io/buildingsareheavy/#">Codepen</a>.
+        <a
+          href="https://github.com/buildingsareheavy"
+          target="_blank"
+          rel="noopener"
+        >
+          Github
+        </a>
+        , as well as host my daily projects on{' '}
+        <a
+          href="https://codepen.io/buildingsareheavy/#"
+          target="_blank"
+          rel="noopener"
+        >
+          Codepen
+        </a>
+        .
       </p>
       <p>
         If you prefer email, you can always reach me at{' '}
@@ -55,15 +78,31 @@ const ConnectSection = () => (
               <Link to="/blog">Blog</Link>
             </li>
             <li>
-              <a href="https://www.instagram.com/buildingsareheavy/">
+              <a
+                href="https://www.instagram.com/buildingsareheavy/"
+                target="_blank"
+                rel="noopener"
+              >
                 Instagram
               </a>
             </li>
             <li>
-              <a href="https://github.com/buildingsareheavy">Github</a>
+              <a
+                href="https://github.com/buildingsareheavy"
+                target="_blank"
+                rel="noopener"
+              >
+                Github
+              </a>
             </li>
             <li>
-              <a href="https://codepen.io/buildingsareheavy/#">Codepen</a>
+              <a
+                href="https://codepen.io/buildingsareheavy/#"
+                target="_blank"
+                rel="noopener"
+              >
+                Codepen
+              </a>
             </li>
             <li>
               <a href="mailto:hello@buildingsAreHeavy.com">Email</a>

@@ -16,6 +16,9 @@ const BioContainer = styled.div`
   span {
     font-weight: 900;
   }
+  a {
+    color: #333;
+  }
 `
 
 const KeySkillList = styled.ul`
@@ -92,6 +95,7 @@ const BioSection = () => (
     <div className="cell">
       <h3>Technical Skills:</h3>
       <TechSkillList>
+        <TechSkill label="CMS" list="Squarespace, Wordpress" />
         <TechSkill
           label="Design Tools"
           list="Figma, Illustrator, Photoshop, Sketch"
@@ -99,7 +103,10 @@ const BioSection = () => (
         <TechSkill label="Frameworks" list="Bootstrap, Divi, React" />
         <TechSkill label="Scripting Languages" list="Javascript, PHP" />
         <TechSkill label="Version Control" list="Git, Github, Bitbucket" />
-        <TechSkill label="Other Skills" list="AJAX, CSS, Gulp, HTML5, JQuery, JSON, REST API, Sass, XML" />
+        <TechSkill
+          label="Other Skills"
+          list="AJAX, CSS, Gulp, HTML5, JQuery, JSON, REST API, Sass, XML"
+        />
       </TechSkillList>
     </div>
 

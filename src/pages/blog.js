@@ -34,20 +34,12 @@ class BlogPage extends React.Component {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
             <div
-              className="blog-post"
-              // more styles in style.scss
-              style={{
-                paddingTop: rhythm(1.25),
-                paddingBottom: rhythm(1.25),
-              }}
+              className="blog-post" // more styles in style.scss
+              style={{ paddingTop: rhythm(1.25), paddingBottom: rhythm(1.25) }}
               key={node.fields.slug}
             >
               <div>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 8),
-                  }}
-                >
+                <h3 style={{ marginBottom: rhythm(1 / 8) }}>
                   <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
                     {title}
                   </Link>

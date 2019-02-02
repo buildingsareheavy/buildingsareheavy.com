@@ -49,7 +49,7 @@ const NavHalf = styled.div`
 const Header = () => (
   // React fragments allow a component to return multiple elements
   <React.Fragment>
-    <NavContainer>
+    <NavContainer style={{ color: 'black' }}>
       <NavHalf>
         <NavTitle>
           <Link to={'/'}>
