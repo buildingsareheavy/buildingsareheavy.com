@@ -12,9 +12,14 @@ const typography = new Typography({
       name: 'Big Caslon',
       styles: ['400'],
     },
+    {
+      name: 'Playfair Display',
+      styles: ['900i'],
+    },
   ],
   headerFontFamily: [
-    'Tiempos Headline Black', // Not working right now
+    'Tiempos Headline Black',
+    'Playfair Display',
     'sans-serif',
   ],
   bodyFontFamily: ['Karla', 'serif'],

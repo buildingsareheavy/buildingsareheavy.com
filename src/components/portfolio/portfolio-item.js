@@ -13,6 +13,11 @@ const PortfolioItem = props => (
     <div>
       <h3>{props.title}</h3>
       <p>{props.descriptionOne}</p>
+      <hr
+        style={{
+          marginTop: rhythm(1),
+        }}
+      />
       <p>{props.descriptionTwo}</p>
       <a href={props.linkURL} target="_blank" rel="noopener">
         {props.linkName}
