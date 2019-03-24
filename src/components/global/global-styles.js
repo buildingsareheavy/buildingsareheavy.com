@@ -3,6 +3,22 @@ import { rhythm, scale } from '../../utils/typography'
 
 injectGlobal`
 
+@font-face {
+  font-family: "Tiempos Headline";
+  src: url('../../fonts/TiemposHeadline-Black.otf');
+  src: url('../../fonts/TiemposHeadline-Black.woff');
+}
+
+@font-face {
+  font-family: "Tiempos Headline Bold";
+  src: url('../../fonts/TiemposHeadline-Bold.otf');
+  src: url('../../fonts/TiemposHeadline-Bold.woff');
+}
+
+h1, h3, h4, h5, h6 {
+  font-family: "Tiempos Headline Bold";
+}
+
 html {
   height: 100%;
 }
