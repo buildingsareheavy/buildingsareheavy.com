@@ -1,19 +1,24 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
 import { rhythm, scale } from '../../utils/typography'
 import styled from 'styled-components'
 
+import { GlobalCSSVariables } from './global-styles-variables'
+
 const NavContainer = styled.div`
+  color: ${GlobalCSSVariables.black};
   border-bottom: 1px solid black;
   margin-bottom: ${rhythm(1.5)};
 `
 
 const NavTitle = styled.h1`
-  border-right: 1px solid black;
   margin-left: ${rhythm(0.25)};
   margin-bottom: ${rhythm(0.25)};
-  ${scale(1.5)};
+  ${scale(2)};
+  line-height: ${rhythm(2)};
+  @media (min-width: 701px) {
+    border-right: 1px solid black;
+  }
   a {
     color: inherit;
   }
@@ -49,7 +54,7 @@ const NavHalf = styled.div`
 const Header = () => (
   // React fragments allow a component to return multiple elements
   <React.Fragment>
-    <NavContainer style={{ color: 'black' }}>
+    <NavContainer>
       <NavHalf>
         <NavTitle>
           <Link to={'/'}>

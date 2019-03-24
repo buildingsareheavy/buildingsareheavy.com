@@ -6,6 +6,7 @@ import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 import { rhythm, scale } from '../utils/typography'
+import { GlobalCSSVariables } from '../components/global/global-styles-variables'
 
 const siteTitle = get(this, 'props.data.site.siteMetadata.title')
 const siteDescription = get(this, 'props.data.site.siteMetadata.description')
@@ -34,13 +35,21 @@ class BlogPage extends React.Component {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
             <div
-              className="blog-post" // more styles in style.scss
-              style={{ paddingTop: rhythm(1.25), paddingBottom: rhythm(1.25) }}
+              className="blog-post"
+              style={
+                { paddingTop: rhythm(1.25), paddingBottom: rhythm(1.25) } // more styles in style.scss
+              }
               key={node.fields.slug}
             >
               <div>
                 <h3 style={{ marginBottom: rhythm(1 / 8) }}>
-                  <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                  <Link
+                    style={{
+                      boxShadow: 'none',
+                      color: GlobalCSSVariables.black,
+                    }}
+                    to={node.fields.slug}
+                  >
                     {title}
                   </Link>
                 </h3>

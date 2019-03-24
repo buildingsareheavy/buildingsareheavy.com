@@ -16,12 +16,12 @@ const typography = new Typography({
       name: 'Playfair Display',
       styles: ['900i'],
     },
+    {
+      name: 'Markazi Text',
+      styles: ['700'],
+    },
   ],
-  headerFontFamily: [
-    'Tiempos Headline Black',
-    'Playfair Display',
-    'sans-serif',
-  ],
+  headerFontFamily: ['Markazi Text', 'Playfair Display', 'sans-serif'],
   bodyFontFamily: ['Karla', 'serif'],
   overrideThemeStyles: () => ({
     h2: {

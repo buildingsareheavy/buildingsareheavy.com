@@ -8,12 +8,12 @@ import FooterSVG from './assets/footer-bg.svg'
 const FooterSticky = styled.footer`
   text-align: center;
   padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
-  color: beige;
   background-image: url('${FooterSVG}');
   background-repeat: no-repeat;
   background-size: cover;
   p {
     margin: 0 auto;
+    color: beige;
   }
 `
 

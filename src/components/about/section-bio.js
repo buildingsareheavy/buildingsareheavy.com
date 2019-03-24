@@ -95,7 +95,7 @@ const BioSection = () => (
     <div className="cell">
       <h3>Technical Skills:</h3>
       <TechSkillList>
-        <TechSkill label="CMS" list="Squarespace, Wordpress" />
+        <TechSkill label="CMS" list="NetlifyCMS, Squarespace, Wordpress" />
         <TechSkill
           label="Design Tools"
           list="Figma, Illustrator, Photoshop, Sketch"

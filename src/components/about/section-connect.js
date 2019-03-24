@@ -24,6 +24,9 @@ const ConnectList = styled.ul`
     a {
       color: #333;
     }
+    @media screen and (max-width: 701px) {
+      font-size: ${rhythm(0.5)};
+    }
   }
 `
 

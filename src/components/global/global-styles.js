@@ -1,23 +1,11 @@
 import styled, { injectGlobal } from 'styled-components'
 import { rhythm, scale } from '../../utils/typography'
 
+import { GlobalCSSVariables } from './global-styles-variables'
+
+// all CSS variables are located in './global-styles-varibles'
+
 injectGlobal`
-
-@font-face {
-  font-family: "Tiempos Headline";
-  src: url('../../fonts/TiemposHeadline-Black.otf');
-  src: url('../../fonts/TiemposHeadline-Black.woff');
-}
-
-@font-face {
-  font-family: "Tiempos Headline Bold";
-  src: url('../../fonts/TiemposHeadline-Bold.otf');
-  src: url('../../fonts/TiemposHeadline-Bold.woff');
-}
-
-h1, h3, h4, h5, h6 {
-  font-family: "Tiempos Headline Bold";
-}
 
 html {
   height: 100%;
@@ -41,16 +29,20 @@ footer {
 a, a:visited {
   box-shadow: none;
   text-decoration: none;
-  color: tomato;
+  color: ${GlobalCSSVariables.link};
   transition: all 0.2s;
   &:hover {
     opacity: 0.75;
   }
 }
 
+p, span, h1, h2, h3, h4, h5, h6 {
+  color: ${GlobalCSSVariables.black};
+}
+
 p {
   a, a:visited {
-    color: tomato;
+    color: ${GlobalCSSVariables.link};
   }
 }
 
@@ -59,6 +51,10 @@ ul {
   li {
     margin-bottom: 0;
   }
+}
+
+h3 {
+  font-size: ${rhythm(1.25)}
 }
 
 // Blog & Portfolio pages
