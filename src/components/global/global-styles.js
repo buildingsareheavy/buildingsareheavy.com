@@ -94,6 +94,9 @@ h3 {
     div.portfolio-post {
       display: block;
     }
+    div.portfolio-post a {
+      margin-bottom: 30px;
+    }
   }
 }
 

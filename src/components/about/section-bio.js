@@ -8,6 +8,8 @@ import BioBackground from './assets/bio-background.svg'
 import ViewPortfolio from './assets/view-portfolio.svg'
 import Portrait from './assets/portrait3.jpg'
 
+import { GlobalCSSVariables } from '../global/global-styles-variables'
+
 const BioContainer = styled.div`
   background: url('${BioBackground}') no-repeat center;
   background-size: 100% 100%;
@@ -17,7 +19,7 @@ const BioContainer = styled.div`
     font-weight: 900;
   }
   a {
-    color: #333;
+    color: ${GlobalCSSVariables.link};
   }
 `
 

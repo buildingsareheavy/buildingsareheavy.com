@@ -79,6 +79,7 @@ Here is a running list so I can see progress, and check older things I've done.
 - [ ] Make portfolio items into it's own file, and keep the actual `portoflio.js` page clean.
 - [ ] start adding some animations
 - [x] make global varibles for CSS
+- [ ] H2 tags, like (About / Blog / Portfolio) are the same size and font as the H3 tags on mobile.
 
 ---
 
