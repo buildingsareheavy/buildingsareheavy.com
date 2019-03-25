@@ -54,7 +54,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/gatsby-icon.png`,
+        icon: `src/assets/favicon.png`,
       },
     },
     `gatsby-plugin-offline`,
@@ -63,6 +63,38 @@ module.exports = {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: 'src/utils/typography',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: './src/assets/favicon.png',
+        // WebApp Manifest Configuration
+        // appName: null, // Inferred with your package.json
+        // appDescription: null,
+        // developerName: null,
+        // developerURL: null,
+        dir: 'auto',
+        lang: 'en-US',
+        // background: '#fff',
+        // theme_color: '#fff',
+        display: 'standalone',
+        orientation: 'any',
+        start_url: '/?homescreen=1',
+        version: '1.0',
+
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          opengraph: false,
+          twitter: false,
+          yandex: false,
+          windows: false,
+        },
       },
     },
     `gatsby-plugin-sass`,
