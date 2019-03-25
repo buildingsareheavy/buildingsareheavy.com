@@ -1,6 +1,6 @@
 export const GlobalCSSVariables = {
   link: '#ff602d',
-  black: '#444',
+  black: '#333333',
 }
 
 export default GlobalCSSVariables

@@ -57,6 +57,11 @@ h3 {
   font-size: ${rhythm(1.25)}
 }
 
+.end {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 // Blog & Portfolio pages
 
 .blog-post,

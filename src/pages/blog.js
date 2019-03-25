@@ -5,12 +5,34 @@ import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
-import { rhythm, scale } from '../utils/typography'
+import { rhythm } from '../utils/typography'
+import styled from 'styled-components'
 import { GlobalCSSVariables } from '../components/global/global-styles-variables'
 
 const siteTitle = get(this, 'props.data.site.siteMetadata.title')
 const siteDescription = get(this, 'props.data.site.siteMetadata.description')
-const posts = get(this, 'props.data.allMarkdownRemark.edges')
+// const posts = get(this, 'props.data.allMarkdownRemark.edges')
+
+const BlogContainer = styled.div`
+  h2 {
+    margin-bottom: ${rhythm(1 / 2)};
+  }
+  div.blog-post {
+    padding-top: ${rhythm(1.25)};
+    padding-bottom: ${rhythm(1.25)};
+    h3 {
+      margin-bottom: ${rhythm(1 / 8)};
+    }
+    a {
+      box-shadow: none;
+      color: ${GlobalCSSVariables.black};
+    }
+    p {
+      margin-top: ${rhythm(1 / 4)};
+      margin-bottom: ${rhythm(1 / 2)};
+    }
+  }
+`
 
 class BlogPage extends React.Component {
   render() {
@@ -21,63 +43,33 @@ class BlogPage extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
+        <BlogContainer>
+          <h2>Blog</h2>
 
-        <h2
-          style={{
-            marginBottom: rhythm(1 / 2),
-          }}
-        >
-          Blog
-        </h2>
-
-        {/* it should be: "posts.map(({ node }) =>" but for some reason it isn't accepting any variable */}
-        {get(this, 'props.data.allMarkdownRemark.edges').map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
-          return (
-            <div
-              className="blog-post"
-              style={
-                { paddingTop: rhythm(1.25), paddingBottom: rhythm(1.25) } // more styles in style.scss
-              }
-              key={node.fields.slug}
-            >
-              <div>
-                <h3 style={{ marginBottom: rhythm(1 / 8) }}>
-                  <Link
-                    style={{
-                      boxShadow: 'none',
-                      color: GlobalCSSVariables.black,
-                    }}
-                    to={node.fields.slug}
-                  >
-                    {title}
-                  </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-                <p
-                  style={{
-                    marginTop: rhythm(1 / 4),
-                    marginBottom: rhythm(1 / 2),
-                  }}
-                >
-                  {node.frontmatter.subtitle}
-                </p>
-                {/* <p dangerouslySetInnerHTML={{ __html: node.excerpt }} /> */}
+          {/* it should be: "posts.map(({ node }) =>" but for some reason it isn't accepting any variable */}
+          {get(this, 'props.data.allMarkdownRemark.edges').map(({ node }) => {
+            const title = get(node, 'frontmatter.title') || node.fields.slug
+            return (
+              <div className="blog-post" key={node.fields.slug}>
+                <div>
+                  <h3>
+                    <Link to={node.fields.slug}>{title}</Link>
+                  </h3>
+                  <small>{node.frontmatter.date}</small>
+                  <p>{node.frontmatter.subtitle}</p>
+                  {/* <p dangerouslySetInnerHTML={{ __html: node.excerpt }} /> */}
+                </div>
+                <Link className="blog-image" to={node.fields.slug}>
+                  <Img
+                    sizes={node.frontmatter.featImage.childImageSharp.sizes}
+                  />
+                </Link>
               </div>
-              <Link className="blog-image" to={node.fields.slug}>
-                <Img sizes={node.frontmatter.featImage.childImageSharp.sizes} />
-              </Link>
-            </div>
-          )
-        })}
-        <br />
-        <p
-          style={{
-            textAlign: 'center',
-          }}
-        >
-          END
-        </p>
+            )
+          })}
+          <br />
+          <p className="end">End</p>
+        </BlogContainer>
       </Layout>
     )
   }

@@ -9,6 +9,9 @@ const NavContainer = styled.div`
   color: ${GlobalCSSVariables.black};
   border-bottom: 1px solid black;
   margin-bottom: ${rhythm(1.5)};
+  a {
+    color: inherit;
+  }
 `
 
 const NavTitle = styled.h1`
@@ -19,9 +22,6 @@ const NavTitle = styled.h1`
   @media (min-width: 701px) {
     border-right: 1px solid black;
   }
-  a {
-    color: inherit;
-  }
 `
 
 const NavItems = styled.ul`
@@ -30,7 +30,6 @@ const NavItems = styled.ul`
     margin: 0 0 0 -5px;
   }
   a {
-    color: inherit;
     display: inline;
     text-decoration: none;
     margin: 0 5px;

@@ -5,33 +5,33 @@ import { rhythm, scale } from '../../utils/typography'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
+const PortfolioItemContainer = styled.div`
+  hr {
+    margin-top: ${rhythm(1)};
+  }
+  img {
+    box-shadow: 0px 0px 5px 0px #ddd;
+  }
+  @media screen and (max-width: 701px) {
+    div {
+      margin-bottom: 30px;
+    }
+  }
+`
+
 const PortfolioItem = props => (
-  <div
-    className="portfolio-post"
-    // more styles in style.scss
-  >
+  <PortfolioItemContainer className="portfolio-post">
     <div>
       <h3>{props.title}</h3>
       <p>{props.descriptionOne}</p>
-      <hr
-        style={{
-          marginTop: rhythm(1),
-        }}
-      />
+      <hr />
       <p>{props.descriptionTwo}</p>
       <a href={props.linkURL} target="_blank" rel="noopener">
         {props.linkName}
       </a>
     </div>
-    <img
-      style={{
-        boxShadow: '0px 0px 5px 0px #ddd',
-      }}
-      className="portfolio-image"
-      src={props.image}
-      alt={props.title}
-    />
-  </div>
+    <img className="portfolio-image" src={props.image} alt={props.title} />
+  </PortfolioItemContainer>
 )
 
 export default PortfolioItem

@@ -12,13 +12,13 @@ Here is a running list so I can see progress, and check older things I've done.
 
 ### 2018-10-28 > Sunday
 
-- [ ] Convert all CSS instances of `black` into a variable `$color-black` or something, that is `#242424`.
+- [x] Convert all CSS instances of `black` into a variable `$color-black` or something, that is `#242424`.
 
 ---
 
 ### 2018-10-27 > Saturday
 
-- [ ] Refactor styles in About page and all it's components
+- [x] Refactor styles in About page and all it's components
 - [x] Add styling to About page
 - [x] Add styling to footer (add SVG above)
 
@@ -26,8 +26,8 @@ Here is a running list so I can see progress, and check older things I've done.
 
 ### 2018-10-23 > Tuesday
 
-- [ ] Refactor `portfolio.js` to have components
-- [ ] Refactor `portfolio.js` to have styled components (and remove whats being affected from `index.scss`).
+- [x] Refactor `portfolio.js` to have components
+- [x] Refactor `portfolio.js` to have styled components (and remove whats being affected from `index.scss`).
 
 ---
 
@@ -36,8 +36,8 @@ Here is a running list so I can see progress, and check older things I've done.
 - [x] ~~Add styling to first 3 blog posts.~~ **Not a fan of that idea anymore.**
 - [ ] Add pagination for blog posts.
 - [x] Add frontmatter for: subtitle, published, portfolio, portfolioOrder.
-- [ ] Refactor `blog.js` and `blog-page.js` to have components
-- [ ] Refactor `blog.js` and `blog-page.js` to have styled components (and remove whats being affected from `index.scss`).
+- [x] Refactor `blog.js` and `blog-page.js` to have components
+- [x] Refactor `blog.js` and `blog-page.js` to have styled components (and remove whats being affected from `index.scss`).
 - [x] Add redirects from Wordpress site, because a lot of URLs have changed.
 - [x] ~~Find out how to make `featImage` accept gif files.~~ **Pretty sure it's not possible, due to the way that Gatsby is set up 😢**
 
@@ -76,10 +76,16 @@ Here is a running list so I can see progress, and check older things I've done.
 
 - [ ] Replace Favicon
 - [ ] Liven up the colors
-- [ ] Make portfolio items into it's own file, and keep the actual `portoflio.js` page clean.
+- [x] Make portfolio items into it's own file, and keep the actual `portoflio.js` page clean.
 - [ ] start adding some animations
 - [x] make global varibles for CSS
 - [ ] H2 tags, like (About / Blog / Portfolio) are the same size and font as the H3 tags on mobile.
+
+---
+
+### 2019-03-25 > Monday
+
+- [ ] Refactor all the CSS in the `global-styles.js`, especially the `blog` vs `portfolio`
 
 ---
 

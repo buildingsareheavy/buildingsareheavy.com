@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import CTA from '../global/cta'
 import BioBackground from './assets/bio-background.svg'
 import ViewPortfolio from './assets/view-portfolio.svg'
-import Portrait from './assets/portrait3.jpg'
+import Portrait from './assets/portrait.jpg'
 
 import { GlobalCSSVariables } from '../global/global-styles-variables'
 
@@ -21,22 +21,26 @@ const BioContainer = styled.div`
   a {
     color: ${GlobalCSSVariables.link};
   }
-`
-
-const KeySkillList = styled.ul`
-  li {
-    font-style: italic;
+  h2 {
+    margin-bottom: ${rhythm(1 / 2)};
   }
-`
-
-const TechSkillList = styled.ul`
   li {
     font-style: italic;
+    border-bottom: 1px solid #ddd;
+    &:last-child {
+      border-bottom: none;
+    }
+    &:hover {
+      background: #ddd;
+    }
     span {
       font-style: normal;
     }
   }
 `
+
+const KeySkillList = styled.ul``
+const TechSkillList = styled.ul``
 const BioImage = styled.img`
   clip-path: polygon(
     23% 6%,
@@ -50,7 +54,6 @@ const BioImage = styled.img`
     81% 3%
   );
 `
-
 const TechSkill = props => (
   <li>
     <span>{props.label}: </span>
@@ -61,28 +64,20 @@ const TechSkill = props => (
 const BioSection = () => (
   <BioContainer className="grid-bio">
     <div className="cell">
-      <h2
-        style={{
-          marginBottom: rhythm(1 / 2),
-        }}
-      >
-        About
-      </h2>
+      <h2>About</h2>
     </div>
     <div className="cell">
-      <p
-        style={{
-          marginBottom: rhythm(1 / 2),
-        }}
-      >
+      <p>
         My name is Ethan Bradford Barrett and I'm a front-end web developer and
         designer based in Denver, CO, USA. You can view my{' '}
         <Link to="/cv/">full CV here</Link>.
       </p>
+      <br />
       <p>
         I studied at Rocky Mountain College of Art + Design, majoring in Fine
         Arts, with an emphasis in Photo / Video and Sculpture.
       </p>
+      <br />
     </div>
     <div className="cell">
       <BioImage src={Portrait} />
@@ -102,7 +97,7 @@ const BioSection = () => (
           label="Design Tools"
           list="Figma, Illustrator, Photoshop, Sketch"
         />
-        <TechSkill label="Frameworks" list="Bootstrap, Divi, React" />
+        <TechSkill label="Frameworks" list="Bootstrap, Divi, React, Vue" />
         <TechSkill label="Scripting Languages" list="Javascript, PHP" />
         <TechSkill label="Version Control" list="Git, Github, Bitbucket" />
         <TechSkill
@@ -115,7 +110,11 @@ const BioSection = () => (
     <div className="cell bio-cta">
       <CTA
         bg={ViewPortfolio}
-        content={<Link to="/portfolio">View Portfolio</Link>}
+        content={
+          <Link to="/portfolio" style={{ color: GlobalCSSVariables.black }}>
+            View Portfolio
+          </Link>
+        }
       />
     </div>
   </BioContainer>
