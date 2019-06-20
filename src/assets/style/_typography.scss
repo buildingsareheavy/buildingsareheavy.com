@@ -1,11 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400, 600');
+@font-face {
+  font-family: "TiemposHeadline-Bold";
+  src: url("../fonts/TiemposHeadline-Bold.otf");
+}
+
+@font-face {
+  font-family: "TiemposHeadline-Black";
+  src: url("../fonts/TiemposHeadline-Black.otf");
+}
+
+@font-face {
+  font-family: "Apercu-Mono";
+  src: url("../fonts/Apercu-Mono.otf");
+}
+
+@font-face {
+  font-family: "Apercu-Regular";
+  src: url("../fonts/Apercu-Regular.otf");
+}
+
 
 html {
   font-size: var(--base-font-size);
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Apercu-Regular', sans-serif;
   font-weight: 400;
   line-height: 1.45;
 }
@@ -14,11 +33,15 @@ p {
 	margin-bottom: 1.25em;
 }
 
+.monospace {
+  font-family: 'Apercu-Mono', sans-serif;
+}
+
 h1, h2, h3, h4, h5 {
   transition: color .6s;
   color: var(--title-color);
   margin: 2.75rem 0 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'TiemposHeadline-Bold', serif;
   font-weight: 600;
   line-height: 1.15;
 }
@@ -69,3 +92,4 @@ ol {
     margin-bottom: .6em;
   }
 }
+

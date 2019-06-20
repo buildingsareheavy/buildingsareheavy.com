@@ -8,9 +8,9 @@ The objective was to combine my professional portfolio and information with my p
 
 [Prototype in Figma](https://www.figma.com/proto/gWEANvhH1dZTGOPVmGP9Z60K/Buildings-Are-Heavy-dot-com?node-id=0%3A1&scaling=min-zoom)
 
+## Uses my Gridsome Blog Starter with Netlify CMS Starter
 
-### Uses my Gridsome Blog Starter with Netlify CMS Starter - [https://github.com/buildingsareheavy/gridsome-blog-netlify-cms-starter](https://github.com/buildingsareheavy/gridsome-blog-netlify-cms-starter)
-
+[https://github.com/buildingsareheavy/gridsome-blog-netlify-cms-starter](https://github.com/buildingsareheavy/gridsome-blog-netlify-cms-starter)
 
 ## Based on the official Gridsome Starter Blog
 
