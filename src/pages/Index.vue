@@ -1,8 +1,7 @@
 <template>
   <Layout :show-logo="false">
-    <!-- Author intro -->
-    <Author :show-title="true"/>
 
+<h2 class="page__title">Blog</h2>
     <!-- List posts -->
     <div class="posts">
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
@@ -52,3 +51,11 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.page__title {
+  margin: 5px 0 25px;
+  font-size: calc(var(--base-font-size) * 1.25);
+  font-weight: normal;
+}
+</style>

@@ -34,6 +34,9 @@ export default {
   border: 0;
   color: var(--body-color);
   cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 
   &:hover {
     opacity: .8
