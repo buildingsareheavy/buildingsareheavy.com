@@ -2,8 +2,8 @@
   <div class="post-card content-box" :class="{'post-card--has-poster' : post.poster}">
     <h2 class="post-card__title" v-html="post.title" />
     <PostMeta class="post-card__meta" :post="post" />
-    <div class="post-card__image">
-      <g-image alt="Cover image" v-if="post.cover_image" :src="post.cover_image" />
+    <div class="post-card__header">
+      <g-image alt="Cover image" v-if="post.cover_image" class="post-card__image" :src="post.cover_image" />
     </div>
     <div class="post-card__content">
       <p class="post-card__description" v-html="post.description" />
@@ -38,13 +38,12 @@ export default {
   grid-gap: calc(var(--space) / 3);
   grid-template-columns: 1fr 1fr;
 
-  &__image {
+  &__header {
     align-self: center;
     img {
-        min-width: 100%;
       border-radius: var(--radius);
+      min-width: 100%;
     }
-    
 
     &:empty {
       display: none;

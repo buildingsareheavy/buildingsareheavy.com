@@ -1,18 +1,23 @@
 <template>
   <Layout>
     <div class="post-title">
+      <div class="content-box">
       <h1 class="post-title__text">
         {{ $page.post.title }}
       </h1>
       
       <PostMeta :post="$page.post" />
 
+  <div class="post__header">
+         <p>{{ $page.post.description }}</p>
+      </div>
     </div>
     
+    
+     
+    </div>
+
     <div class="post content-box">
-      <div class="post__header">
-        <g-image alt="Cover image" v-if="$page.post.cover_image" :src="$page.post.cover_image" />
-      </div>
 
       <div class="post__content" v-html="$page.post.content" />
 
@@ -68,7 +73,6 @@ query Post ($path: String!) {
     }
     description
     content
-    cover_image (width: 860, blur: 10)
   }
 }
 </page-query>
@@ -82,12 +86,16 @@ query Post ($path: String!) {
 .post {
 
   &__header {
-    width: calc(100% + var(--space) * 2);
-    margin-left: calc(var(--space) * -1);
-    margin-top: calc(var(--space) * -1);
-    margin-bottom: calc(var(--space) / 2);
+    /* width: calc(100% + var(--space) * 2); */
+    /* margin-left: calc(var(--space) * -1); */
+    margin-top: calc(var(--space) * 0.5);
+    /* margin-bottom: calc(var(--space) / 1.5); */
     overflow: hidden;
     border-radius: var(--radius) var(--radius) 0 0;
+    text-align: center;
+    p {
+      padding: 0 calc(var(--space) / 1.5);
+    }
     
     img {
       width: 100%;
@@ -109,12 +117,15 @@ query Post ($path: String!) {
     }
 
     img {
-      width: calc(100% + var(--space) * 2);
-      margin-left: calc(var(--space) * -1);
+      /* width: calc(100% + var(--space) * 2); */
+      /* margin-left: calc(var(--space) * -1); */
       display: block;
-      max-width: none;
+      /* max-width: none; */
     }
   }
+  .post__footer {
+      padding-top: calc(var(--space) / 4);
+    }
 }
 
 .post-comments {
