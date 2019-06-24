@@ -1,17 +1,16 @@
 <template>
   <div class="post-card content-box" :class="{'post-card--has-poster' : post.poster}">
-    <div class="post-card__header">
-      <g-image alt="Cover image" v-if="post.cover_image" class="post-card__image" :src="post.cover_image" />
+    <h2 class="post-card__title" v-html="post.title" />
+    <PostMeta class="post-card__meta" :post="post" />
+    <div class="post-card__image">
+      <g-image alt="Cover image" v-if="post.cover_image" :src="post.cover_image" />
     </div>
     <div class="post-card__content">
-      <h2 class="post-card__title" v-html="post.title" />
       <p class="post-card__description" v-html="post.description" />
-      
-      <PostMeta class="post-card__meta" :post="post" />
       <PostTags class="post-card__tags" :post="post" />
-
       <g-link class="post-card__link" :to="post.path">Link</g-link>
     </div>
+  
   </div>
 </template>
 
@@ -32,26 +31,34 @@ export default {
 .post-card {
   margin-bottom: var(--space);
   position: relative;
+  display: grid;
+  @media screen and (max-width: 650px) {
+  display: block;
+  }
+  grid-gap: calc(var(--space) / 3);
+  grid-template-columns: 1fr 1fr;
 
-  &__header {
-    margin-left: calc(var(--space) * -1);
-    margin-right: calc(var(--space) * -1);
-    margin-bottom: calc(var(--space) / 2);
-    margin-top: calc(var(--space) * -1);
-    overflow: hidden;
-    border-radius: var(--radius) var(--radius) 0 0;
+  &__image {
+    align-self: center;
+    img {
+        min-width: 100%;
+      border-radius: var(--radius);
+    }
+    
 
     &:empty {
       display: none;
     }
   }
 
-  &__image {
-    min-width: 100%;
-  }
+&__content {
+  grid-column: 2 / 3;
+}
 
   &__title {
-    margin-top: 0;
+    margin: 0;
+    justify-self: center;
+    grid-column: 1 / 3;
   }
 
   &:hover {
@@ -59,7 +66,18 @@ export default {
     box-shadow: 1px 10px 30px 0 rgba(0,0,0,.1);
   }
 
+&__meta {
+  margin: -10px 0 0 0; 
+    @media screen and (max-width: 650px) {
+  margin: 5px 0 10px;
+  }
+  justify-self: center;
+  grid-column: 1 / 3;
+}
+
   &__tags {
+    grid-column: 2 / 3;
+    justify-self: end;
     z-index: 1;
     position: relative;
   }
