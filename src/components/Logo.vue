@@ -1,5 +1,5 @@
 <template>
-	<g-link class="logo" to="/">
+	<g-link class="logo" to="/blog">
 	  <h2 class="logo__text">
 	    <!-- &larr; {{ $static.metaData.siteName }} -->
 		&larr; Back To Blog

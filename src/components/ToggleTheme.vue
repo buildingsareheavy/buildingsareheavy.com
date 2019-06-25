@@ -37,6 +37,10 @@ export default {
   position: absolute;
   top: 15px;
   right: 15px;
+  @media screen and (max-width: 650px) {
+  left: 20px;
+  top: 95px;
+  }
 
   &:hover {
     opacity: .8

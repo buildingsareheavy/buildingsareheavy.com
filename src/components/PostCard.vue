@@ -29,7 +29,6 @@ export default {
 
 <style lang="scss">
 .post-card {
-  margin-bottom: var(--space);
   position: relative;
   display: grid;
   @media screen and (max-width: 650px) {
@@ -37,6 +36,18 @@ export default {
   }
   grid-gap: calc(var(--space) / 3);
   grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid currentColor;
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: var(--space);
+  }
+	  &:hover {
+		  z-index: 11;
+    border-bottom: none;
+    transform: translateY(-5px);
+    box-shadow: 1px 10px 30px 0 var(--border-color);
+    }
+  
 
   &__header {
     align-self: center;
@@ -60,10 +71,6 @@ export default {
     grid-column: 1 / 3;
   }
 
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 1px 10px 30px 0 rgba(0,0,0,.1);
-  }
 
 &__meta {
   margin: -10px 0 0 0; 

@@ -10,8 +10,8 @@
 
       <div class="header__right">
         <g-link class="navigation" to="/">About</g-link>
-        <g-link class="navigation" to="/info">Portfolio</g-link>
-        <g-link class="navigation" to="/info">Blog</g-link>
+        <g-link class="navigation" to="/portfolio">Portfolio</g-link>
+        <g-link class="navigation" to="/blog">Blog</g-link>
       </div>
     </header>
 
@@ -67,7 +67,6 @@ export default {
   padding: calc(var(--space) / 3) 15px;
   z-index: 10;
   border-bottom: 1px solid var(--title-color);
-  font-weight: bold;
 
  &__left,
   &__right {
@@ -77,7 +76,7 @@ export default {
   }
 
 &__left {
-  margin-left: 1rem;
+  margin-left: 10px;
   border-right: 1px solid var(--title-color);
 }
 
@@ -93,18 +92,27 @@ export default {
   &__left {
     border: none;
     margin-bottom: calc(var(--space) * -1.5);
+       @media screen and (max-width: 650px) {
+        margin-top: 10px;
+    }
   }
   &__right {
-    align-items: flex-end;
+      @media screen and (max-width: 650px) {
+        align-items: flex-end;
+        margin-top: -60px;
+        margin-bottom: 20px;
+    }
   }
 
 }
 
- 
   .navigation {
-    padding: 0 1rem;
+    padding: 2px 1rem;
     text-decoration: none;
     color: currentColor;
+    &.active--exact {
+      text-decoration: line-through;
+    }
   }
 
   @media screen and (min-width: 1300px) {

@@ -1,10 +1,9 @@
 <template>
   <Layout :show-logo="false">
-    
 
-    <div class="info">
+    <div class="portfolio">
       <div class="content-box">
-        <h1>About</h1>
+        <h1>Portfolio</h1>
       </div>
     </div>
   </Layout>
@@ -12,19 +11,18 @@
 
 <script>
 
-
 export default {
   components: {
-
+    
   },
   metaInfo: {
-    title: "Index"
+    title: "Portfolio"
   }
 };
 </script>
 
 <style lang="scss">
-.info {
+.portfolio {
 }
 </style>
 
