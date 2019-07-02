@@ -1,12 +1,9 @@
 <template>
   <Layout :show-logo="false">
+    <div class="blog posts">
+      <h1 class="page-title text-center space-bottom">Blog</h1>
 
-<div class="blog posts">
-      <div class="content-box">
-        <h1>Blog</h1>
-      </div>
-  
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
     </div>
   </Layout>
 </template>
@@ -55,5 +52,4 @@ export default {
 </script>
 
 <style lang="scss">
-
 </style>

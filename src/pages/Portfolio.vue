@@ -1,20 +1,14 @@
 <template>
   <Layout :show-logo="false">
-
     <div class="portfolio">
-      <div class="content-box">
-        <h1>Portfolio</h1>
-      </div>
+      <h1 class="page-title text-center space-bottom">Portfolio</h1>
     </div>
   </Layout>
 </template>
 
 <script>
-
 export default {
-  components: {
-    
-  },
+  components: {},
   metaInfo: {
     title: "Portfolio"
   }

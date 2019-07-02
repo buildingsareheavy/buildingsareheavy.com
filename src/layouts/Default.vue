@@ -15,20 +15,19 @@
       </div>
     </header>
 
-<ToggleTheme/>
+    <ToggleTheme />
 
-<Logo v-if="showLogo"/>
+    <Logo v-if="showLogo" />
 
     <main class="main">
-      
-      <slot/>
+      <slot />
     </main>
 
     <footer class="footer">
-      <span class="footer__copyright">{{ $static.metaData.siteName }} © {{ new Date().getFullYear() }}</span>
-      <span class="footer__reserved">
-        All Rights Reserved
-      </span>
+      <span
+        class="footer__copyright"
+      >{{ $static.metaData.siteName }} © {{ new Date().getFullYear() }}</span>
+      <span class="footer__reserved">All Rights Reserved</span>
     </footer>
   </div>
 </template>
@@ -68,43 +67,42 @@ export default {
   z-index: 10;
   border-bottom: 1px solid var(--title-color);
 
- &__left,
+  &__left,
   &__right {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
 
-&__left {
-  margin-left: 10px;
-  border-right: 1px solid var(--title-color);
-}
+  &__left {
+    margin-left: 10px;
+    border-right: 1px solid var(--title-color);
+  }
 
- &__name {
+  &__name {
     margin: 0;
     span {
       display: block;
     }
   }
 
-@media screen and (max-width: 650px) {
-  display: block;
-  &__left {
-    border: none;
-    margin-bottom: calc(var(--space) * -1.5);
-       @media screen and (max-width: 650px) {
+  @media screen and (max-width: 650px) {
+    display: block;
+    &__left {
+      border: none;
+      margin-bottom: calc(var(--space) * -1.5);
+      @media screen and (max-width: 650px) {
         margin-top: 10px;
+      }
     }
-  }
-  &__right {
+    &__right {
       @media screen and (max-width: 650px) {
         align-items: flex-end;
         margin-top: -60px;
         margin-bottom: 20px;
+      }
     }
   }
-
-}
 
   .navigation {
     padding: 2px 1rem;
@@ -138,7 +136,7 @@ export default {
   background-size: cover;
   background-size: 100% 100%;
   @media screen and (max-width: 650px) {
-  margin: -10px 15px;
+    margin: -10px 15px;
   }
 
   > span {
@@ -146,5 +144,10 @@ export default {
     display: block;
     color: #eeeeee;
   }
+}
+.page-title,
+.tag-title {
+  padding: var(--space) 0;
+  border-bottom: 1px solid currentColor;
 }
 </style>
