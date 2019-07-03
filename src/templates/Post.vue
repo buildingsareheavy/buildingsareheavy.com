@@ -2,42 +2,34 @@
   <Layout>
     <div class="post-title">
       <div class="content-box">
-      <h1 class="post-title__text">
-        {{ $page.post.title }}
-      </h1>
-      
-      <PostMeta :post="$page.post" />
+        <h1 class="post-title__text">{{ $page.post.title }}</h1>
 
-  <div class="post__header">
-         <p>{{ $page.post.description }}</p>
+        <PostMeta :post="$page.post" />
+
+        <div class="post__header">
+          <p>{{ $page.post.description }}</p>
+        </div>
       </div>
-    </div>
-    
-    
-     
     </div>
 
     <div class="post content-box">
-
       <div class="post__content" v-html="$page.post.content" />
+    </div>
 
-      <div class="post__footer">
-        <PostTags :post="$page.post" />
-      </div>
+    <div class="post__footer">
+      <PostTags :post="$page.post" />
     </div>
 
     <div class="post-comments">
       <!-- Add comment widgets here -->
     </div>
-
-    <Author class="post-author" />
   </Layout>
 </template>
 
 <script>
-import PostMeta from '~/components/PostMeta'
-import PostTags from '~/components/PostTags'
-import Author from '~/components/Author.vue'
+import PostMeta from "~/components/PostMeta";
+import PostTags from "~/components/PostTags";
+import Author from "~/components/Author.vue";
 
 export default {
   components: {
@@ -45,18 +37,18 @@ export default {
     PostMeta,
     PostTags
   },
-  metaInfo () {
+  metaInfo() {
     return {
       title: this.$page.post.title,
       meta: [
         {
-          name: 'description',
+          name: "description",
           content: this.$page.post.description
         }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <page-query>
@@ -81,22 +73,24 @@ query Post ($path: String!) {
 .post-title {
   padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
   text-align: center;
+  .content-box {
+    border-bottom: 1px solid currentColor;
+  }
 }
 
 .post {
-
   &__header {
     /* width: calc(100% + var(--space) * 2); */
     /* margin-left: calc(var(--space) * -1); */
     margin-top: calc(var(--space) * 0.5);
     /* margin-bottom: calc(var(--space) / 1.5); */
     overflow: hidden;
-    border-radius: var(--radius) var(--radius) 0 0;
+    /* border-radius: var(--radius) var(--radius) 0 0; */
     text-align: center;
     p {
       padding: 0 calc(var(--space) / 1.5);
     }
-    
+
     img {
       width: 100%;
     }
@@ -123,14 +117,17 @@ query Post ($path: String!) {
       /* max-width: none; */
     }
   }
-  .post__footer {
-      padding-top: calc(var(--space) / 4);
-    }
+}
+
+.post__footer {
+  padding: calc(var(--space) / 4) 0 calc(var(--space) * 1.5) 0;
+  border-top: 1px solid currentColor;
+  text-align: center;
 }
 
 .post-comments {
   padding: calc(var(--space) / 2);
-  
+
   &:empty {
     display: none;
   }
