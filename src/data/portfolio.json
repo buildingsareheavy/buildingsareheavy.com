@@ -5,7 +5,7 @@
     "description_1": "A personal project, written in javascript that uses the Google Sheets API to manage content updates.",
     "url_full": "https://putitontheblog.co/",
     "url_name": "PutItOnTheBlog.co",
-    "image": "@/src/assets/images/put-it-on-the-blog.jpg"
+    "image": "/assets/img/put-it-on-the-blog.jpg"
   },
   {
     "id": "2",
@@ -14,7 +14,7 @@
     "description_2": "“Pure Smiles” is a new practice that provides advanced, comprehensive dentistry in Westerville, Ohio.",
     "url_full": "https://puresmiles.com/",
     "url_name": "PureSmiles.com",
-    "image": "@/src/assets/images/pure-smiles.jpg"
+    "image": "/assets/img/pure-smiles.jpg"
   },
   {
     "id": "3",
@@ -23,7 +23,7 @@
     "description_2": "“With Food + Love” is a plant-based, gluten-free blog run by Sherrie Castellano, a contributing photographer, food writer and columnist for FEAST Magazine. She has worked with Absolut, Chobani, LaCroix, Silk, Simply Organics, Urban Outfitters, Better Homes and Gardens, and Livestrong, among others.",
     "url_full": "https://withfoodandlove.com/",
     "url_name": "WithFoodAndLove.com",
-    "image": "@/src/assets/images/with-food-and-love.jpg"
+    "image": "/assets/img/with-food-and-love.jpg"
   },
   {
     "id": "4",
@@ -31,7 +31,7 @@
     "description_1": "A personal project, written in Vue.js that uses the Youtube Data API to present a clean and colorful version of YouTube.",
     "url_full": "https://simpleyoutube.xyz/",
     "url_name": "SimpleYoutube.com",
-    "image": "@/src/assets/images/simple-youtube.jpg"
+    "image": "/assets/img/simple-youtube.jpg"
   },
   {
     "id": "5",
@@ -40,7 +40,7 @@
     "description_2": "“Loop Dental” is a new dental practice located in the North Loop neighborhood of Minneapolis, Minnesota.",
     "url_full": "https://loopdentalmn.com/",
     "url_name": "LoopDental.com",
-    "image": "@/src/assets/images/loop-dental.jpg"
+    "image": "/assets/img/loop-dental.jpg"
   },
   {
     "id": "6",
@@ -49,7 +49,7 @@
     "description_2": "“The Museum of Contemporary Art Denver” (MCA Denver) created “Animating Museums” to further cultivate the creativity of already creative people working in art museums. Fourteen fellows from art museums across the United States have been selected for the two-year program, which includes residency workshops in Denver, ongoing mentorship, and a group project.",
     "url_full": "http://animatingmuseums.org/",
     "url_name": "AnimatingMuseums.org",
-    "image": "@/src/assets/images/animating-museums.jpg"
+    "image": "/assets/img/animating-museums.jpg"
   },
   {
     "id": "7",
@@ -58,7 +58,7 @@
     "description_2": "“Gone Camping RV” is an RV dealership with two locations in Evans and Greeley, Colorado, specializing in motor homes.",
     "url_full": "https://gonecampingrv.com/",
     "url_name": "GoneCampingRV.com",
-    "image": "@/src/assets/images/gone-camping.jpg"
+    "image": "/assets/img/gone-camping.jpg"
   },
   {
     "id": "8",
@@ -67,7 +67,7 @@
     "description_2": "“FRESH 23” is an annual fashion show and multimedia event, celebrating high school artists in Wheat Ridge, CO. In 2008, twenty-three student artists teamed with Vans to create twenty-three pairs of shoe designs, and showcase their artwork. This partnership has been the nucleus of annual events to celebrate the Wheat Ridge High School artists, and initiated nationwide attention inspiring the Vans Custom Culture contest... now serving over 3,000 schools nationwide, as well as international equivalents throughout four continents.",
     "url_full": "http://freshstudio23.com/",
     "url_name": "FreshStudio23.com",
-    "image": "@/src/assets/images/fresh-studio-23.jpg"
+    "image": "/assets/img/fresh-studio-23.jpg"
   },
   {
     "id": "9",
@@ -76,7 +76,7 @@
     "description_2": "“Claremont Ranch” is a vetrinary clinic located in Colorado Springs, Colorado.",
     "url_full": "https://claremontranchvet.com/",
     "url_name": "ClaremontRanchVet.com",
-    "image": "@/src/assets/images/claremont-ranch.jpg"
+    "image": "/assets/img/claremont-ranch.jpg"
   },
   {
     "id": "10",
@@ -85,7 +85,7 @@
     "description_2": "“Wiewiora & Dunn Orthodontics” is a oral surgery practice, located in Lake Mary and Longwood, Florida.",
     "url_full": "https://centralfloridasmiles.com/",
     "url_name": "CentralFloridaSmiles.com",
-    "image": "@/src/assets/images/central-florida-smiles.jpg"
+    "image": "/assets/img/central-florida-smiles.jpg"
   },
   {
     "id": "11",
@@ -94,7 +94,7 @@
     "description_2": "Artists Franky + Annie Scaglione established “My Favourite Colour Studio” to honour and capture the aesthetics of nostalgia. From baseball to cross-country road trips, their inspirations and passion overlap in the preservation of our rich pastimes, celebrating all things classic.",
     "url_full": "http://www.mfcstudio.com/",
     "url_name": "MFCstudio.com",
-    "image": "@/src/assets/images/mfc-studio.jpg"
+    "image": "/assets/img/mfc-studio.jpg"
   },
   {
     "id": "12",
@@ -103,6 +103,6 @@
     "description_2": "“Scaglione Hardwood Flooring” is an elite flooring company based in Denver, Colorado.",
     "url_full": "http://www.scaglionehardwood.com/",
     "url_name": "ScaglioneHardwood.com",
-    "image": "@/src/assets/images/scaglione-hardwood.jpg"
+    "image": "/assets/img/scaglione-hardwood.jpg"
   }
 ]
