@@ -35,18 +35,21 @@ export default {
   methods: {
     getRss() {
       butter.feed.retrieve("rss").then(res => {
+        // eslint-disable-next-line
         console.log(res.data.data);
         this.rss = res.data.data;
       });
     },
     getAtom() {
       butter.feed.retrieve("atom").then(res => {
+        // eslint-disable-next-line
         console.log(res.data.data);
         this.atom = res.data.data;
       });
     },
     getSitemap() {
       butter.feed.retrieve("sitemap").then(res => {
+        // eslint-disable-next-line
         console.log(res.data.data);
         this.sitemap = res.data.data;
       });
