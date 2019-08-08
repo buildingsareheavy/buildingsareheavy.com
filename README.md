@@ -1,9 +1,35 @@
-# Buildings Are Heavy: Professional Website (New)
+# Buildings Are Heavy
 
-[Buildings Are Heavy](https://buildingsareheavy.com) is built using [Gatsby(v2)](https://www.gatsbyjs.org/), a React-based, GraphQL powered, static site generator.
+## Project setup
 
----
+```
+npm install
+```
 
-The objective was to combine my professional portfolio and information with my personal blog to give a more holistic view of who I am, as well as what I do.
+### Compiles and hot-reloads for development
 
-[Prototype in Figma](https://www.figma.com/proto/gWEANvhH1dZTGOPVmGP9Z60K/Buildings-Are-Heavy-dot-com?node-id=0%3A1&scaling=min-zoom)
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+
+```
+npm run build
+```
+
+### Run your tests
+
+```
+npm run test
+```
+
+### Lints and fixes files
+
+```
+npm run lint
+```
+
+### Customize configuration
+
+See [Configuration Reference](https://cli.vuejs.org/config/).
