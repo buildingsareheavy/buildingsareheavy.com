@@ -5,7 +5,9 @@
     <p>All Rights Reserved</p>
     <small>
       Powered by:
-      <img src="https://cdn.buttercms.com/PGJPyIwaQ2KnOA8UyKfH" alt />
+      <a href="https://buttercms.com">
+        <img src="https://cdn.buttercms.com/PGJPyIwaQ2KnOA8UyKfH" alt />
+      </a>
     </small>
   </div>
 </template>

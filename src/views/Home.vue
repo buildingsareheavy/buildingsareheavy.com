@@ -1,5 +1,10 @@
 <template>
   <div class="home">
+    <!-- TODO: FIX SVG IMPORT -->
+    <object data="../assets/logo.svg" type="image/svg+xml">
+      <img src="../assets/logo.svg" alt />
+    </object>
+
     <h2>About</h2>
     <p>My name is Ethan Bradford Barrett and I'm a front-end web developer and designer based in Denver, CO, USA. You can view my full CV here.</p>
     <p>I studied at Rocky Mountain College of Art + Design, majoring in Fine Arts, with an emphasis in Photo / Video and Sculpture.</p>
