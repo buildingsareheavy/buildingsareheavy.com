@@ -11,8 +11,8 @@ import Portrait from './assets/portrait.jpg'
 import { GlobalCSSVariables } from '../global/global-styles-variables'
 
 const BioContainer = styled.div`
-  background: url('${BioBackground}') no-repeat center;
-  background-size: 100% 100%;
+  /* background: url('${BioBackground}') no-repeat center;
+  background-size: 100% 100%; */
   margin-top: -1px;
   padding: ${rhythm(1)};
   span {
@@ -31,7 +31,7 @@ const BioContainer = styled.div`
       border-bottom: none;
     }
     &:hover {
-      background: #ddd;
+      /* background: #ddd; */
     }
     span {
       font-style: normal;
@@ -69,8 +69,8 @@ const BioSection = () => (
     <div className="cell">
       <p>
         My name is Ethan Bradford Barrett and I'm a front-end web developer and
-        designer based in Denver, CO, USA. You can view my{' '}
-        <Link to="/cv/">full CV here</Link>.
+        designer based in Denver, CO, USA. You can{' '}
+        <a href="mailto:hello@buildingsareheavy.com">email me</a> for full CV.
       </p>
       <br />
       <p>
