@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
+import VuePrism from 'vue-prism';
+Vue.use(VuePrism);
 
 Vue.config.productionTip = false;
 

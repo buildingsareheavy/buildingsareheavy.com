@@ -22,6 +22,7 @@
 <script>
 import ToggleTheme from "@/components/ToggleTheme.vue";
 import Footer from "@/components/Footer.vue";
+
 export default {
   name: "app",
   components: {
