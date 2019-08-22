@@ -20,6 +20,7 @@
 </template>
 
 <script>
+import "prismjs/prism";
 import { butter } from "@/buttercms";
 export default {
   name: "photography-post",

@@ -21,6 +21,7 @@
 
 <script>
 import { butter } from "@/buttercms";
+import "prismjs/prism";
 export default {
   name: "writing-post",
   data() {
