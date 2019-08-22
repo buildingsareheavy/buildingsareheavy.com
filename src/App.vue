@@ -1,20 +1,31 @@
 <template>
   <div id="app">
     <nav id="nav-main">
-      <router-link to="/">About</router-link>|
-      <router-link to="/blog">Blog</router-link>|
-      <router-link to="/portfolio">Portfolio</router-link>
+      <h1>
+        <router-link to="/">
+          Buildings Are
+          <br />Heavy
+        </router-link>
+      </h1>
+      <router-link to="/about">About</router-link>|
+      <router-link to="/portfolio">Portfolio</router-link>|
+      <router-link to="/photography">Photography</router-link>|
+      <router-link to="/writing">Writing</router-link>
     </nav>
+    <hr />
+    <ToggleTheme />
     <router-view />
     <Footer />
   </div>
 </template>
 
 <script>
+import ToggleTheme from "@/components/ToggleTheme.vue";
 import Footer from "@/components/Footer.vue";
 export default {
   name: "app",
   components: {
+    ToggleTheme,
     Footer
   }
 };
@@ -31,11 +42,7 @@ export default {
   }
 }
 #nav-main {
-  text-align: center;
-  padding: 30px;
   a {
-    font-weight: bold;
-    color: #2c3e50;
     &.router-link-exact-active {
       color: #42b983;
     }

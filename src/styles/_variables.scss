@@ -1,0 +1,34 @@
+// SASS Variables
+// They don't dynamically change, just global variables to reference
+
+//
+// MEDIA QUERIES
+//
+$desktop-xl: '1200px';
+$desktop: '992px';
+$tablet: '768px';
+$mobile: '480px';
+
+// CSS Variables
+// They dyamically change based on user
+
+html {
+  --base-font-size: 16px;
+}
+
+// Light default theme
+body {
+  --bg-color: #fff;
+  --bg-code: #fffbf3;
+  --text-color: #444;
+  --link-color: #3700ff;
+  --content-width: 860px;
+}
+
+// Dark theme
+body[data-theme='dark'] {
+  --bg-color: #0d2538;
+  --bg-code: rgba(0, 0, 0, 0.3);
+  --text-color: #fff;
+  --link-color: #ff7700;
+}

@@ -1,0 +1,27 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  //   font-family: 'Apercu-Regular', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: color 0.6s, background-color 0.6s;
+  margin: 0;
+  padding: 0;
+}
+
+a:not(.button) {
+  color: var(--link-color);
+  transition: opacity 0.2s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+img {
+  max-width: 100%;
+}

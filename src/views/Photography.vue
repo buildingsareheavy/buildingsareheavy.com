@@ -1,10 +1,10 @@
 <template>
-  <div id="blog">
+  <div id="photography">
     <h1>{{ page_title }}</h1>
     <hr />
 
     <div v-for="(post,index) in posts" :key="post.slug + '_' + index">
-      <router-link :to="'/blog/' + post.slug">
+      <router-link :to="'/photography/' + post.slug">
         <article>
           <figure>
             <img v-if="post.featured_image" :src="post.featured_image" alt />
@@ -24,10 +24,10 @@
 <script>
 import { butter } from "@/buttercms";
 export default {
-  name: "blog",
+  name: "photography",
   data() {
     return {
-      page_title: "Blog",
+      page_title: "Photography",
       posts: []
     };
   },

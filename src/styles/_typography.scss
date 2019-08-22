@@ -1,0 +1,20 @@
+// @font-face {
+//     font-family: "Apercu-Regular";
+//     src: url("../fonts/Apercu-Regular.otf");
+//   }
+
+html {
+  font-size: var(--base-font-size);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}

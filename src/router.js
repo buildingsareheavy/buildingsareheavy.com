@@ -1,8 +1,11 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
-import Blog from './views/Blog';
-import BlogPost from './views/BlogPost';
+import About from './views/About.vue';
+import Photography from './views/Photography';
+import PhotographyPost from './views/PhotographyPost';
+import Writing from './views/Writing';
+import WritingPost from './views/WritingPost';
 import Portfolio from './views/Portfolio.vue';
 import RssAtomSitemap from '@/components/RssAtomSitemap';
 
@@ -23,16 +26,30 @@ export default new Router({
     // which is lazy-loaded when the route is visited.
     // component: () =>
     //   import(/* webpackChunkName: "about" */ './views/About.vue'),
-
     {
-      path: '/blog/',
-      name: 'blog',
-      component: Blog,
+      path: '/about/',
+      name: 'about',
+      component: About,
     },
     {
-      path: '/blog/:slug',
-      name: 'blog-post',
-      component: BlogPost,
+      path: '/photography/',
+      name: 'photography',
+      component: Photography,
+    },
+    {
+      path: '/photography/:slug',
+      name: 'photography-post',
+      component: PhotographyPost,
+    },
+    {
+      path: '/writing/',
+      name: 'writing',
+      component: Writing,
+    },
+    {
+      path: '/writing/:slug',
+      name: 'writing-post',
+      component: WritingPost,
     },
     {
       path: '/portfolio/',

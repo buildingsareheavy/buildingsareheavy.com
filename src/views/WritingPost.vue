@@ -1,13 +1,13 @@
 <template>
-  <div id="blog-post">
+  <div id="writing-post">
     <nav>
       <router-link
         v-if="post.meta.previous_post"
-        :to="/blog/ + post.meta.previous_post.slug"
+        :to="/writing/ + post.meta.previous_post.slug"
       >{{ post.meta.previous_post.title }}</router-link>
       <router-link
         v-if="post.meta.next_post"
-        :to="/blog/ + post.meta.next_post.slug"
+        :to="/writing/ + post.meta.next_post.slug"
       >{{ post.meta.next_post.title }} ></router-link>
     </nav>
     <hr />
@@ -22,7 +22,7 @@
 <script>
 import { butter } from "@/buttercms";
 export default {
-  name: "blog-post",
+  name: "writing-post",
   data() {
     return {
       post: {}
