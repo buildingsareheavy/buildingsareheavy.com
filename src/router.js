@@ -2,10 +2,10 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
 import About from './views/About.vue';
-import Photography from './views/Photography';
-import PhotographyPost from './views/PhotographyPost';
-import Writing from './views/Writing';
-import WritingPost from './views/WritingPost';
+import Photography from './components/Photography';
+import PhotographyPost from './components/PhotographyPost';
+import Writing from './components/Writing';
+import WritingPost from './components/WritingPost';
 import Portfolio from './views/Portfolio.vue';
 import RssAtomSitemap from '@/components/RssAtomSitemap';
 
