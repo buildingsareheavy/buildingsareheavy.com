@@ -1,14 +1,16 @@
 <template>
   <div id="footer">
     <hr />
-    <p>Buildings Are Heavy © {{ new Date().getFullYear() }}</p>
-    <p>All Rights Reserved</p>
-    <small>
-      Built with:
-      <a href="https://buttercms.com">
-        <img src="https://cdn.buttercms.com/PGJPyIwaQ2KnOA8UyKfH" alt="Butter CMS" />
-      </a>, HTML, SCSS and Vuejs.
-    </small>
+    <footer>
+      <p>Buildings Are Heavy © {{ new Date().getFullYear() }}</p>
+      <p>All Rights Reserved</p>
+      <small>
+        Built with:
+        <a href="https://buttercms.com">
+          <img src="https://cdn.buttercms.com/PGJPyIwaQ2KnOA8UyKfH" alt="Butter CMS" />
+        </a>, HTML, SCSS and Vuejs.
+      </small>
+    </footer>
   </div>
 </template>
 

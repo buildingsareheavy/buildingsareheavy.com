@@ -1,6 +1,6 @@
 <template>
   <div id="portfolio">
-    <h1>{{ page_title }}</h1>
+    <p>Archive of work from various agencies, clients, friends and personal projects.</p>
     <hr />
 
     <div v-for="(item,index) in items" :key="item.image + '_' + index">
@@ -23,7 +23,6 @@ export default {
   name: "portfolio",
   data() {
     return {
-      page_title: "Portfolio",
       items: []
     };
   },

@@ -31,8 +31,10 @@ pre[class*='language-'] {
 
 /* Code blocks */
 pre[class*='language-'] {
-  padding: 1em;
-  margin: 0.5em 0;
+  // padding: 1em;
+  // margin: 0.5em 0;
+  padding: 2rem;
+  border-radius: 5px;
   overflow: auto;
 }
 
@@ -120,4 +122,15 @@ pre[class*='language-'] {
 
 .token.inserted {
   color: green;
+}
+
+code {
+  background: var(--bg-code);
+  padding: 5px 6px;
+  border-radius: 5px;
+}
+pre {
+  code {
+    background: inherit;
+  }
 }

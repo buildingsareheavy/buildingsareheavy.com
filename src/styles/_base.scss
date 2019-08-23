@@ -25,3 +25,10 @@ a:not(.button) {
 img {
   max-width: 100%;
 }
+
+figure.image,
+.content {
+  img {
+    box-shadow: 0px 5px 10px 5px var(--bg-code);
+  }
+}
