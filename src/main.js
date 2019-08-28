@@ -3,6 +3,7 @@ import App from './App.vue';
 import router from './router';
 import VuePrism from 'vue-prism';
 Vue.use(VuePrism);
+Vue.use(require('vue-moment'));
 
 Vue.config.productionTip = false;
 

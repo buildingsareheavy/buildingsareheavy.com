@@ -1,20 +1,20 @@
 <template>
-  <div class="photography-post">
+  <div class="post">
     <nav>
       <router-link
-        class="photography-post__previous"
+        class="post__previous"
         v-if="post.meta.previous_post"
-        :to="/photography/ + post.meta.previous_post.slug"
+        :to="/blog/ + post.meta.previous_post.slug"
       >{{ post.meta.previous_post.title }}</router-link>
       <router-link
-        class="photography-post__next"
+        class="post__next"
         v-if="post.meta.next_post"
-        :to="/photography/ + post.meta.next_post.slug"
+        :to="/blog/ + post.meta.next_post.slug"
       >{{ post.meta.next_post.title }}</router-link>
     </nav>
     <hr />
     <h1>{{ post.data.title }}</h1>
-    <h4>{{ post.data.published }}</h4>
+    <h4>{{ post.data.published | moment("Do MMMM YYYY") }}</h4>
     <div class="summary" v-html="post.data.summary"></div>
     <hr />
     <div class="content" v-html="post.data.body"></div>
@@ -25,7 +25,7 @@
 import "prismjs/prism";
 import { butter } from "@/buttercms";
 export default {
-  name: "photography-post",
+  name: "blog-post",
   data() {
     return {
       post: {}
@@ -36,7 +36,6 @@ export default {
       butter.post
         .retrieve(this.$route.params.slug)
         .then(res => {
-          // console.log(res.data);
           this.post = res.data;
         })
         .catch(res => {
@@ -58,7 +57,7 @@ export default {
 </script>
 
 <style lang="scss">
-.photography-post {
+.post {
   nav {
     clear: both;
     overflow: auto;

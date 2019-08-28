@@ -1,21 +1,15 @@
 <template>
   <div id="rss">
     <div v-if="rss">
-      <pre>
-        {{ rss }}
-      </pre>
+      <pre></pre>
       <hr />
     </div>
     <div v-if="atom">
-      <pre>
-        {{ atom }}
-      </pre>
+      <pre></pre>
       <hr />
     </div>
     <div v-if="sitemap">
-      <pre>
-        {{ sitemap }}
-      </pre>
+      <pre></pre>
       <hr />
     </div>
   </div>

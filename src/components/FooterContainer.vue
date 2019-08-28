@@ -1,5 +1,5 @@
 <template>
-  <div id="footer">
+  <div class="footer">
     <hr />
     <footer>
       <p>Buildings Are Heavy © {{ new Date().getFullYear() }}</p>
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#footer {
+.footer {
   text-align: center;
   small img {
     height: 1.25rem;

@@ -21,19 +21,19 @@
     <hr />
     <ToggleTheme />
     <router-view />
-    <Footer />
+    <FooterContainer />
   </div>
 </template>
 
 <script>
 import ToggleTheme from "@/components/ToggleTheme.vue";
-import Footer from "@/components/Footer.vue";
+import FooterContainer from "@/components/FooterContainer.vue";
 
 export default {
   name: "app",
   components: {
     ToggleTheme,
-    Footer
+    FooterContainer
   }
 };
 </script>

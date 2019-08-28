@@ -1,14 +1,11 @@
 <template>
-  <div id="photography">
-    <h1>{{ page_title }}</h1>
-    <hr />
-
+  <div class="archive">
     <div v-for="(post,index) in posts" :key="post.slug + '_' + index">
-      <router-link :to="'/photography/' + post.slug">
+      <router-link :to="'/blog/' + post.slug">
         <article>
           <figure>
             <img v-if="post.featured_image" :src="post.featured_image" alt />
-            <img v-else src="http://via.placeholder.com/250x250" alt />
+            <img v-else src="https://via.placeholder.com/250x250" alt />
           </figure>
 
           <div class="content">
@@ -24,10 +21,12 @@
 <script>
 import { butter } from "@/buttercms";
 export default {
-  name: "photography",
+  name: "blogArchive",
+  props: {
+    blogType: String
+  },
   data() {
     return {
-      page_title: "Photography",
       posts: []
     };
   },
@@ -36,8 +35,8 @@ export default {
       butter.post
         .list({
           page: 1,
-          page_size: 10
-          // category_slug: "ethan"
+          page_size: 10,
+          category_slug: this.blogType
         })
         .then(res => {
           // console.log(res.data)
