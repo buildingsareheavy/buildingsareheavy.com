@@ -1,9 +1,9 @@
 <template>
-  <div :id="page_title">
-    <h1>{{ page_title }}</h1>
+  <main :class="page_title">
+    <h1>{{ page_title }} archive</h1>
     <hr />
     <BlogArchive :blogType="page_title" />
-  </div>
+  </main>
 </template>
 
 <script>

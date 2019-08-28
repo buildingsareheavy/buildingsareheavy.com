@@ -1,8 +1,7 @@
 <template>
-  <div id="portfolio">
+  <main class="portfolio">
     <p>Archive of work from various agencies, clients, friends and personal projects.</p>
     <hr />
-
     <div v-for="(item,index) in items" :key="item.image + '_' + index">
       <article>
         <figure>
@@ -14,7 +13,7 @@
         </div>
       </article>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>

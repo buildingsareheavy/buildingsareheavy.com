@@ -1,7 +1,4 @@
-// @font-face {
-//     font-family: "Apercu-Regular";
-//     src: url("../fonts/Apercu-Regular.otf");
-//   }
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,800&display=swap');
 
 html {
   font-size: var(--base-font-size);
@@ -15,6 +12,16 @@ html {
   font-style: italic;
 }
 
-.text-center {
-  text-align: center;
+.monospace {
+  font-family: monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: 'EB Garamond', serif;
 }

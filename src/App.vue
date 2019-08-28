@@ -1,39 +1,23 @@
 <template>
   <div id="app">
-    <nav class="nav-main">
-      <div class="nav-main__item-main">
-        <h1>
-          <router-link to="/">
-            Buildings Are
-            <br />Heavy
-          </router-link>
-        </h1>
-      </div>
-      <div class="nav-main__item">
-        <router-link to="/about">About</router-link>
-        <router-link to="/portfolio">Portfolio</router-link>
-      </div>
-      <div class="nav-main__item">
-        <router-link to="/photography">Photography</router-link>
-        <router-link to="/writing">Writing</router-link>
-      </div>
-    </nav>
-    <hr />
+    <GlobalHeader />
     <ToggleTheme />
     <router-view />
-    <FooterContainer />
+    <GlobalFooter />
   </div>
 </template>
 
 <script>
 import ToggleTheme from "@/components/ToggleTheme.vue";
-import FooterContainer from "@/components/FooterContainer.vue";
+import GlobalHeader from "@/components/GlobalHeader.vue";
+import GlobalFooter from "@/components/GlobalFooter.vue";
 
 export default {
   name: "app",
   components: {
     ToggleTheme,
-    FooterContainer
+    GlobalHeader,
+    GlobalFooter
   }
 };
 </script>
@@ -47,28 +31,6 @@ export default {
   padding: 0.25rem 2rem;
   img {
     max-width: 100%;
-  }
-}
-.nav-main {
-  @supports (display: flex) and (display: grid) {
-    @include bigger-than($mobile) {
-      display: grid;
-    }
-    grid-template-columns: 8fr 1fr 1fr;
-    &__item {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      a {
-        padding: 0.25rem 1rem;
-      }
-    }
-  }
-  a {
-    text-decoration: none;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
   }
 }
 </style>

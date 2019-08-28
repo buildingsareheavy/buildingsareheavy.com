@@ -1,5 +1,5 @@
 <template>
-  <div class="archive">
+  <section class="archive">
     <div v-for="(post,index) in posts" :key="post.slug + '_' + index">
       <router-link :to="'/blog/' + post.slug">
         <article>
@@ -15,7 +15,7 @@
         </article>
       </router-link>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
