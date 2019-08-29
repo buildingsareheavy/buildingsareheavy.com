@@ -7,7 +7,9 @@ import CentralFlorida from './assets/central-florida-smiles.jpg'
 import ClaremontRanch from './assets/claremont-ranch.jpg'
 import FreshStudio23 from './assets/fresh-studio-23.jpg'
 import GoneCamping from './assets/gone-camping-rv.jpg'
+import IkonPass from './assets/ikon-pass.jpg'
 import LoopDental from './assets/loop-dental.jpg'
+import Matillion from './assets/matillion.jpg'
 import MFCstudio from './assets/my-favourite-colour-studio.jpg'
 import PureSmiles from './assets/pure-smiles.jpg'
 import PutItOnTheBlog from './assets/put-it-on-the-blog.jpg'
@@ -18,16 +20,32 @@ import WithFoodAndLove from './assets/with-food-and-love.jpg'
 const PortfolioItems = props => (
   <div>
     <PortfolioItem
+      title="IKON Pass"
+      descriptionOne="I was asked to create designs and page templates for the IKON Pass blog “Lifted” to provide a more cohesive and consistent user experience. The designs were later developed into a Wordpress website."
+      descriptionTwo="The “IKON Pass” is a ski and snowboard pass with over 40 destinations around the world."
+      image={IkonPass}
+      linkURL="https://lifted.ikonpass.com/"
+      linkName="lifted.ikonpass.com"
+    />
+    <PortfolioItem
+      title="Matillion"
+      descriptionOne="Hired on as a consultant, I advised best practices and helped manage their Wordpress website more efficiently. I also assisted with redesign and development."
+      descriptionTwo="“Matillion” is an award-winning cloud data software company. They provide end-to-end data transformation for Amazon Redshift, Snowflake, and Google BigQuery."
+      image={Matillion}
+      linkURL="https://www.matillion.com/"
+      linkName="matillion.com"
+    />
+    <PortfolioItem
       title="Put It On The Blog"
-      descriptionOne="A personal project, written in javascript that uses the Google Sheets API to manage content updates."
-      descriptionTwo=""
+      descriptionOne="A personal project, written in Vue.js that uses the Airtable API to manage content and updates."
+      descriptionTwo="“Put It On The Blog” is a community space where users can easily and anonymously submit quotes without needing to worry about login credentials."
       image={PutItOnTheBlog}
       linkURL="https://putitontheblog.co/"
       linkName="putitontheblog.co"
     />
     <PortfolioItem
       title="Pure Smiles"
-      descriptionOne="While working at EOS, I developed a system to rapidly prototype Wordpress websites, and allow them to be templated and scalable."
+      descriptionOne="While working at “EOS Healthcare Marketing”, I developed a system to rapidly prototype Wordpress websites, and allow them to be templated and scalable."
       descriptionTwo="“Pure Smiles” is a new practice that provides advanced, comprehensive dentistry in Westerville, Ohio."
       image={PureSmiles}
       linkURL="https://puresmiles.com/"
@@ -35,7 +53,7 @@ const PortfolioItems = props => (
     />
     <PortfolioItem
       title="With Food + Love"
-      descriptionOne="An existing client site, built in Wordpress. I was tasked to redesigned, rebranded, and recreated a new method of retrieving and displaying all the data for recipes and other blog posts."
+      descriptionOne="An existing client site, built in Wordpress. I was tasked to redesign, rebrand, and recreate a new method of retrieving and displaying all the data for recipes and other blog posts."
       descriptionTwo="“With Food + Love” is a plant-based, gluten-free blog run by Sherrie Castellano, a contributing photographer, food writer and columnist for FEAST Magazine. She has worked with Absolut, Chobani, LaCroix, Silk, Simply Organics, Urban Outfitters, Better Homes and Gardens, and Livestrong, among others."
       image={WithFoodAndLove}
       linkURL="https://withfoodandlove.com/"
@@ -43,7 +61,7 @@ const PortfolioItems = props => (
     />
     <PortfolioItem
       title="Simple Youtube"
-      descriptionOne="A personal project, written in Vue.js that uses the Youtube Data API to present a clean and colorful version of YouTube."
+      descriptionOne="A personal project, written in Vue.js that uses Vuetify, a “material design” library and the Youtube Data API to present a clean, colorful, and ad-free version of YouTube."
       descriptionTwo=""
       image={SimpleYoutube}
       linkURL="https://simpleyoutube.xyz/"
@@ -51,7 +69,7 @@ const PortfolioItems = props => (
     />
     <PortfolioItem
       title="Loop Dental"
-      descriptionOne="While working at “EOS Healthcare Marketing”, I was tasked to create a Wordpress site, based off a chosen theme and mockups created by the graphic designer."
+      descriptionOne="While working at “EOS Healthcare Marketing”, I was tasked to create a Wordpress site, based off a chosen theme and mockups created by the graphic design team."
       descriptionTwo="“Loop Dental” is a new dental practice located in the North Loop neighborhood of Minneapolis, Minnesota."
       image={LoopDental}
       linkURL="https://loopdentalmn.com/"
@@ -81,7 +99,6 @@ const PortfolioItems = props => (
       linkURL="http://freshstudio23.com/"
       linkName="freshstudio23.com"
     />
-
     <PortfolioItem
       title="Claremont Ranch"
       descriptionOne="While working at “EOS Healthcare Marketing”, I developed a system to rapidly prototype Wordpress websites, and allow them to be templated and scalable. This was the first site to utilize that system."
@@ -103,7 +120,7 @@ const PortfolioItems = props => (
       descriptionOne="A client website, I was tasked to create consistent branding with hundreds of store items, as well as curate featured collections of work that was both for sale and on display as fine art."
       descriptionTwo="Artists Franky + Annie Scaglione established “My Favourite Colour Studio” to honour and capture the aesthetics of nostalgia. From baseball to cross-country road trips, their inspirations and passion overlap in the preservation of our rich pastimes, celebrating all things classic."
       image={MFCstudio}
-      linkURL="http://www.mfcstudio.com/"
+      linkURL="http://www.mfcstudio.com/right-to-roam"
       linkName="mfcstudio.com"
     />
     <PortfolioItem
