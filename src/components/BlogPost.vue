@@ -4,7 +4,7 @@
       <router-link
         class="post__previous"
         v-if="post.meta.previous_post"
-        :to="/blog/ + post.meta.previous_post.slug"
+        :to="post.meta.previous_post.slug"
       >{{ post.meta.previous_post.title }}</router-link>
       <router-link
         class="post__next"

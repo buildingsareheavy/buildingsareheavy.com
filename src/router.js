@@ -35,7 +35,7 @@ export default new Router({
       component: Writing,
     },
     {
-      path: '/blog/:slug',
+      path: '/:slug',
       name: 'blog-post',
       component: BlogPost,
     },
