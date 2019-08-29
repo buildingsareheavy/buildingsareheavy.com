@@ -4,12 +4,12 @@
       <router-link
         class="post__previous"
         v-if="post.meta.previous_post"
-        :to="post.meta.previous_post.slug"
+        :to="/blog/ + post.meta.previous_post.slug"
       >{{ post.meta.previous_post.title }}</router-link>
       <router-link
         class="post__next"
         v-if="post.meta.next_post"
-        :to="post.meta.next_post.slug"
+        :to="/blog/ + post.meta.next_post.slug"
       >{{ post.meta.next_post.title }}</router-link>
     </nav>
     <hr />

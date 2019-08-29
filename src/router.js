@@ -7,6 +7,7 @@ import Writing from './views/Writing.vue';
 import BlogPost from './components/BlogPost.vue';
 import Portfolio from './views/Portfolio.vue';
 import RssAtomSitemap from './views/RssAtomSitemap';
+import FourOhFour from './views/FourOhFour.vue';
 
 Vue.use(Router);
 
@@ -35,7 +36,7 @@ export default new Router({
       component: Writing,
     },
     {
-      path: '/:slug',
+      path: '/blog/:slug',
       name: 'blog-post',
       component: BlogPost,
     },
@@ -48,6 +49,10 @@ export default new Router({
       path: '/rss',
       name: 'rss',
       component: RssAtomSitemap,
+    },
+    {
+      path: '/*',
+      component: FourOhFour,
     },
   ],
 });

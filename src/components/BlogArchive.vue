@@ -1,7 +1,7 @@
 <template>
   <section class="archive">
     <div v-for="(post,index) in posts" :key="post.slug + '_' + index">
-      <router-link :to="post.slug">
+      <router-link :to="/blog/ + post.slug">
         <article>
           <figure>
             <img v-if="post.featured_image" :src="post.featured_image" alt />
