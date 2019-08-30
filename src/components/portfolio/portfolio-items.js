@@ -3,9 +3,7 @@ import PortfolioItem from './portfolio-item'
 
 // Import images
 import AnimatingMuseums from './assets/animating-museums.jpg'
-// import CentralFlorida from './assets/central-florida-smiles.jpg'
 import ClaremontRanch from './assets/claremont-ranch.jpg'
-import FreshStudio23 from './assets/fresh-studio-23.jpg'
 import GoneCamping from './assets/gone-camping-rv.jpg'
 import IkonPass from './assets/ikon-pass.jpg'
 import LoopDental from './assets/loop-dental.jpg'
@@ -22,30 +20,6 @@ import WithFoodAndLove from './assets/with-food-and-love.jpg'
 const PortfolioItems = props => (
   <div>
     <PortfolioItem
-      title="Matthew Steele Plastic Surgery"
-      descriptionOne="While working at “EOS Healthcare Marketing”, I redesigned a pre-existing site and developed an import pipeline to migrate large amount of data and images to a custom Wordpress website. The site was built using React, PHP, and Javascript."
-      descriptionTwo="“Dr. Matthew H. Steele” is a plastic surgeon based in Fort Worth, specializing in cosmetic and reconstructive surgery."
-      image={MatthewSteele}
-      linkURL="https://drsteeleplasticsurgery.com/"
-      linkName="drsteeleplasticsurgery.com"
-    />
-    <PortfolioItem
-      title="Prime Dental Design"
-      descriptionOne="While working at “EOS Healthcare Marketing”, I was tasked with creating a fully custom Wordpress theme. The site was hand coded using Bootstrap 4, Advanced Custom Fields Pro, PHP and JavaScript."
-      descriptionTwo="“Prime Dental Design” is a dental practice located in Central Florida, focusing on cosmetic and restorative dentistry."
-      image={PrimeDentalDesign}
-      linkURL="https://primedentaldesign.com/"
-      linkName="primedentaldesign.com"
-    />
-    <PortfolioItem
-      title="IKON Pass"
-      descriptionOne="I was asked to create designs and page templates for the IKON Pass blog “Lifted” to provide a more cohesive and consistent user experience. The designs were later developed into a Wordpress website."
-      descriptionTwo="The “IKON Pass” is a ski and snowboard pass with over 40 destinations around the world."
-      image={IkonPass}
-      linkURL="https://lifted.ikonpass.com/"
-      linkName="lifted.ikonpass.com"
-    />
-    <PortfolioItem
       title="Matillion"
       descriptionOne="Hired on as a consultant, I advised best practices and helped manage their Wordpress website more efficiently. I also assisted with redesign and development."
       descriptionTwo="“Matillion” is an award-winning cloud data software company. They provide end-to-end data transformation for Amazon Redshift, Snowflake, and Google BigQuery."
@@ -54,12 +28,12 @@ const PortfolioItems = props => (
       linkName="matillion.com"
     />
     <PortfolioItem
-      title="Put It On The Blog"
-      descriptionOne="A personal project, written in Vue.js that uses the Airtable API to manage content and updates."
-      descriptionTwo="“Put It On The Blog” is a community space where users can easily and anonymously submit quotes without needing to worry about login credentials."
-      image={PutItOnTheBlog}
-      linkURL="https://putitontheblog.co/"
-      linkName="putitontheblog.co"
+      title="Matthew Steele Plastic Surgery"
+      descriptionOne="While working at “EOS Healthcare Marketing”, I redesigned a pre-existing site and developed an import pipeline to migrate large amount of data and images to a custom Wordpress website. The site was built using React, PHP, and Javascript."
+      descriptionTwo="“Dr. Matthew H. Steele” is a plastic surgeon based in Fort Worth, specializing in cosmetic and reconstructive surgery."
+      image={MatthewSteele}
+      linkURL="https://drsteeleplasticsurgery.com/"
+      linkName="drsteeleplasticsurgery.com"
     />
     <PortfolioItem
       title="Pure Smiles"
@@ -70,12 +44,36 @@ const PortfolioItems = props => (
       linkName="puresmiles.com"
     />
     <PortfolioItem
+      title="IKON Pass"
+      descriptionOne="I was asked to create designs and page templates for the IKON Pass blog “Lifted” to provide a more cohesive and consistent user experience. The designs were later developed into a Wordpress website."
+      descriptionTwo="The “IKON Pass” is a ski and snowboard pass with over 40 destinations around the world."
+      image={IkonPass}
+      linkURL="https://lifted.ikonpass.com/"
+      linkName="lifted.ikonpass.com"
+    />
+    <PortfolioItem
       title="With Food + Love"
       descriptionOne="An existing client site, built in Wordpress. I was tasked to redesign, rebrand, and recreate a new method of retrieving and displaying all the data for recipes and other blog posts."
       descriptionTwo="“With Food + Love” is a plant-based, gluten-free blog run by Sherrie Castellano, a contributing photographer, food writer and columnist for FEAST Magazine. She has worked with Absolut, Chobani, LaCroix, Silk, Simply Organics, Urban Outfitters, Better Homes and Gardens, and Livestrong, among others."
       image={WithFoodAndLove}
       linkURL="https://withfoodandlove.com/"
       linkName="withfoodandlove.com"
+    />
+    <PortfolioItem
+      title="Put It On The Blog"
+      descriptionOne="A personal project, written in Vue.js that uses the Airtable API to manage content and updates."
+      descriptionTwo="“Put It On The Blog” is a community space where users can easily and anonymously submit quotes without needing to worry about login credentials."
+      image={PutItOnTheBlog}
+      linkURL="https://putitontheblog.co/"
+      linkName="putitontheblog.co"
+    />
+    <PortfolioItem
+      title="Prime Dental Design"
+      descriptionOne="While working at “EOS Healthcare Marketing”, I was tasked with creating a fully custom Wordpress theme. The site was hand coded using Bootstrap 4, Advanced Custom Fields Pro, PHP and JavaScript."
+      descriptionTwo="“Prime Dental Design” is a dental practice located in Central Florida, focusing on cosmetic and restorative dentistry."
+      image={PrimeDentalDesign}
+      linkURL="https://primedentaldesign.com/"
+      linkName="primedentaldesign.com"
     />
     <PortfolioItem
       title="Simple Youtube"
@@ -94,14 +92,6 @@ const PortfolioItems = props => (
       linkName="loopdentalmn.com"
     />
     <PortfolioItem
-      title="MCA Denver: Animating Museums"
-      descriptionOne="A client website, built in Wordpress, with an intiuative backend for employees to update, and post to the blog. I was asked to capture and reflect the subtle and contemporary aesthetics of MCA Denver."
-      descriptionTwo="“The Museum of Contemporary Art Denver” (MCA Denver) created “Animating Museums” to further cultivate the creativity of already creative people working in art museums. Fourteen fellows from art museums across the United States have been selected for the two-year program, which includes residency workshops in Denver, ongoing mentorship, and a group project."
-      image={AnimatingMuseums}
-      linkURL="http://animatingmuseums.org/"
-      linkName="animatingmuseums.org"
-    />
-    <PortfolioItem
       title="Gone Camping RV"
       descriptionOne="A client website, built in Wordpress that houses online inventory of two RV dealerships. I built pipelines to connect thier deal management software to the database of the website, as well as export that data to classified sites, such as Craigslist."
       descriptionTwo="“Gone Camping RV” is an RV dealership with two locations in Evans and Greeley, Colorado, specializing in motor homes."
@@ -110,12 +100,20 @@ const PortfolioItems = props => (
       linkName="gonecampingrv.com"
     />
     <PortfolioItem
-      title="Fresh Studio 23"
-      descriptionOne="A website using Wordpress, that documents 10 years of work Franky Scaglione has done with the “Fresh 23 Fashion Show” and his classroom, Studio 23."
-      descriptionTwo="“FRESH 23” is an annual fashion show and multimedia event, celebrating high school artists in Wheat Ridge, CO. In 2008, twenty-three student artists teamed with Vans to create twenty-three pairs of shoe designs, and showcase their artwork. This partnership has been the nucleus of annual events to celebrate the Wheat Ridge High School artists, and initiated nationwide attention inspiring the Vans Custom Culture contest... now serving over 3,000 schools nationwide, as well as international equivalents throughout four continents."
-      image={FreshStudio23}
-      linkURL="http://freshstudio23.com/"
-      linkName="freshstudio23.com"
+      title="MFC Studio"
+      descriptionOne="A client website, I was tasked to create consistent branding with hundreds of store items, as well as curate featured collections of work that was both for sale and on display as fine art."
+      descriptionTwo="Artists Franky + Annie Scaglione established “My Favourite Colour Studio” to honour and capture the aesthetics of nostalgia. From baseball to cross-country road trips, their inspirations and passion overlap in the preservation of our rich pastimes, celebrating all things classic."
+      image={MFCstudio}
+      linkURL="http://www.mfcstudio.com/right-to-roam"
+      linkName="mfcstudio.com"
+    />
+    <PortfolioItem
+      title="MCA Denver: Animating Museums"
+      descriptionOne="A client website, built in Wordpress, with an intiuative backend for employees to update, and post to the blog. I was asked to capture and reflect the subtle and contemporary aesthetics of MCA Denver."
+      descriptionTwo="“The Museum of Contemporary Art Denver” (MCA Denver) created “Animating Museums” to further cultivate the creativity of already creative people working in art museums. Fourteen fellows from art museums across the United States have been selected for the two-year program, which includes residency workshops in Denver, ongoing mentorship, and a group project."
+      image={AnimatingMuseums}
+      linkURL="http://animatingmuseums.org/"
+      linkName="animatingmuseums.org"
     />
     <PortfolioItem
       title="Claremont Ranch"
@@ -124,22 +122,6 @@ const PortfolioItems = props => (
       image={ClaremontRanch}
       linkURL="https://claremontranchvet.com/"
       linkName="claremontranchvet.com"
-    />
-    {/* <PortfolioItem
-      title="Central Florida Smiles"
-      descriptionOne="While working at “EOS Healthcare Marketing”, I was tasked with creating a fully custom Wordpress theme, based on the new branding direction of the practice. The site was hand coded using Bootstrap 4, Advanced Custom Fields Pro, and custom PHP and JavaScript."
-      descriptionTwo="“Wiewiora & Dunn Orthodontics” is a oral surgery practice, located in Lake Mary and Longwood, Florida."
-      image={CentralFlorida}
-      linkURL="https://centralfloridasmiles.com/"
-      linkName="centralfloridasmiles.com"
-    /> */}
-    <PortfolioItem
-      title="MFC Studio"
-      descriptionOne="A client website, I was tasked to create consistent branding with hundreds of store items, as well as curate featured collections of work that was both for sale and on display as fine art."
-      descriptionTwo="Artists Franky + Annie Scaglione established “My Favourite Colour Studio” to honour and capture the aesthetics of nostalgia. From baseball to cross-country road trips, their inspirations and passion overlap in the preservation of our rich pastimes, celebrating all things classic."
-      image={MFCstudio}
-      linkURL="http://www.mfcstudio.com/right-to-roam"
-      linkName="mfcstudio.com"
     />
     <PortfolioItem
       title="Scaglione Hardwood Flooring"
