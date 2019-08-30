@@ -3,14 +3,16 @@ import PortfolioItem from './portfolio-item'
 
 // Import images
 import AnimatingMuseums from './assets/animating-museums.jpg'
-import CentralFlorida from './assets/central-florida-smiles.jpg'
+// import CentralFlorida from './assets/central-florida-smiles.jpg'
 import ClaremontRanch from './assets/claremont-ranch.jpg'
 import FreshStudio23 from './assets/fresh-studio-23.jpg'
 import GoneCamping from './assets/gone-camping-rv.jpg'
 import IkonPass from './assets/ikon-pass.jpg'
 import LoopDental from './assets/loop-dental.jpg'
 import Matillion from './assets/matillion.jpg'
+import MatthewSteele from './assets/matthew-steele.jpg'
 import MFCstudio from './assets/my-favourite-colour-studio.jpg'
+import PrimeDentalDesign from './assets/prime-dental-design.jpg'
 import PureSmiles from './assets/pure-smiles.jpg'
 import PutItOnTheBlog from './assets/put-it-on-the-blog.jpg'
 import ScaglioneHardwood from './assets/scaglione-hardwood-flooring.jpg'
@@ -19,6 +21,22 @@ import WithFoodAndLove from './assets/with-food-and-love.jpg'
 
 const PortfolioItems = props => (
   <div>
+    <PortfolioItem
+      title="Matthew Steele Plastic Surgery"
+      descriptionOne="While working at “EOS Healthcare Marketing”, I redesigned a pre-existing site and developed an import pipeline to migrate large amount of data and images to a custom Wordpress website. The site was built using React, PHP, and Javascript."
+      descriptionTwo="“Dr. Matthew H. Steele” is a plastic surgeon based in Fort Worth, specializing in cosmetic and reconstructive surgery."
+      image={MatthewSteele}
+      linkURL="https://drsteeleplasticsurgery.com/"
+      linkName="drsteeleplasticsurgery.com"
+    />
+    <PortfolioItem
+      title="Prime Dental Design"
+      descriptionOne="While working at “EOS Healthcare Marketing”, I was tasked with creating a fully custom Wordpress theme. The site was hand coded using Bootstrap 4, Advanced Custom Fields Pro, PHP and JavaScript."
+      descriptionTwo="“Prime Dental Design” is a dental practice located in Central Florida, focusing on cosmetic and restorative dentistry."
+      image={PrimeDentalDesign}
+      linkURL="https://primedentaldesign.com/"
+      linkName="primedentaldesign.com"
+    />
     <PortfolioItem
       title="IKON Pass"
       descriptionOne="I was asked to create designs and page templates for the IKON Pass blog “Lifted” to provide a more cohesive and consistent user experience. The designs were later developed into a Wordpress website."
@@ -107,14 +125,14 @@ const PortfolioItems = props => (
       linkURL="https://claremontranchvet.com/"
       linkName="claremontranchvet.com"
     />
-    <PortfolioItem
+    {/* <PortfolioItem
       title="Central Florida Smiles"
       descriptionOne="While working at “EOS Healthcare Marketing”, I was tasked with creating a fully custom Wordpress theme, based on the new branding direction of the practice. The site was hand coded using Bootstrap 4, Advanced Custom Fields Pro, and custom PHP and JavaScript."
       descriptionTwo="“Wiewiora & Dunn Orthodontics” is a oral surgery practice, located in Lake Mary and Longwood, Florida."
       image={CentralFlorida}
       linkURL="https://centralfloridasmiles.com/"
       linkName="centralfloridasmiles.com"
-    />
+    /> */}
     <PortfolioItem
       title="MFC Studio"
       descriptionOne="A client website, I was tasked to create consistent branding with hundreds of store items, as well as curate featured collections of work that was both for sale and on display as fine art."
