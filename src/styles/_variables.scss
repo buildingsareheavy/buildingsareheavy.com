@@ -12,17 +12,17 @@ $mobile: '480px';
 // CSS Variables
 // They dyamically change based on user
 
-html {
+:root {
   --base-font-size: 20px;
+  --width: 768px;
 }
 
 // Light default theme
 body {
-  --bg-color: #eeeeee;
+  --bg-color: hsl(0, 0%, 93%);
   --bg-code: hsl(0, 6%, 91%);
-  --text-color: #242424;
+  --text-color: hsl(0, 0%, 14%);
   --link-color: hsl(253, 100%, 50%);
-  --width: 768px;
   // specific colors
   --pink: hsl(0, 97%, 87%);
   --yellow: hsl(45, 94%, 68%);
@@ -32,13 +32,13 @@ body {
 
 // Dark theme
 body[data-theme='dark'] {
-  --bg-color: #242424;
+  --bg-color: hsl(0, 0%, 14%);
   --bg-code: hsla(0, 1%, 74%, 0.3);
-  --text-color: #eeeeee;
+  --text-color: hsl(0, 0%, 93%);
   --link-color: hsl(28, 100%, 50%);
   // specific colors
   --pink: hsl(10, 30%, 54%);
-  --yellow: #daa520;
-  --green: ##febcbc;
-  --blue: #5d30ff;
+  --yellow: hsl(43, 74%, 49%);
+  --green: hsl(0, 97%, 87%);
+  --blue: hsl(253, 100%, 59%);
 }

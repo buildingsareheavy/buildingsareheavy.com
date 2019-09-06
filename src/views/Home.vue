@@ -85,7 +85,7 @@ export default {
   &__current {
     background: var(--yellow);
     padding: 5vw;
-    margin: -2rem;
+    margin: 0 -3rem; // reset because of margins on #app
     h2 {
       background: var(--pink);
     }
@@ -102,7 +102,7 @@ export default {
   &__connect {
     background: var(--green);
     padding: 5vw;
-    margin: -2rem;
+    margin: 0 -3rem; // reset because of margins on #app
     margin-bottom: 0; // for footer
     h2 {
       background: var(--pink);

@@ -25,10 +25,7 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding: 0.25rem 2rem;
+  margin: 0.25rem 3rem;
   img {
     max-width: 100%;
   }
