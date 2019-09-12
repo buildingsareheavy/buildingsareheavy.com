@@ -8,9 +8,9 @@
 </template>
 
 <script>
-import ToggleTheme from "@/components/ToggleTheme.vue";
-import GlobalHeader from "@/components/GlobalHeader.vue";
-import GlobalFooter from "@/components/GlobalFooter.vue";
+import ToggleTheme from "@/components/global/ToggleTheme.vue";
+import GlobalHeader from "@/components/global/GlobalHeader.vue";
+import GlobalFooter from "@/components/global/GlobalFooter.vue";
 
 export default {
   name: "app",
@@ -24,10 +24,4 @@ export default {
 
 
 <style lang="scss">
-#app {
-  margin: 0.25rem 3rem;
-  img {
-    max-width: 100%;
-  }
-}
 </style>

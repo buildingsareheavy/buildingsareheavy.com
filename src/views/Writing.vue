@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import BlogArchive from "@/components/BlogArchive.vue";
+import BlogArchive from "@/components/blog/BlogArchive.vue";
 export default {
   name: "writing",
   components: {

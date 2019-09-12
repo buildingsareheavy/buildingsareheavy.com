@@ -4,7 +4,7 @@ import Home from './views/Home.vue';
 import About from './views/About.vue';
 import Photography from './views/Photography.vue';
 import Writing from './views/Writing.vue';
-import BlogPost from './components/BlogPost.vue';
+import BlogPost from './components/blog/BlogPost.vue';
 import Portfolio from './views/Portfolio.vue';
 import RssAtomSitemap from './views/RssAtomSitemap';
 import FourOhFour from './views/FourOhFour.vue';

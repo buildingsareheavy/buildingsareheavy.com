@@ -1,13 +1,14 @@
 <template>
   <header class="header">
-    <h1>
-      <router-link to="/" class="header__link">
+    <router-link to="/" class="header__link">
+      <h1>
         Buildings Are
         <br />Heavy
-      </router-link>
-    </h1>
+      </h1>
+    </router-link>
+
     <nav class="header-nav">
-      <div class="header-nav__item">
+      <div class="empty">
         <!-- EMPTY -->
       </div>
       <div class="header-nav__item">
@@ -28,29 +29,27 @@
 
 <style lang="scss">
 .header {
-  h1 {
-    margin-top: 1.75rem;
-    margin-bottom: 0.5rem;
-    line-height: 2.5rem;
-    .header__link {
-      font-size: 3rem;
+  margin: 0 var(--spacing);
+  font-size: 1.5rem;
+  &__link {
+    display: inline-block;
+    h1 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.25rem;
+      line-height: 2.75rem;
     }
   }
-  // all links
-  .header__link,
-  .header-nav__link {
+  &__link, // title (header__link)
+  &-nav__link // other pages in nav (header-nav__link)
+ {
     text-decoration: none;
   }
-  nav {
-    .header-nav__link {
-      font-size: 1.5rem;
-      &.router-link-exact-active {
-        text-decoration: underline;
-      }
-    }
+  &-nav__link.router-link-exact-active {
+    opacity: 0.8;
   }
+
   &-nav {
-    @include bigger-than($mobile) {
+    @include bigger-than($tablet) {
       margin-top: -8rem; // if not supported by flex or grid
       margin-right: 1rem; // if not supported by flex or grid
     }
@@ -58,6 +57,7 @@
       a {
         display: block; // if not supported by flex or grid
         padding: 0.25rem 1rem;
+        margin: 0 auto;
         text-align: right;
       }
     }
@@ -65,16 +65,16 @@
   @supports (display: flex) and (display: grid) {
     @include bigger-than($tablet) {
       &-nav {
-        padding: 1.5rem 0 2.5rem 0;
+        padding: 1.75rem 0 1.25rem 0;
         display: grid;
         grid-template-columns: 4.5fr 1fr 1fr;
         a {
           text-align: left;
         }
+        .empty {
+          z-index: -1;
+        }
         &__item {
-          &:first-child {
-            z-index: -1;
-          }
           display: flex;
           flex-direction: column;
           justify-content: center;
