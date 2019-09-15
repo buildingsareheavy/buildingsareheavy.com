@@ -40,9 +40,9 @@ export default {
           justify-self: center;
         }
         h1 {
-          max-width: var(--width);
           font-size: 3rem;
           line-height: 3rem;
+          padding-left: 3rem;
         }
       }
     }

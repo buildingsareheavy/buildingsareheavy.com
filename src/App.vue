@@ -24,4 +24,12 @@ export default {
 
 
 <style lang="scss">
+#app {
+  .spacer {
+    height: 1rem;
+    border-radius: 2px;
+    background: var(--white);
+    transform: rotate(7.5deg);
+  }
+}
 </style>

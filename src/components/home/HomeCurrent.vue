@@ -1,5 +1,6 @@
 <template>
   <section class="home__current">
+    <div class="spacer"></div>
     <div class="home__current-title-bg">
       <svg width="0" height="0">
         <defs>
@@ -22,11 +23,16 @@
     </div>
     <div class="home__current-container">
       <div class="home__current-item" v-for="project in projects" :key="project.title">
-        <h3>
-          <a :href="project.link">{{ project.title }}</a>
-        </h3>
-
-        <p>Description</p>
+        <h3>{{ project.title }}</h3>
+        <p>
+          {{ project.desc }}
+          <a
+            v-if="project.link"
+            :href="project.link"
+            target="_blank"
+            rel="noopener"
+          >Link</a>
+        </p>
       </div>
     </div>
   </section>
@@ -48,7 +54,6 @@ export default {
 <style lang="scss">
 .home {
   &__current {
-    background: var(--yellow);
     padding: 5vw;
     &-title {
       display: inline-block;
@@ -56,6 +61,10 @@ export default {
         background: var(--pink);
         padding: 5.25rem;
         clip-path: url("#current-title");
+        @include smaller-than($mobile) {
+          transform: translateX(5vw);
+          padding: 6rem;
+        }
       }
       h2 {
         font-size: 2.75rem;
@@ -66,45 +75,27 @@ export default {
         }
         span {
           display: block;
-          transform: translateX(1rem);
+          transform: translateX(1.5rem);
         }
       }
     }
     &-container {
-      display: grid;
-      grid-template-columns: repeat(10, 1fr);
-      grid-template-rows: repeat(9, 5rem);
-      transform: translateY(-20rem);
+      margin-top: -7rem;
+      max-width: var(--width);
+      margin-left: auto;
+      @include smaller-than($mobile) {
+        margin-top: -10rem;
+        margin-bottom: 2rem;
+      }
     }
     &-item {
-      background: var(--text-color);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border-radius: 30px;
-      h3 a,
+      margin: 0 auto;
+      border-bottom: 5px solid var(--yellow);
       p {
-        text-decoration: none;
-        color: var(--bg-color);
-        margin: 0;
-      }
-      h3 {
-        padding-bottom: 1rem;
-        border-bottom: 2px solid var(--bg-color);
-      }
-      &:nth-child(1) {
-        grid-column: 1 / 5;
-        grid-row: 4 / 8;
-      }
-      &:nth-child(2) {
-        grid-column: 7 / 11;
-        grid-row: 2 / 5;
-      }
-      &:nth-child(3) {
-        grid-column: 4 / 9;
-        grid-row: 8 / 10;
-        transform: rotate(-20deg);
+        a {
+          float: right;
+          text-decoration: none;
+        }
       }
     }
   }

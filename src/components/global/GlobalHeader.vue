@@ -43,6 +43,7 @@
   &-nav__link // other pages in nav (header-nav__link)
  {
     text-decoration: none;
+    background: none;
   }
   &-nav__link.router-link-exact-active {
     opacity: 0.8;
@@ -62,7 +63,7 @@
       }
     }
   }
-  @supports (display: flex) and (display: grid) {
+  @supports (display: grid) {
     @include bigger-than($tablet) {
       &-nav {
         padding: 1.75rem 0 1.25rem 0;
@@ -75,9 +76,7 @@
           z-index: -1;
         }
         &__item {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
+          display: block;
         }
       }
     }
