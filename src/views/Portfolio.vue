@@ -1,5 +1,5 @@
 <template>
-  <main class="portfolio">
+  <main class="portfolio container">
     <p>Archive of work from various agencies, clients, friends and personal projects.</p>
     <hr />
     <div v-for="(item,index) in items" :key="item.image + '_' + index">
@@ -46,5 +46,5 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 </style>

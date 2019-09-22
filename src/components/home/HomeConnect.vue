@@ -112,6 +112,28 @@ export default {
           border-bottom: 6px solid var(--blue);
         }
       }
+      @include smaller-than($desktop) {
+        &:nth-child(1) {
+          margin-right: 0%;
+          margin-left: 40%;
+        }
+        &:nth-child(2) {
+          margin-right: 10%;
+          margin-left: 35%;
+        }
+        &:nth-child(3) {
+          margin-right: 25%;
+          margin-left: 25%;
+        }
+        &:nth-child(4) {
+          margin-right: 35%;
+          margin-left: 10%;
+        }
+        &:nth-child(5) {
+          margin-right: 40%;
+          margin-left: 0%;
+        }
+      }
     }
   }
 }

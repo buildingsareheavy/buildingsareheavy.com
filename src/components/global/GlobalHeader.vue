@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header container">
     <router-link to="/" class="header__link">
       <h1>
         Buildings Are
@@ -29,7 +29,6 @@
 
 <style lang="scss">
 .header {
-  margin: 0 var(--spacing);
   font-size: 1.5rem;
   &__link {
     display: inline-block;

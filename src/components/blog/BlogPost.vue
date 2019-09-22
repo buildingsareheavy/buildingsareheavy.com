@@ -1,12 +1,12 @@
 <template>
-  <div class="post">
+  <div class="post container">
     <div class="post__header">
       <h1>{{ post.data.title }}</h1>
       <small>{{ post.data.published | moment("Do MMMM YYYY") }}</small>
-      <div class="summary" v-html="post.data.summary"></div>
+      <div class="post__header-summary" v-html="post.data.summary"></div>
     </div>
     <hr />
-    <div class="content" v-html="post.data.body"></div>
+    <div class="post__content" v-html="post.data.body"></div>
     <hr />
     <nav>
       <router-link
@@ -64,6 +64,14 @@ export default {
     clear: both;
     overflow: auto;
   }
+  &__content {
+    img {
+      display: block;
+      padding: 1rem 0;
+      margin: 0 auto;
+      border-radius: 2px;
+    }
+  }
   &__previous {
     float: left;
     &::before {
@@ -84,7 +92,7 @@ export default {
     small {
       margin: 0;
     }
-    .summary {
+    &-summary {
       margin: 1rem 0;
     }
   }

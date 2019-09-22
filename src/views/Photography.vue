@@ -1,5 +1,5 @@
 <template>
-  <main :class="page_title">
+  <main :class="`${page_title} container`">
     <h1 :class="page_title__header">{{ page_title }} archive</h1>
     <hr />
     <p class="test">sadfgdsdfgd</p>

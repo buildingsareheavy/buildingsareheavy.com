@@ -1,5 +1,5 @@
 <template>
-  <main class="about">
+  <main class="about container">
     <div class="about__intro">
       <p>Ethan Bradford Barrett is a front-end web developer and designer based in Denver, CO, USA. They studied at Rocky Mountain College of Art + Design, majoring in Fine Arts, with an emphasis in Photo / Video and Sculpture.</p>
     </div>

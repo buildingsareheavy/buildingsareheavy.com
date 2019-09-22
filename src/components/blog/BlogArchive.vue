@@ -5,10 +5,9 @@
         <article>
           <figure>
             <img v-if="post.featured_image" :src="post.featured_image" alt />
-            <img v-else src="https://via.placeholder.com/250x250" alt />
           </figure>
 
-          <div class="content">
+          <div class="archive__content">
             <h2>{{ post.title }}</h2>
             <div>{{ post.summary }}</div>
           </div>
@@ -50,5 +49,10 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+.archive {
+  &__content {
+    border-bottom: 1px solid var(--bg-color);
+  }
+}
 </style>
