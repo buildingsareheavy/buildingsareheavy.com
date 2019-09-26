@@ -1,4 +1,4 @@
-// This is where project configuration and plugin options are located. 
+// This is where project configuration and plugin options are located.
 // Learn more: https://gridsome.org/docs/config
 
 // Changes here require a server restart.
@@ -6,5 +6,21 @@
 
 module.exports = {
   siteName: 'Gridsome',
-  plugins: []
-}
+  plugins: [
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Post',
+        baseDir: './post',
+        pathPrefix: '/post',
+        template: './src/templates/Post.vue',
+        refs: {
+          tags: {
+            typeName: 'Tags',
+            create: true,
+          },
+        },
+      },
+    },
+  ],
+};
