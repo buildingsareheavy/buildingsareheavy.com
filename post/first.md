@@ -8,5 +8,11 @@ tags: [writing, photography]
 This is the content for the first post....
 
 ```javascript
-console.log('Testing' + ref);
+import Vue from 'vue';
+import VuePrism from 'vue-prism';
+Vue.use(VuePrism);
+
+import 'prismjs/themes/prism.css';
+// dark theme
+// import 'prismjs/themes/prism-tomorrow.css';
 ```

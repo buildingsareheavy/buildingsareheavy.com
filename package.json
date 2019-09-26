@@ -9,5 +9,8 @@
   "dependencies": {
     "@gridsome/vue-remark": "^0.1.4",
     "gridsome": "^0.7.0"
+  },
+  "devDependencies": {
+    "vue-prism": "^1.0.5"
   }
 }
