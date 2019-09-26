@@ -1,9 +1,14 @@
-# Buildings Are Heavy: Professional Website (New)
+# Default starter for Gridsome
 
-[Buildings Are Heavy](https://buildingsareheavy.com) is built using [Gatsby(v2)](https://www.gatsbyjs.org/), a React-based, GraphQL powered, static site generator.
+This is the project you get when you run `gridsome create new-project`.
 
----
+### 1. Install Gridsome CLI tool if you don't have
 
-The objective was to combine my professional portfolio and information with my personal blog to give a more holistic view of who I am, as well as what I do.
+`npm install --global @gridsome/cli`
 
-[Prototype in Figma](https://www.figma.com/proto/gWEANvhH1dZTGOPVmGP9Z60K/Buildings-Are-Heavy-dot-com?node-id=0%3A1&scaling=min-zoom)
+### 2. Create a Gridsome project
+
+1. `gridsome create my-gridsome-site` to install default starter
+2. `cd my-gridsome-site` to open the folder
+3. `gridsome develop` to start a local dev server at `http://localhost:8080`
+4. Happy coding 🎉🙌
