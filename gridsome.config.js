@@ -20,8 +20,13 @@ module.exports = {
             create: true,
           },
         },
-        remark: {
-          plugins: ['@gridsome/remark-prismjs'],
+        transformers: {
+          //Add markdown support to all file-system sources
+          remark: {
+            externalLinksTarget: '_blank',
+            externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+            anchorClassName: 'icon icon-link',
+          },
         },
       },
     },
