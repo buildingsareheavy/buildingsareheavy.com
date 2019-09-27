@@ -12,8 +12,8 @@ module.exports = {
       options: {
         typeName: 'Photography',
         baseDir: './photography',
-        pathPrefix: '/photography',
-        template: './src/templates/Photography.vue',
+        pathPrefix: '/',
+        template: './src/templates/PhotographyPost.vue',
         refs: {
           tags: {
             typeName: 'PhotographyTag',
@@ -27,8 +27,8 @@ module.exports = {
       options: {
         typeName: 'Writing',
         baseDir: './writing',
-        pathPrefix: '/writing',
-        template: './src/templates/Writing.vue',
+        pathPrefix: '/',
+        template: './src/templates/WritingPost.vue',
         refs: {
           tags: {
             typeName: 'WritingTag',

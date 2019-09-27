@@ -1,6 +1,7 @@
 <template>
   <Layout>
     <h1>{{ $page.photography.title }}</h1>
+    <h1>BOO</h1>
     <p class="intro">{{ $page.photography.excerpt }}</p>
     <p>{{ $page.photography.date }}</p>
     <p>
@@ -29,7 +30,7 @@ query Photography($id: ID!) {
 
 <script>
 export default {
-  name: "photography"
+  name: "photography-post"
 };
 </script>
 

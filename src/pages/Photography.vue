@@ -1,8 +1,7 @@
 <template>
   <Layout>
-    <h1>boo</h1>
     <div
-      class="photographys"
+      class="photography"
       v-for="photography in $page.photography.edges"
       :key="photography.node.id"
     >

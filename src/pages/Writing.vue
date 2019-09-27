@@ -1,7 +1,6 @@
 <template>
   <Layout>
-    <h1>boo</h1>
-    <div class="writings" v-for="writing in $page.writing.edges" :key="writing.node.id">
+    <div class="writing" v-for="writing in $page.writing.edges" :key="writing.node.id">
       <g-link :to="writing.node.path">
         <p>{{writing.node.title}}</p>
       </g-link>

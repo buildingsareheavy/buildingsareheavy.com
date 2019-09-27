@@ -29,7 +29,7 @@ query Writing($id: ID!) {
 
 <script>
 export default {
-  name: "writing"
+  name: "writing-post"
 };
 </script>
 
