@@ -7,12 +7,13 @@ tags:
   - netlify
   - g-image
 ---
+
 Ok, the cover image is freshly added.
 
 The portrait photo already existed:
 
-![alt test](/photography/images/portrait.jpg "title")
+![alt test](/photography/images/portrait.jpg 'title')
 
 The Pure Smiles photo is new:
 
-![pure smiles](/photography/images/pure-smiles.jpg "title for pure smiles")
+![pure smiles](/photography/images/pure-smiles.jpg 'title for pure smiles')
