@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+
+media_folder: 'static/photography/images'
+public_folder: 'photography/images'
+
+publish_mode: editorial_workflow
+show_preview_links: true
+
+collections:
+  - name: 'photography'
+    label: 'Photography'
+    folder: 'photography'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Excerpt', name: 'excerpt', widget: 'string', required: false }
+      - {
+          label: 'Cover Image',
+          name: 'cover_image',
+          widget: 'image',
+          required: false,
+        }
+      - { label: 'Publish Date', name: 'date', widget: 'date' }
+      - {
+          label: 'Tags',
+          name: 'tags',
+          widget: 'list',
+          # default: ["post"],
+          required: false,
+        }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  #
