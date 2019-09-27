@@ -46,13 +46,13 @@ module.exports = {
       },
     },
     // fix paths
-    // {
-    //   use: 'gridsome-plugin-netlify-cms-paths',
-    //   options: {
-    //     contentTypes: ['Photography', 'Writing'], // Same as declared above
-    //     coverField: 'cover_image', // Global definition
-    //   },
-    // },
+    {
+      use: 'gridsome-plugin-netlify-cms-paths',
+      options: {
+        contentTypes: ['Photography', 'Writing'], // Same as declared above
+        coverField: 'cover_image', // Global definition
+      },
+    },
   ],
   transformers: {
     //Add markdown support to all file-system sources
