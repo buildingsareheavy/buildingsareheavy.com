@@ -16,7 +16,7 @@ module.exports = {
         template: './src/templates/Photography.vue',
         refs: {
           tags: {
-            typeName: 'Tags',
+            typeName: 'PhotographyTag',
             create: true,
           },
         },
@@ -31,7 +31,7 @@ module.exports = {
         template: './src/templates/Writing.vue',
         refs: {
           tags: {
-            typeName: 'Tags',
+            typeName: 'WritingTag',
             create: true,
           },
         },
@@ -49,7 +49,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-netlify-cms-paths',
       options: {
-        contentTypes: ['Photography', 'Writing'], // Same as declared above
+        contentTypes: ['Photography'], // Same as declared above
         coverField: 'cover_image', // Global definition
       },
     },

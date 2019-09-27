@@ -10,19 +10,37 @@ show_preview_links: true
 
 collections:
   - name: 'photography'
-    label: 'Photography'
+    label: 'Photography Post'
     folder: 'photography'
     create: true
     slug: '{{slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Excerpt', name: 'excerpt', widget: 'string', required: false }
+      - { label: 'Excerpt', name: 'excerpt', widget: 'string', required: true }
       - {
           label: 'Cover Image',
           name: 'cover_image',
           widget: 'image',
+          required: true,
+        }
+      - { label: 'Publish Date', name: 'date', widget: 'date' }
+      - {
+          label: 'Tags',
+          name: 'tags',
+          widget: 'list',
+          # default: ["post"],
           required: false,
         }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  #
+  - name: 'writing'
+    label: 'Writing Post'
+    folder: 'writing'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Excerpt', name: 'excerpt', widget: 'string', required: true }
       - { label: 'Publish Date', name: 'date', widget: 'date' }
       - {
           label: 'Tags',

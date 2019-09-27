@@ -7,3 +7,5 @@ tags: [photography]
 ---
 
 This is the first **photo** post!
+
+![](/images/cover.jpg)
