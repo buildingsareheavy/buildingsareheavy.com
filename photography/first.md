@@ -1,10 +1,11 @@
 ---
 title: First Post
 excerpt: This is the first excerpt.
-date: 2019-02-03
-tags: [writing, photography]
+date: 2019-02-03T00:00:00.000Z
+tags:
+  - writing
+  - photography
 ---
-
 This is the content for the first post....
 
 ```javascript
@@ -18,3 +19,5 @@ import 'prismjs/themes/prism.css';
 ```
 
 [prismjs](https://prismjs.com/)
+
+Adding something extra from **Netlify**!
