@@ -9,13 +9,9 @@ tags:
 ---
 Ok, the cover image is freshly added.
 
-
-
 The portrait photo already existed:
 
 ![alt test](/photography/images/portrait.jpg "title")
-
-
 
 The Pure Smiles photo is new:
 
