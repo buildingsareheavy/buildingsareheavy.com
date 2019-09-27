@@ -37,11 +37,20 @@ module.exports = {
         },
       },
     },
+    // configure Netlify CMS
     {
       use: `gridsome-plugin-netlify-cms`,
       options: {
         publicPath: `/admin`,
         modulePath: `src/admin/index.js`,
+      },
+    },
+    // fix paths
+    {
+      use: 'gridsome-plugin-netlify-cms-paths',
+      options: {
+        contentTypes: ['Photography', 'Writing'], // Same as declared above
+        coverField: 'cover_image', // Global definition
       },
     },
   ],

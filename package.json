@@ -10,6 +10,7 @@
     "@gridsome/vue-remark": "^0.1.4",
     "gridsome": "^0.7.0",
     "gridsome-plugin-netlify-cms": "^1.0.9",
+    "gridsome-plugin-netlify-cms-paths": "^0.3.0",
     "netlify-cms": "^2.9.7"
   },
   "devDependencies": {
