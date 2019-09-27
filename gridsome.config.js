@@ -10,25 +10,46 @@ module.exports = {
     {
       use: '@gridsome/vue-remark',
       options: {
-        typeName: 'Post',
-        baseDir: './post',
-        pathPrefix: '/post',
-        template: './src/templates/Post.vue',
+        typeName: 'Photography',
+        baseDir: './photography',
+        pathPrefix: '/photography',
+        template: './src/templates/Photography.vue',
         refs: {
           tags: {
             typeName: 'Tags',
             create: true,
           },
         },
-        transformers: {
-          //Add markdown support to all file-system sources
-          remark: {
-            externalLinksTarget: '_blank',
-            externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-            anchorClassName: 'icon icon-link',
+      },
+    },
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Writing',
+        baseDir: './writing',
+        pathPrefix: '/writing',
+        template: './src/templates/Writing.vue',
+        refs: {
+          tags: {
+            typeName: 'Tags',
+            create: true,
           },
         },
       },
     },
+    {
+      use: `gridsome-plugin-netlify-cms`,
+      options: {
+        publicPath: `/admin`,
+      },
+    },
   ],
+  transformers: {
+    //Add markdown support to all file-system sources
+    remark: {
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon-link',
+    },
+  },
 };

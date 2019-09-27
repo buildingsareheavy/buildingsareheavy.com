@@ -1,21 +1,21 @@
 <template>
   <Layout>
-    <h1>{{ $page.post.title }}</h1>
-    <p class="intro">{{ $page.post.excerpt }}</p>
-    <p>{{ $page.post.date }}</p>
+    <h1>{{ $page.writing.title }}</h1>
+    <p class="intro">{{ $page.writing.excerpt }}</p>
+    <p>{{ $page.writing.date }}</p>
     <p>
       Tags:
-      <span v-for="tags in $page.post.tags" :key="tags.id">{{ tags.id}}</span>
+      <span v-for="tags in $page.writing.tags" :key="tags.id">{{ tags.id}}</span>
     </p>
-    <g-image v-if="$page.post.cover_image" :src="$page.post.cover_image" />
+    <g-image v-if="$page.writing.cover_image" :src="$page.writing.cover_image" />
     <hr />
     <VueRemarkContent />
   </Layout>
 </template>
 
 <page-query>
-query Post($id: ID!) {
-    post(id: $id) {
+query Writing($id: ID!) {
+    writing(id: $id) {
         title
         excerpt
         date (format: "D MMMM YYYY")
@@ -29,7 +29,7 @@ query Post($id: ID!) {
 
 <script>
 export default {
-  name: "post"
+  name: "writing"
 };
 </script>
 

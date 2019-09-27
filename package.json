@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "@gridsome/vue-remark": "^0.1.4",
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.0",
+    "gridsome-plugin-netlify-cms": "^1.0.9",
+    "netlify-cms": "^2.9.7"
   },
   "devDependencies": {
     "vue-prism": "^1.0.5"
