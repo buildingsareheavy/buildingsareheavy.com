@@ -39,6 +39,10 @@ body {
   padding-right: 20px;
 }
 
+img {
+  width: 100%;
+}
+
 .header {
   display: flex;
   justify-content: space-between;

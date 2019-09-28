@@ -6,9 +6,10 @@
       :key="photography.node.id"
     >
       <g-link :to="photography.node.path">
-        <p>{{photography.node.title}}</p>
+        <h1>{{photography.node.title}}</h1>
       </g-link>
       <p>{{photography.node.excerpt }}</p>
+      <p>{{photography.node.date }}</p>
       <p>
         Tags:
         <span v-for="tags in photography.node.tags" :key="tags.id">{{ tags.id}}</span>
@@ -27,6 +28,7 @@ query Photography {
                 title
                 excerpt
                 path
+                date (format: "D MMMM YYYY")
                 cover_image (width: 720, blur: 10)
                  tags {
                     id

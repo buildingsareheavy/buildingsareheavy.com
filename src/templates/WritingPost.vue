@@ -7,7 +7,6 @@
       Tags:
       <span v-for="tags in $page.writing.tags" :key="tags.id">{{ tags.id}}</span>
     </p>
-    <g-image v-if="$page.writing.cover_image" :src="$page.writing.cover_image" />
     <hr />
     <VueRemarkContent />
   </Layout>
@@ -19,7 +18,6 @@ query Writing($id: ID!) {
         title
         excerpt
         date (format: "D MMMM YYYY")
-        cover_image (width: 720, blur: 10)
         tags {
             id
         }
