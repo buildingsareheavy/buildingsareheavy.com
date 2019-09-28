@@ -11,12 +11,17 @@
       </p>
       <hr />
     </div>
+    <Pager class="writing__pagination pagination" :info="$page.writing.pageInfo" />
   </Layout>
 </template>
 
 <page-query>
-query writing {
-    writing: allWriting {
+query Writing($page: Int) {
+    writing: allWriting(perPage: 2, page: $page) @paginate {
+       pageInfo {
+      totalPages
+      currentPage
+    }
         edges {
             node {
                 title
@@ -32,8 +37,13 @@ query writing {
 </page-query>
 
 <script>
+import { Pager } from "gridsome";
+
 export default {
-  name: "writing-archive"
+  name: "writing-archive",
+  components: {
+    Pager
+  }
 };
 </script>
 

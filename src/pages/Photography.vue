@@ -17,12 +17,17 @@
       <g-image v-if="photography.node.cover_image" :src="photography.node.cover_image" />
       <hr />
     </div>
+    <Pager class="photography__pagination pagination" :info="$page.photography.pageInfo" />
   </Layout>
 </template>
 
 <page-query>
-query Photography {
-    photography: allPhotography {
+query Photography($page: Int) {
+    photography: allPhotography(perPage: 6, page: $page) @paginate {
+       pageInfo {
+      totalPages
+      currentPage
+    }
         edges {
             node {
                 title
@@ -40,8 +45,13 @@ query Photography {
 </page-query>
 
 <script>
+import { Pager } from "gridsome";
+
 export default {
-  name: "photography-archive"
+  name: "photography-archive",
+  components: {
+    Pager
+  }
 };
 </script>
 
