@@ -1,0 +1,140 @@
+[
+  {
+    "id": "1",
+    "title": "Matillion",
+    "desc_1": "Hired on as a consultant, I advised best practices and helped manage their Wordpress website more efficiently. I also assisted with redesign and development.",
+    "desc_2": "\"Matillion\" is an award-winning cloud data software company. They provide end-to-end data transformation for Amazon Redshift, Snowflake, and Google BigQuery.",
+    "link_url": "https://www.matillion.com/",
+    "link_name": "matillion.com",
+    "image": "../../portfolio/images/animating-museums.jpg"
+  },
+
+  {
+    "id": "2",
+    "title": "Matthew Steele Plastic Surgery",
+    "desc_1": "While working at \"EOS Healthcare Marketing\", I redesigned a pre-existing site and developed an import pipeline to migrate large amount of data and images to a custom Wordpress website. The site was built using React, PHP, and Javascript.",
+    "desc_2": "\"Dr. Matthew H. Steele\" is a plastic surgeon based in Fort Worth, specializing in cosmetic and reconstructive surgery.",
+    "link_url": "https://drsteeleplasticsurgery.com/",
+    "link_name": "drsteeleplasticsurgery.com",
+    "image": "../../portfolio/images/matthew-steele.jpg"
+  },
+
+  {
+    "id": "3",
+    "title": "Pure Smiles",
+    "desc_1": "While working at EOS, I developed a system to rapidly prototype Wordpress websites, and allow them to be templated and scalable.",
+    "desc_2": "\"Pure Smiles\" is a new practice that provides advanced, comprehensive dentistry in Westerville, Ohio.",
+    "link_url": "https://puresmiles.com/",
+    "link_name": "PureSmiles.com",
+    "image": "../../portfolio/images/pure-smiles.jpg"
+  },
+
+  {
+    "id": "4",
+    "title": "IKON Pass",
+    "desc_1": "I was asked to create designs and page templates for the IKON Pass blog \"Lifted\" to provide a more cohesive and consistent user experience. The designs were later developed into a Wordpress website.",
+    "desc_2": "The \"IKON Pass\" is a ski and snowboard pass with over 40 destinations around the world.",
+    "link_url": "https://lifted.ikonpass.com/",
+    "link_name": "lifted.ikonpass.com",
+    "image": "../../portfolio/images/ikon-pass.jpg"
+  },
+
+  {
+    "id": "5",
+    "title": "With Food + Love",
+    "desc_1": "An existing client site, built in Wordpress. I was tasked to redesigned, rebranded, and recreated a new method of retrieving and displaying all the data for recipes and other blog posts.",
+    "desc_2": "\"With Food + Love\" is a plant-based, gluten-free blog run by Sherrie Castellano, a contributing photographer, food writer and columnist for FEAST Magazine. She has worked with Absolut, Chobani, LaCroix, Silk, Simply Organics, Urban Outfitters, Better Homes and Gardens, and Livestrong, among others.",
+    "link_url": "https://withfoodandlove.com/",
+    "link_name": "WithFoodAndLove.com",
+    "image": "../../portfolio/images/with-food-and-love.jpg"
+  },
+
+  {
+    "id": "6",
+    "title": "Put It On The Blog",
+    "desc_1": "A personal project, written in Vue.js that uses the Airtable API to manage content and updates.",
+    "desc_2": "\"Put It On The Blog\" is a community space where users can easily and anonymously submit quotes without needing to worry about login credentials.",
+    "link_url": "https://putitontheblog.co/",
+    "link_name": "PutItOnTheBlog.co",
+    "image": "../../portfolio/images/put-it-on-the-blog.jpg"
+  },
+
+  {
+    "id": "7",
+    "title": "Prime Dental Design",
+    "desc_1": "While working at \"EOS Healthcare Marketing\", I was tasked with creating a fully custom Wordpress theme. The site was hand coded using Bootstrap 4, Advanced Custom Fields Pro, PHP and JavaScript.",
+    "desc_2": "\"Prime Dental Design\" is a dental practice located in Central Florida, focusing on cosmetic and restorative dentistry.",
+    "link_url": "https://primedentaldesign.com/",
+    "link_name": "primedentaldesign.com",
+    "image": "../../portfolio/images/prime-dental-design.jpg"
+  },
+
+  {
+    "id": "8",
+    "title": "Simple Youtube",
+    "desc_1": "A personal project, written in Vue.js that uses the Youtube Data API to present a clean and colorful version of YouTube.",
+    "link_url": "https://simpleyoutube.xyz/",
+    "link_name": "SimpleYoutube.com",
+    "image": "../../portfolio/images/simple-youtube.jpg"
+  },
+
+  {
+    "id": "9",
+    "title": "Loop Dental",
+    "desc_1": "While working at \"EOS Healthcare Marketing\", I was tasked to create a Wordpress site, based off a chosen theme and mockups created by the graphic designer.",
+    "desc_2": "\"Loop Dental\" is a new dental practice located in the North Loop neighborhood of Minneapolis, Minnesota.",
+    "link_url": "https://loopdentalmn.com/",
+    "link_name": "LoopDental.com",
+    "image": "../../portfolio/images/loop-dental.jpg"
+  },
+
+  {
+    "id": "10",
+    "title": "Gone Camping RV",
+    "desc_1": "A client website, built in Wordpress that houses online inventory of two RV dealerships. I built pipelines to connect thier deal management software to the database of the website, as well as export that data to classified sites, such as Craigslist.",
+    "desc_2": "\"Gone Camping RV\" is an RV dealership with two locations in Evans and Greeley, Colorado, specializing in motor homes.",
+    "link_url": "https://gonecampingrv.com/",
+    "link_name": "GoneCampingRV.com",
+    "image": "../../portfolio/images/gone-camping.jpg"
+  },
+
+  {
+    "id": "11",
+    "title": "MCA Denver: Animating Museums",
+    "desc_1": "A client website, built in Wordpress, with an intiuative backend for employees to update, and post to the blog. I was asked to capture and reflect the subtle and contemporary aesthetics of MCA Denver.",
+    "desc_2": "\"The Museum of Contemporary Art Denver\" (MCA Denver) created \"Animating Museums\" to further cultivate the creativity of already creative people working in art museums. Fourteen fellows from art museums across the United States have been selected for the two-year program, which includes residency workshops in Denver, ongoing mentorship, and a group project.",
+    "link_url": "http://animatingmuseums.org/",
+    "link_name": "AnimatingMuseums.org",
+    "image": "../../portfolio/images/animating-museums.jpg"
+  },
+
+  {
+    "id": "12",
+    "title": "MFC Studio",
+    "desc_1": "A client website, I was tasked to create consistent branding with hundreds of store items, as well as curate featured collections of work that was both for sale and on display as fine art.",
+    "desc_2": "Artists Franky + Annie Scaglione established \"My Favourite Colour Studio\" to honour and capture the aesthetics of nostalgia. From baseball to cross-country road trips, their inspirations and passion overlap in the preservation of our rich pastimes, celebrating all things classic.",
+    "link_url": "http://www.mfcstudio.com/",
+    "link_name": "MFCstudio.com",
+    "image": "../../portfolio/images/mfc-studio.jpg"
+  },
+
+  {
+    "id": "13",
+    "title": "Claremont Ranch",
+    "desc_1": "While working at \"EOS Healthcare Marketing\", I developed a system to rapidly prototype Wordpress websites, and allow them to be templated and scalable. This was the first site to utilize that system.",
+    "desc_2": "\"Claremont Ranch\" is a vetrinary clinic located in Colorado Springs, Colorado.",
+    "link_url": "https://claremontranchvet.com/",
+    "link_name": "ClaremontRanchVet.com",
+    "image": "../../portfolio/images/claremont-ranch.jpg"
+  },
+
+  {
+    "id": "14",
+    "title": "Scaglione Hardwood Flooring",
+    "desc_1": "A new client, who requested I build thier site to reflect thier modern and elegant aesthetic, built in Squarespace.",
+    "desc_2": "\"Scaglione Hardwood Flooring\" is an elite flooring company based in Denver, Colorado.",
+    "link_url": "http://www.scaglionehardwood.com/",
+    "link_name": "ScaglioneHardwood.com",
+    "image": "../../portfolio/images/scaglione-hardwood-flooring.jpg"
+  }
+]

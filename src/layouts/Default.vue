@@ -9,6 +9,7 @@
         <g-link class="nav__link" to="/about/">About</g-link>
         <g-link class="nav__link" to="/photography/">Photography Archive</g-link>
         <g-link class="nav__link" to="/writing/">Writing Archive</g-link>
+        <g-link class="nav__link" to="/portfolio/">Portfolio</g-link>
       </nav>
     </header>
     <slot />

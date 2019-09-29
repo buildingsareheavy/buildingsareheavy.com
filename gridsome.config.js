@@ -37,6 +37,14 @@ module.exports = {
         },
       },
     },
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Portfolio',
+        baseDir: './portfolio',
+        pathPrefix: '/',
+      },
+    },
     // configure Netlify CMS
     {
       use: `gridsome-plugin-netlify-cms`,
