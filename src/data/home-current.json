@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Plant Info",
+    "link": "https://github.com/buildingsareheavy/plant-info",
+    "desc": "Plant information, directory, and reference guide"
+  },
+  {
+    "title": "Daily Project #018",
+    "link": "https://github.com/buildingsareheavy/daily-projects/tree/master/018%20-vue%2001%20accordion",
+    "desc": "Building an accordion with events in Vue.js"
+  },
+  {
+    "title": "Javascript Fundamentals",
+    "desc": "Putting together a small site to explain ideas like scope, array methods, objects,events, and more."
+  }
+]

@@ -1,14 +1,16 @@
 <template>
   <Layout>
-    <h1>{{ $page.writing.title }}</h1>
-    <p class="intro">{{ $page.writing.excerpt }}</p>
-    <p>{{ $page.writing.date }}</p>
-    <p>
-      Tags:
-      <span v-for="tags in $page.writing.tags" :key="tags.id">{{ tags.id}}</span>
-    </p>
-    <hr />
-    <VueRemarkContent />
+    <main class="writing-post">
+      <div class="writing-post__header">
+        <h1>{{ $page.writing.title }}</h1>
+        <small>{{ $page.writing.date }}</small>
+        <p class="writing-post__header-summary">{{ $page.writing.excerpt }}</p>
+      </div>
+      <hr />
+      <div class="writing-post__content">
+        <VueRemarkContent />
+      </div>
+    </main>
   </Layout>
 </template>
 
@@ -18,9 +20,6 @@ query Writing($id: ID!) {
         title
         excerpt
         date (format: "D MMMM YYYY")
-        tags {
-            id
-        }
     }
 }
 </page-query>

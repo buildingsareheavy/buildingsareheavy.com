@@ -1,12 +1,26 @@
 <template>
   <Layout>
-    <div class="portfolio" v-for="portfolio in $page.portfolio.edges" :key="portfolio.node.id">
-      <h1>{{portfolio.node.title}}</h1>
-      <g-link :to="portfolio.node.link_url">{{ portfolio.node.link_name }}</g-link>
-      <g-image v-if="portfolio.node.image" :src="portfolio.node.image" />
-      <div v-html="portfolio.node.content" />
-    </div>
-    <Pager class="portfolio__pagination pagination" :info="$page.portfolio.pageInfo" />
+    <main class="portfolio container">
+      <p>Archive of work from various agencies, clients, friends and personal projects.</p>
+      <hr />
+      <div
+        class="portfolio__item"
+        v-for="portfolio in $page.portfolio.edges"
+        :key="portfolio.node.id"
+      >
+        <figure>
+          <g-image v-if="portfolio.node.image" :src="portfolio.node.image" />
+        </figure>
+        <div class="portfolio__item-content">
+          <h1>{{portfolio.node.title}}</h1>
+          <div v-html="portfolio.node.content" />
+        </div>
+        <g-link :to="portfolio.node.link_url">{{ portfolio.node.link_name }}</g-link>
+        <hr />
+        <br />
+      </div>
+      <Pager class="portfolio__pagination pagination" :info="$page.portfolio.pageInfo" />
+    </main>
   </Layout>
 </template>
 
@@ -35,7 +49,7 @@ query Portfolio($page: Int) {
 import { Pager } from "gridsome";
 
 export default {
-  name: "portfolio-archive",
+  name: "portfolio",
   components: {
     Pager
   }

@@ -1,18 +1,8 @@
 <template>
   <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
-        <g-link class="nav__link" to="/photography/">Photography Archive</g-link>
-        <g-link class="nav__link" to="/writing/">Writing Archive</g-link>
-        <g-link class="nav__link" to="/portfolio/">Portfolio</g-link>
-      </nav>
-    </header>
+    <GlobalHeader />
     <slot />
+    <GlobalFooter />
   </div>
 </template>
 
@@ -23,6 +13,18 @@ query {
   }
 }
 </static-query>
+
+<script>
+import GlobalHeader from "../components/global/GlobalHeader";
+import GlobalFooter from "../components/global/GlobalFooter";
+export default {
+  name: "layout-default",
+  components: {
+    GlobalHeader,
+    GlobalFooter
+  }
+};
+</script>
 
 <style>
 body {
@@ -42,17 +44,5 @@ body {
 
 img {
   width: 100%;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
 }
 </style>

@@ -1,17 +1,24 @@
 <template>
   <Layout>
-    <div class="writing" v-for="writing in $page.writing.edges" :key="writing.node.id">
-      <g-link :to="writing.node.path">
-        <p>{{writing.node.title}}</p>
-      </g-link>
-      <p>{{writing.node.excerpt }}</p>
-      <p>
-        Tags:
-        <span v-for="tags in writing.node.tags" :key="tags.id">{{ tags.id}}</span>
-      </p>
+    <main class="writing">
+      <p>Writing Archive</p>
       <hr />
-    </div>
-    <Pager class="writing__pagination pagination" :info="$page.writing.pageInfo" />
+      <div class="writing__item" v-for="writing in $page.writing.edges" :key="writing.node.id">
+        <div class="writing__item-content">
+          <g-link :to="writing.node.path">
+            <p>{{writing.node.title}}</p>
+          </g-link>
+          <small>{{ writing.node.date }}</small>
+          <p>{{writing.node.excerpt }}</p>
+          <p>
+            Tags:
+            <span v-for="tags in writing.node.tags" :key="tags.id">{{ tags.id}}</span>
+          </p>
+          <hr />
+        </div>
+      </div>
+      <Pager class="writing__pagination pagination" :info="$page.writing.pageInfo" />
+    </main>
   </Layout>
 </template>
 
@@ -27,6 +34,7 @@ query Writing($page: Int) {
                 title
                 excerpt
                 path
+                date (format: "D MMMM YYYY")
                  tags {
                     id
                 }

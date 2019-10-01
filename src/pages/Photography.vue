@@ -1,23 +1,31 @@
 <template>
   <Layout>
-    <div
-      class="photography"
-      v-for="photography in $page.photography.edges"
-      :key="photography.node.id"
-    >
-      <g-link :to="photography.node.path">
-        <h1>{{photography.node.title}}</h1>
-      </g-link>
-      <p>{{photography.node.excerpt }}</p>
-      <p>{{photography.node.date }}</p>
-      <p>
-        Tags:
-        <span v-for="tags in photography.node.tags" :key="tags.id">{{ tags.id}}</span>
-      </p>
-      <g-image v-if="photography.node.cover_image" :src="photography.node.cover_image" />
+    <main class="photography">
+      <p>Photography Archive</p>
       <hr />
-    </div>
-    <Pager class="photography__pagination pagination" :info="$page.photography.pageInfo" />
+      <div
+        class="photography__item"
+        v-for="photography in $page.photography.edges"
+        :key="photography.node.id"
+      >
+        <figure>
+          <g-image v-if="photography.node.cover_image" :src="photography.node.cover_image" />
+        </figure>
+        <div class="photography__item-content">
+          <g-link :to="photography.node.path">
+            <h1>{{photography.node.title}}</h1>
+          </g-link>
+          <small>{{photography.node.date }}</small>
+          <p>{{photography.node.excerpt }}</p>
+          <p>
+            Tags:
+            <span v-for="tags in photography.node.tags" :key="tags.id">{{ tags.id}}</span>
+          </p>
+        </div>
+        <hr />
+      </div>
+      <Pager class="photography__pagination pagination" :info="$page.photography.pageInfo" />
+    </main>
   </Layout>
 </template>
 

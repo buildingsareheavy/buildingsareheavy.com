@@ -1,15 +1,16 @@
 <template>
   <Layout>
-    <h1>{{ $page.photography.title }}</h1>
-    <p class="intro">{{ $page.photography.excerpt }}</p>
-    <p>{{ $page.photography.date }}</p>
-    <p>
-      Tags:
-      <span v-for="tags in $page.photography.tags" :key="tags.id">{{ tags.id}}</span>
-    </p>
-    <g-image v-if="$page.photography.cover_image" :src="$page.photography.cover_image" />
-    <hr />
-    <VueRemarkContent />
+    <main class="photography-post">
+      <div class="photography-post__header">
+        <h1>{{ $page.photography.title }}</h1>
+        <small>{{ $page.photography.date }}</small>
+        <p class="photography-post__header-summary">{{ $page.photography.excerpt }}</p>
+        <hr />
+      </div>
+      <div class="photography-post__content">
+        <VueRemarkContent />
+      </div>
+    </main>
   </Layout>
 </template>
 
@@ -19,10 +20,6 @@ query Photography($id: ID!) {
         title
         excerpt
         date (format: "D MMMM YYYY")
-        cover_image (width: 720, blur: 10)
-        tags {
-            id
-        }
     }
 }
 </page-query>
