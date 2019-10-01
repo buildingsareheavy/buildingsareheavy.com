@@ -57,8 +57,8 @@ module.exports = {
     {
       use: 'gridsome-plugin-netlify-cms-paths',
       options: {
-        contentTypes: ['Photography'], // Same as declared above
-        coverField: 'cover_image', // Global definition
+        contentTypes: ['Portfolio'], // Same as declared above
+        coverField: 'image', // Global definition
       },
     },
   ],
