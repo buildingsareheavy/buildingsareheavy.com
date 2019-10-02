@@ -1,0 +1,28 @@
+//
+// MEDIA QUERIES
+//
+
+@mixin bigger-than($min-width) {
+  @media only screen and (min-width: $min-width) {
+    @content;
+  }
+}
+
+@mixin smaller-than($max-width) {
+  @media only screen and (max-width: calc(#{$max-width} - 1px)) {
+    @content;
+  }
+}
+
+@mixin between($small-width, $big-width) {
+  @media only screen and (max-width: calc(#{$big-width} - 1px)) and (min-width: #{$small-width}) {
+    @content;
+  }
+}
+
+// EXAMPLE
+// @include between($tablet, $desktop) {
+//   body {
+//     background: red;
+//   }
+// }

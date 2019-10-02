@@ -50,5 +50,39 @@ export default {
 };
 </script>
 
+
 <style lang="scss">
+.home {
+  &__intro {
+    margin: 0 var(--spacing);
+    padding: 2rem 0 6rem 0;
+    img {
+      padding-top: 4rem;
+      display: block;
+      margin: 0 auto;
+      filter: drop-shadow(0px 0px 10px var(--bg-code));
+    }
+    h1 {
+      line-height: 2rem;
+      font-weight: normal;
+    }
+    @supports (display: flex) and (display: grid) {
+      @include bigger-than($tablet) {
+        display: grid;
+        grid-template-columns: 1.25fr 1fr;
+        grid-gap: var(--spacing);
+        h1,
+        img {
+          align-self: center;
+          justify-self: center;
+        }
+        h1 {
+          font-size: 3rem;
+          line-height: 3rem;
+          padding-left: 3rem;
+        }
+      }
+    }
+  }
+}
 </style>

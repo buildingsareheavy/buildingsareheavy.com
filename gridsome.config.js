@@ -1,11 +1,23 @@
-// This is where project configuration and plugin options are located.
-// Learn more: https://gridsome.org/docs/config
+const path = require('path');
 
-// Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
+function addStyleResource(rule) {
+  rule
+    .use('style-resource')
+    .loader('style-resources-loader')
+    .options({
+      patterns: [path.resolve(__dirname, './src/assets/scss/index.scss')],
+    });
+}
 
 module.exports = {
   siteName: 'Buildings Are Heavy',
+  chainWebpack(config) {
+    // Load variables for all vue-files
+    const types = ['vue-modules', 'vue', 'normal-modules', 'normal'];
+    types.forEach(type => {
+      addStyleResource(config.module.rule('scss').oneOf(type));
+    });
+  },
   plugins: [
     {
       use: '@gridsome/vue-remark',
@@ -54,13 +66,13 @@ module.exports = {
       },
     },
     // fix paths
-    {
-      use: 'gridsome-plugin-netlify-cms-paths',
-      options: {
-        contentTypes: ['Portfolio'], // Same as declared above
-        coverField: 'image', // Global definition
-      },
-    },
+    // {
+    //   use: 'gridsome-plugin-netlify-cms-paths',
+    //   options: {
+    //     contentTypes: ['Portfolio'], // Same as declared above
+    //     coverField: 'image', // Global definition
+    //   },
+    // },
   ],
   transformers: {
     //Add markdown support to all file-system sources

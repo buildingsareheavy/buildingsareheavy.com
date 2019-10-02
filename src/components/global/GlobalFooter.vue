@@ -12,5 +12,13 @@ export default {
 };
 </script>
 
+
 <style lang="scss">
+.footer {
+  text-align: center;
+  small img {
+    height: 1.25rem;
+    vertical-align: bottom;
+  }
+}
 </style>

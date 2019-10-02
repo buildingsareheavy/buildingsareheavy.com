@@ -50,5 +50,54 @@ export default {
 };
 </script>
 
+
 <style lang="scss">
+.home {
+  &__current {
+    padding: 5vw;
+    &-title {
+      display: inline-block;
+      &-bg {
+        background: var(--pink);
+        padding: 5.25rem;
+        clip-path: url("#current-title");
+        @include smaller-than($mobile) {
+          transform: translateX(5vw);
+          padding: 6rem;
+        }
+      }
+      h2 {
+        font-size: 2.75rem;
+        line-height: 3rem;
+        transform: translate(6rem, -11rem);
+        @include smaller-than($mobile) {
+          transform: translate(0rem, -11rem);
+        }
+        span {
+          display: block;
+          transform: translateX(1.5rem);
+        }
+      }
+    }
+    &-container {
+      margin-top: -7rem;
+      max-width: var(--width);
+      margin-left: auto;
+      @include smaller-than($mobile) {
+        margin-top: -10rem;
+        margin-bottom: 2rem;
+      }
+    }
+    &-item {
+      margin: 0 auto;
+      border-bottom: 5px solid var(--yellow);
+      p {
+        a {
+          float: right;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
 </style>

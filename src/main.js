@@ -6,9 +6,13 @@ import Vue from 'vue';
 import VuePrism from 'vue-prism';
 Vue.use(VuePrism);
 
-import 'prismjs/themes/prism.css';
 // dark theme
 // import 'prismjs/themes/prism-tomorrow.css';
+
+// light theme
+import 'prismjs/themes/prism.css';
+
+import '@/assets/scss/index.scss';
 
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component

@@ -1,0 +1,46 @@
+// SASS Variables
+// They don't dynamically change, just global variables to reference
+
+//
+// MEDIA QUERIES
+//
+$desktop-xl: 1200px;
+$desktop: 992px;
+$tablet: 768px;
+$mobile: 480px;
+
+// CSS Variables
+// They dyamically change based on user
+
+:root {
+  --base-font-size: 20px;
+  --width: 768px;
+  --spacing: 2rem;
+  --radius: 30px;
+}
+
+// Light default theme
+body {
+  --bg-color: hsl(0, 0%, 93%);
+  --bg-code: hsl(0, 6%, 91%);
+  --text-color: hsl(0, 0%, 14%);
+  // specific colors
+  --pink: hsl(0, 97%, 87%);
+  --yellow: hsl(45, 94%, 68%);
+  --green: hsl(162, 88%, 76%);
+  --blue: hsl(205, 100%, 59%);
+  --white: hsl(0, 0%, 100%);
+}
+
+// Dark theme
+body[data-theme='dark'] {
+  --bg-color: hsl(0, 0%, 14%);
+  --bg-code: hsla(0, 1%, 74%, 0.3);
+  --text-color: hsl(0, 0%, 93%);
+  // specific colors
+  --pink: hsl(10, 30%, 54%);
+  --yellow: hsl(43, 74%, 49%);
+  --green: hsl(0, 97%, 87%);
+  --blue: hsl(253, 100%, 59%);
+  --white: hsl(0, 0%, 0%);
+}

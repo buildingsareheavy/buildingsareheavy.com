@@ -1,0 +1,61 @@
+body {
+  // font-family: 'Apercu-Regular', sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: color 0.6s, background-color 0.6s;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--text-color);
+  background-image: linear-gradient(var(--pink), var(--pink));
+  background-size: 100% 0.5em;
+  background-repeat: no-repeat;
+  background-position: left 0 bottom -30%;
+  transition: all 0.2s;
+  border-radius: 1px;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.8;
+    background-size: 100% 0.75em;
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+//
+// Still global but more specific
+//
+
+.language-css .token.string {
+  background: inherit; // reset for prism
+}
+
+.pagination {
+  padding: 1rem;
+  text-align: center;
+
+  a {
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    background-position: left 0 bottom -12%;
+    &.active,
+    &.active--exact {
+      background-size: 100% 100%;
+    }
+  }
+}
