@@ -1,8 +1,7 @@
 <template>
   <footer class="footer">
-    <hr />
-    <p>Buildings Are Heavy © {{ new Date().getFullYear() }}</p>
-    <p>All Rights Reserved</p>
+    <p>Copyright © {{ new Date().getFullYear() }}</p>
+    <p>Ethan Bradford Barrett</p>
   </footer>
 </template>
 
@@ -15,10 +14,8 @@ export default {
 
 <style lang="scss">
 .footer {
+  margin-top: var(--spacing);
+  border-top: 1px solid var(--text-color);
   text-align: center;
-  small img {
-    height: 1.25rem;
-    vertical-align: bottom;
-  }
 }
 </style>

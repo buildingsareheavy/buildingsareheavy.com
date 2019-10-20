@@ -1,9 +1,11 @@
 <template>
   <Layout>
     <main class="portfolio">
-      <div class="portfolio__title">
-        <h1>Archive of work from various agencies, clients, and personal projects.</h1>
-      </div>
+      <h1>Portfolio</h1>
+      <p>Archive of work from various agencies, clients, and personal projects.</p>
+
+      <hr />
+
       <article
         class="portfolio__item"
         v-for="portfolio in $page.portfolio.edges"
@@ -13,9 +15,9 @@
           <g-image v-if="portfolio.node.image" :src="portfolio.node.image" />
         </figure>
         <div class="portfolio__item-content">
-          <h2>{{portfolio.node.title}}</h2>
-          <g-link :to="portfolio.node.link_url">{{ portfolio.node.link_name }}</g-link>
+          <h2 class="underline">{{portfolio.node.title}}</h2>
           <div v-html="portfolio.node.content" />
+          <g-link :to="portfolio.node.link_url">{{ portfolio.node.link_name }}</g-link>
         </div>
       </article>
       <Pager class="portfolio__pagination pagination" :info="$page.portfolio.pageInfo" />
@@ -57,30 +59,25 @@ export default {
 
 <style lang="scss">
 .portfolio {
-  &__title {
-    margin: calc(-0.75rem);
-    padding: 1rem;
-    text-align: center;
-  }
   &__item {
-    background: var(--white);
+    margin: 2rem 0;
+    padding: 2rem;
     border-radius: var(--radius);
-    margin: 3rem auto;
-    max-width: $mobile;
-    transition: all 0.5s;
-    box-shadow: 0px 0px 12px 2px var(--bg-code);
+    background: var(--white);
     img {
-      border-top-right-radius: var(--radius);
-      border-top-left-radius: var(--radius);
       box-shadow: 0px -5px 12px 2px var(--bg-code);
     }
+    @include bigger-than($tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+    }
     &-content {
-      padding: 1rem 2rem;
-      margin-top: -2rem;
+      align-self: start;
+      padding: 1rem;
+      padding-top: 0;
       h2 {
-        font-size: 2rem;
-        margin-bottom: 10px;
-        line-height: 110%;
+        margin-top: 0;
       }
     }
   }

@@ -26,8 +26,10 @@ export default {
 };
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
+<style lang="scss">
+.home {
+  section {
+    padding: var(--spacing) 0;
+  }
 }
 </style>

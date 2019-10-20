@@ -1,15 +1,14 @@
 <template>
   <Layout>
     <main class="photography">
-      <div class="photography__title">
-        <h1>Photography Archive</h1>
-      </div>
-      <article
-        class="photography__item"
-        v-for="photography in $page.photography.edges"
-        :key="photography.node.id"
-      >
-        <g-link :to="photography.node.path">
+      <h1>Photography Archive</h1>
+      <photography class="photography__container">
+        <article
+          class="photography__item"
+          v-for="photography in $page.photography.edges"
+          :key="photography.node.id"
+          @click="ArticlePath(photography.node.path)"
+        >
           <figure>
             <g-image v-if="photography.node.cover_image" :src="photography.node.cover_image" />
           </figure>
@@ -22,8 +21,8 @@
             <span v-for="tags in photography.node.tags" :key="tags.id">{{ tags.id}}</span>
             </p>-->
           </div>
-        </g-link>
-      </article>
+        </article>
+      </photography>
       <Pager class="photography__pagination pagination" :info="$page.photography.pageInfo" />
     </main>
   </Layout>
@@ -59,40 +58,47 @@ export default {
   name: "photography-archive",
   components: {
     Pager
+  },
+  methods: {
+    ArticlePath(path) {
+      return this.$router.push(path);
+    }
   }
 };
 </script>
 
 <style lang="scss">
 .photography {
-  &__title {
-    margin: calc(-0.75rem);
-    padding: 1rem;
-    text-align: center;
+  &__container {
+    @include bigger-than($tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+    }
   }
   &__item {
     background: var(--white);
     border-radius: var(--radius);
-    margin: 3rem auto;
-    max-width: $mobile;
+    margin: 1rem auto;
     transition: all 0.5s;
     box-shadow: 0px 0px 12px 2px var(--bg-code);
+
     &:hover {
+      cursor: pointer;
       transform: scale(0.95);
       box-shadow: 0px 0px 12px 12px var(--bg-code);
     }
     img {
-      border-top-right-radius: var(--radius);
-      border-top-left-radius: var(--radius);
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
       box-shadow: 0px -5px 12px 2px var(--bg-code);
     }
     &-content {
       padding: 1rem 2rem;
       margin-top: -2rem;
       h2 {
-        font-size: 2rem;
-        margin-bottom: 10px;
-        line-height: 110%;
+        margin-top: 2rem;
+        margin-bottom: 0;
       }
     }
   }

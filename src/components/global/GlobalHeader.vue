@@ -1,30 +1,30 @@
 <template>
   <header class="header">
-    <g-link to="/" class="header__link">
-      <h1>
+    <nav>
+      <g-link to="/" class="heading">
         Buildings Are
-        <br />Heavy
-      </h1>
-    </g-link>
+        <span>Heavy</span>
+      </g-link>
 
-    <nav class="header__nav">
-      <div class="empty">
-        <!-- EMPTY -->
-      </div>
-      <div class="header__nav-item">
-        <g-link to="/about/" class="header__nav-link">About</g-link>
-        <g-link to="/portfolio/" class="header__nav-link">Portfolio</g-link>
-      </div>
-      <div class="header__nav-item">
-        <g-link to="/photography/" class="header__nav-link">Photography</g-link>
-        <g-link to="/writing/" class="header__nav-link">Writing</g-link>
-      </div>
+      <g-link to="/about/" class="header-item">About</g-link>
+      <g-link to="/portfolio/" class="header-item">Portfolio</g-link>
+
+      <g-link to="/photography/" class="header-item">Photography</g-link>
+      <g-link to="/writing/" class="header-item">Writing</g-link>
     </nav>
-    <hr class="slant" />
+    <hr />
+    <mq-layout :mq="['sm', 'md']">
+      <h1>MOBILE: {{ $mq }}</h1>
+    </mq-layout>
+
+    <mq-layout mq="lg">
+      <h1>DESKTOP: {{ $mq }}</h1>
+    </mq-layout>
   </header>
 </template>
 
 <script>
+// VueMq from "vue-mq" is imported in main.js;
 export default {
   name: "global-header"
 };
@@ -33,60 +33,38 @@ export default {
 
 <style lang="scss">
 .header {
-  font-size: 1.5rem;
-  &__link {
-    display: inline-block;
-    h1 {
-      margin-top: 1.5rem;
-      margin-bottom: 0.25rem;
-      line-height: 2.75rem;
-    }
-  }
-  &__link, // title (header__link)
-  &__nav-link // other pages in nav (header-nav__link)
- {
-    text-decoration: none;
-    background: none;
-  }
-  &__nav-link.router-link-exact-active {
-    opacity: 0.8;
-  }
-
-  &__nav {
-    @include bigger-than($tablet) {
-      margin-top: -8rem; // if not supported by flex or grid
-      margin-right: 1rem; // if not supported by flex or grid
-    }
-    &-item {
-      a {
-        display: block; // if not supported by flex or grid
-        padding: 0.25rem 1rem;
-        margin: 0 auto;
-        text-align: right;
+  nav {
+    display: grid;
+    grid-template-columns: 3fr 4fr 1fr 1fr;
+    grid-template-rows: 3rem 3rem;
+    grid-gap: 0.5rem;
+    .header-item {
+      font-size: 1.25rem;
+      &:nth-child(2), // About & Portfolio
+      &:nth-child(3) {
+        grid-column: 3 / 4;
+      }
+      &:nth-child(4), // Photography & Writing
+      &:nth-child(5) {
+        grid-column: 4 / 5;
+      }
+      &:nth-child(4) {
+        grid-row: 1; // Move Photography back up to top row
+      }
+      &:nth-child(2),
+      &:nth-child(4) {
+        align-self: end; // Move About and Photography to bottom of row
       }
     }
-  }
-  @supports (display: grid) {
-    @include bigger-than($tablet) {
-      &__nav {
-        padding: 1.75rem 0 1.25rem 0;
-        display: grid;
-        grid-template-columns: 4.5fr 1fr 1fr;
-        a {
-          text-align: left;
-        }
-        .empty {
-          z-index: -1;
-        }
-        &__item {
-          display: block;
-        }
-      }
+    a {
+      text-decoration: none;
     }
-    @include smaller-than($tablet) {
-      .slant {
-        transform: rotate(7deg) translateY(3rem);
-        margin-bottom: 3rem;
+    .heading {
+      font-size: 2rem;
+      line-height: 2rem;
+      padding-top: 1.5rem;
+      span {
+        /* display: block; */
       }
     }
   }

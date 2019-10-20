@@ -28,7 +28,7 @@ export default {
 
 <style lang="scss">
 .layout {
-  max-width: $desktop-xl;
+  max-width: $desktop;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;

@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Quicksand|Rubik:700&display=swap');
 
 html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-size: var(--base-font-size);
+  line-height: 1.25;
 }
 
 .bold {
@@ -16,12 +19,33 @@ html {
   font-family: monospace;
 }
 
-h1,
+.underline {
+  border-bottom: 1px solid var(--text-color);
+}
+
+.body-font,
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.heading,
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  * {
+    font-family: inherit;
+  }
+}
+
+.subheading,
+nav,
 h2,
 h3,
 h4,
 h5,
-h6,
-nav {
-  font-family: 'EB Garamond', serif;
+h6 {
+  font-family: 'Nunito', sans-serif;
+  * {
+    font-family: inherit;
+  }
 }
