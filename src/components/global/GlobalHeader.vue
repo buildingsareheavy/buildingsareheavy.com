@@ -32,7 +32,6 @@
         </div>
       </mq-layout>
     </nav>
-    <hr />
   </header>
 </template>
 
@@ -65,13 +64,14 @@ export default {
 <style lang="scss">
 .header {
   nav {
+    border-bottom: 2px solid var(--divider-color);
     a {
       text-decoration: none;
     }
     .heading {
       font-size: 2rem;
       line-height: 2rem;
-      padding-top: 1.5rem;
+      padding-top: 1.25rem;
     }
     .header-item {
       font-size: 1.25rem;
@@ -81,6 +81,7 @@ export default {
       grid-template-columns: 250px 3fr 1fr 1fr;
       grid-template-rows: 3rem 3rem;
       grid-gap: 0.5rem;
+      padding-bottom: 0.25rem;
       .header-item {
         &:nth-child(2), // About & Portfolio
       &:nth-child(3) {
@@ -115,12 +116,10 @@ export default {
           padding: 0.5rem;
           border-radius: var(--radius);
           transition: all 0.5s;
-          &:hover {
-            box-shadow: 0px 0px 12px 2px var(--black);
-            background: var(--white);
-          }
+          &:hover,
           &:active {
             transform: scale(0.9);
+            opacity: 0.8;
           }
         }
       }
@@ -129,7 +128,7 @@ export default {
         grid-template-columns: 1fr auto auto 1fr;
         grid-template-rows: 2.5rem 2.5rem;
         overflow: hidden;
-        max-height: 5rem; // need to clarify for transition
+        max-height: 6rem; // need to clarify for transition
         transition: 0.5s ease all;
         .header-item {
           align-self: center;
@@ -141,16 +140,17 @@ export default {
           }
           &:nth-child(2) {
             // Portfolio
-            grid-column: 3 / 4;
-            grid-row: 1 / 2;
-          }
-          &:nth-child(3) {
-            // Photography
             grid-column: 2 / 3;
             grid-row: 2 / 3;
           }
-          &:nth-child(4) {
+
+          &:nth-child(3) {
             // Photography
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+          }
+          &:nth-child(4) {
+            // Writing
             grid-column: 3 / 4;
             grid-row: 2 / 3;
           }
@@ -159,7 +159,7 @@ export default {
     }
   }
   .is-open .header__mobile-toggle {
-    height: 5rem;
+    height: 6rem;
   }
   .is-closed .header__mobile-toggle {
     max-height: 0;

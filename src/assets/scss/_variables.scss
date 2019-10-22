@@ -16,7 +16,7 @@ $mobile: 480px;
   --base-font-size: 18px;
   --width: 768px;
   --spacing: 6rem;
-  --radius: 5px;
+  --radius: 3px;
 }
 
 // Light default theme
@@ -25,6 +25,7 @@ body {
   --bg-code: hsl(0, 6%, 91%);
   --text-color: hsl(0, 0%, 14%);
   --text-color-muted: hsl(0, 0%, 75%);
+  --divider-color: hsl(0, 0%, 33%);
   // specific colors
   --pink: hsl(0, 97%, 87%);
   --yellow: hsl(45, 94%, 68%);
