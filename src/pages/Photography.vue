@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <main class="photography">
-      <h1>Photography Archive</h1>
+      <h1 class="page-title">Photography</h1>
       <photography class="photography__container">
         <article
           class="photography__item"
@@ -9,8 +9,8 @@
           :key="photography.node.id"
           @click="ArticlePath(photography.node.path)"
         >
-          <figure>
-            <g-image v-if="photography.node.cover_image" :src="photography.node.cover_image" />
+          <figure v-if="photography.node.cover_image">
+            <g-image :src="photography.node.cover_image" />
           </figure>
           <div class="photography__item-content">
             <h2>{{photography.node.title}}</h2>

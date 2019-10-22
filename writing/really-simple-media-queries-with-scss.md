@@ -2,6 +2,7 @@
 title: Really Simple Media Queries With SCSS
 excerpt: I have all the media queries I need in 4 variables and 3 SASS mixins.
 date: 2019-08-23
+cover_image: ./images/really-simple-media-queries-with-scss/cover.jpg
 tags:
   - CSS
 ---

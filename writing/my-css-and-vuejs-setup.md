@@ -2,6 +2,7 @@
 title: My CSS and Vue Setup
 excerpt: A walk-through on how I set up my Vue projects and SCSS.  Its hella simple but I still always forget.
 date: 2019-08-22
+cover_image: ./images/my-css-and-vuejs-setup/cover.jpg
 tags:
   - CSS
   - Vue

@@ -2,6 +2,7 @@
 title: Making A Snippet In VSCode
 excerpt: A quick reference to how I made my own Visual Studio Code snippet.
 date: 2019-09-12
+cover_image: ./images/making-a-vue-snippet-in-vscode/cover.jpg
 tags:
   - VS Code
   - Javascript

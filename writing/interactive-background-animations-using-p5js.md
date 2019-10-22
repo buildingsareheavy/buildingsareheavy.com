@@ -2,6 +2,7 @@
 title: Interactive Background Animations Using P5.js
 excerpt: Two examples of animations using the P5.js library and a short back story of Processing and Arduino.
 date: 2017-03-09
+cover_image: ./images/interactive-background-animations-using-p5js/cover.gif
 tags:
   - tutorial
   - processing

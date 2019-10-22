@@ -2,6 +2,7 @@
 title: Making Routes Work On Netlify While Using Vue
 excerpt: I was having problems with typed links that appeared broken in Netlify. The solution was so much easier than I tried to make it...
 date: 2019-08-28
+cover_image: ./images/making-routes-work-in-netlify-with-vue/cover.jpg
 tags:
   - Netlify
   - Javascript

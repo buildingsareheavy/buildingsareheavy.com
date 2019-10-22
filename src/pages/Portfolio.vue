@@ -1,11 +1,7 @@
 <template>
   <Layout>
     <main class="portfolio">
-      <h1>Portfolio</h1>
-      <p>Archive of work from various agencies, clients, and personal projects.</p>
-
-      <hr />
-
+      <h1 class="page-title">Portfolio</h1>
       <article
         class="portfolio__item"
         v-for="portfolio in $page.portfolio.edges"
