@@ -11,9 +11,9 @@ It has been almost a year since I have posted something formally on my blog. I h
 
 This small series broke many personal rules I’ve been holding onto since college:
 
-- • Never photograph people
-- • Editing is subtractive
-- • Take the subject out of context
+- Never photograph people
+- Editing is subtractive
+- Take the subject out of context
 
 ---
 

@@ -18,6 +18,7 @@ query Photography($id: ID!) {
     photography(id: $id) {
         title
         excerpt
+        cover_image
         date (format: "D MMMM YYYY")
     }
 }
@@ -25,7 +26,30 @@ query Photography($id: ID!) {
 
 <script>
 export default {
-  name: "photography-post"
+  name: "photography-post",
+  metaInfo() {
+    return {
+      title: this.$page.photography.title,
+      meta: [
+        {
+          name: "description",
+          content: this.$page.photography.excerpt
+        },
+        {
+          property: "og:title",
+          content: this.$page.photography.title
+        },
+        {
+          property: "og:description",
+          cotent: this.$page.photography.excerpt
+        },
+        {
+          property: "og:image",
+          content: this.$page.photography.cover_image || ""
+        }
+      ]
+    };
+  }
 };
 </script>
 
@@ -34,6 +58,7 @@ export default {
   &__header {
     text-align: center;
     padding: calc(var(--spacing) / 2) 0;
+    border-bottom: 2px solid var(--divider-color);
     h1 {
       margin-bottom: 0;
     }

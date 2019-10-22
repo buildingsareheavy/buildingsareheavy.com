@@ -3,10 +3,9 @@
     <main class="writing-post">
       <div class="writing-post__header">
         <h1>{{ $page.writing.title }}</h1>
-        <small>{{ $page.writing.date }}</small>
-        <p class="writing-post__header-summary">{{ $page.writing.excerpt }}</p>
+        <small class="subheading">{{ $page.writing.date }}</small>
+        <p class="subheading">{{ $page.writing.excerpt }}</p>
       </div>
-      <hr />
       <div class="writing-post__content">
         <VueRemarkContent />
       </div>
@@ -19,6 +18,7 @@ query Writing($id: ID!) {
     writing(id: $id) {
         title
         excerpt
+        cover_image
         date (format: "D MMMM YYYY")
     }
 }
@@ -26,9 +26,42 @@ query Writing($id: ID!) {
 
 <script>
 export default {
-  name: "writing-post"
+  name: "writing-post",
+  metaInfo() {
+    return {
+      title: this.$page.writing.title,
+      meta: [
+        {
+          name: "description",
+          content: this.$page.writing.excerpt
+        },
+        {
+          property: "og:title",
+          content: this.$page.writing.title
+        },
+        {
+          property: "og:description",
+          cotent: this.$page.writing.excerpt
+        },
+        {
+          property: "og:image",
+          content: this.$page.writing.cover_image || ""
+        }
+      ]
+    };
+  }
 };
 </script>
 
 <style lang="scss">
+.writing-post {
+  &__header {
+    text-align: center;
+    padding: calc(var(--spacing) / 2) 0;
+    border-bottom: 2px solid var(--divider-color);
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+}
 </style>
