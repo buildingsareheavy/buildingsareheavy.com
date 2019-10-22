@@ -27,6 +27,10 @@ svg {
   max-width: 100%;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .pagination {
   padding: 1rem;
   text-align: center;
