@@ -10,7 +10,7 @@
           @click="ArticlePath(writing.node.path)"
         >
           <figure v-if="writing.node.cover_image">
-            <g-image :src="writing.node.cover_image" />
+            <g-image :src="writing.node.cover_image" :alt="`Cover Image of ` + writing.node.title" />
           </figure>
           <div class="writing__item-content">
             <h2>{{writing.node.title}}</h2>
@@ -41,7 +41,7 @@ query Writing($page: Int) {
                 excerpt
                 path
                 date (format: "D MMMM YYYY")
-                cover_image (width: 720, blur: 10)
+                cover_image (blur: 10)
                  tags {
                     id
                 }

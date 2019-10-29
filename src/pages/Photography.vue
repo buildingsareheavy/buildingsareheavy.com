@@ -10,7 +10,10 @@
           @click="ArticlePath(photography.node.path)"
         >
           <figure v-if="photography.node.cover_image">
-            <g-image :src="photography.node.cover_image" />
+            <g-image
+              :src="photography.node.cover_image"
+              :alt="`Cover Image of ` + photography.node.title"
+            />
           </figure>
           <div class="photography__item-content">
             <h2>{{photography.node.title}}</h2>

@@ -8,7 +8,11 @@
         :key="portfolio.node.id"
       >
         <figure>
-          <g-image v-if="portfolio.node.image" :src="portfolio.node.image" />
+          <g-image
+            v-if="portfolio.node.image"
+            :src="portfolio.node.image"
+            :alt="`Cover Image of ` + portfolio.node.title"
+          />
         </figure>
         <div class="portfolio__item-content">
           <h2>{{portfolio.node.title}}</h2>
@@ -16,6 +20,7 @@
           <g-link :to="portfolio.node.link_url">{{ portfolio.node.link_name }}</g-link>
         </div>
       </article>
+
       <Pager class="portfolio__pagination pagination" :info="$page.portfolio.pageInfo" />
     </main>
   </Layout>
@@ -56,7 +61,13 @@ export default {
 <style lang="scss">
 .portfolio {
   &__item {
-    margin: var(--spacing) 0;
+    padding: var(--spacing) 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--divider-color);
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
     img {
       box-shadow: 0px 0px 2px 2px var(--bg-code);
     }
@@ -72,6 +83,10 @@ export default {
         @include bigger-than($tablet) {
           margin-top: 0;
         }
+      }
+      p:nth-child(2) {
+        border-top: 1px solid var(--text-color-muted);
+        padding-top: 1rem;
       }
     }
   }
