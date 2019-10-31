@@ -1,21 +1,8 @@
 <template>
   <section class="home__connect">
-    <h1>Connect</h1>
+    <h1 class="text-center">Connect</h1>
     <div class="home__connect-container">
-      <div>
-        <h2>Email</h2>
-        <a :href="links[0].url">{{ links[0].name }}</a>
-      </div>
-      <div>
-        <h2>Social</h2>
-        <a :href="links[1].url">{{ links[1].name }}</a>
-        <a :href="links[2].url">{{ links[2].name }}</a>
-      </div>
-      <div>
-        <h2>Code</h2>
-        <a :href="links[3].url">{{ links[3].name }}</a>
-        <a :href="links[4].url">{{ links[4].name }}</a>
-      </div>
+      <a v-for="link in links" :key="link.name" class="btn" :href="link.url">{{ link.name }}</a>
     </div>
   </section>
 </template>
@@ -27,10 +14,13 @@ export default {
     return {
       links: [
         {
-          name: "Hello@BuildingsAreHeavy.com",
+          name: "Email",
           url: "mailto:hello@buildingsareheavy.com"
         },
-
+        {
+          name: "LinkedIn",
+          url: "https://www.linkedin.com/in/ethan-barrett-535a18109"
+        },
         {
           name: "Instagram",
           url: "https://www.instagram.com/buildingsareheavy/"
@@ -57,18 +47,16 @@ export default {
 <style lang="scss">
 .home {
   &__connect {
+    text-align: center;
     &-container {
+      padding: 1em;
       @include bigger-than($tablet) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1rem;
+        a.btn {
+          padding: 0.75em 1em;
+        }
       }
-      div:not(:first-child) {
-        justify-self: center;
-      }
-      a {
-        padding-bottom: 10px;
-        display: block;
+      a.btn {
+        margin: 0.5em;
       }
     }
   }

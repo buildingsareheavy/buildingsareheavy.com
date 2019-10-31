@@ -16,12 +16,12 @@ $mobile: 480px;
   --base-font-size: 18px;
   --width: 768px;
   --spacing: 6rem;
-  --radius: 3px;
+  --radius: 0.5em;
 }
 
 // Light default theme
 body {
-  --bg-color: hsl(0, 0%, 95%);
+  --bg-color: var(--white);
   --bg-code: hsl(0, 6%, 91%);
   --text-color: hsl(0, 0%, 14%);
   --text-color-muted: hsl(0, 0%, 75%);
@@ -32,6 +32,7 @@ body {
   --green: hsl(162, 88%, 76%);
   --blue: hsl(205, 100%, 59%);
   --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 95%);
 }
 
 // Dark theme

@@ -17,7 +17,7 @@
         <div class="portfolio__item-content">
           <h2>{{portfolio.node.title}}</h2>
           <div v-html="portfolio.node.content" />
-          <g-link :to="portfolio.node.link_url">{{ portfolio.node.link_name }}</g-link>
+          <g-link class="btn" :to="portfolio.node.link_url">{{ portfolio.node.link_name }}</g-link>
         </div>
       </article>
 
@@ -62,14 +62,11 @@ export default {
 .portfolio {
   &__item {
     padding: var(--spacing) 0;
-    &:not(:last-child) {
-      border-bottom: 1px solid var(--divider-color);
-      &:last-child {
-        padding-bottom: 0;
-      }
+    &:last-child {
+      padding-bottom: 0;
     }
     img {
-      box-shadow: 0px 0px 2px 2px var(--bg-code);
+      box-shadow: 0px 0px 12px 2px var(--bg-code);
     }
     @include bigger-than($tablet) {
       display: grid;

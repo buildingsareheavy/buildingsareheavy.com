@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Accessibility and Browser Compatibility",
+    "list": "A11y, BrowserStack"
+  },
+  {
+    "title": "CMS",
+    "list": "NetlifyCMS, Squarespace, Wordpress"
+  },
+  {
+    "title": "Design Tools",
+    "list": "Figma, Illustrator, Photoshop, Sketch"
+  },
+  {
+    "title": "Developer Tools",
+    "list": "Firefox Developer Tools, Google DevTools"
+  },
+  {
+    "title": "Frameworks",
+    "list": "Bootstrap, Divi, React, Vue"
+  },
+  {
+    "title": "Hosting",
+    "list": "Apache, DigitalOcean, Google Firebase, Netlify, Nginx, Serverpilot"
+  },
+  {
+    "title": "Operating Systems",
+    "list": "Linux, MacOS"
+  },
+  {
+    "title": "Query Languages",
+    "list": "GraphQL, MySQL, NoSQL"
+  },
+  {
+    "title": "Static Site Generators",
+    "list": "Eleventy, Gatsby, Gridsome"
+  },
+  {
+    "title": "Scripting Languages",
+    "list": "Javascript, PHP"
+  },
+  {
+    "title": "Text Editor",
+    "list": "VS Code"
+  },
+  {
+    "title": "Version Control",
+    "list": "Git, Github, Bitbucket"
+  },
+  {
+    "title": "Other Skills",
+    "list": "Airtable, AJAX, CSS3, Gulp, HTML5, JQuery, JSON, Node.js, NPM, oAuth, REST API, Sass, XML, Yarn"
+  }
+]

@@ -1,8 +1,8 @@
 <template>
   <section class="about__interests">
     <h1 class="underline">Interests</h1>
-    <p>I studied at Rocky Mountain College of Art + Design, majoring in Fine Arts, with an emphasis in Photo / Video and Sculpture.</p>
-    <p>Their interests include taking care of plants, using their instapot for indian food, eating Korean food, and ….</p>
+    <p>When I'm not creating for the web, I love to cook.</p>
+    <p>I am passionate about vinyasa yoga and am beginning to explore Brazilian Jiu-Jitsu.</p>
   </section>
 </template>
 

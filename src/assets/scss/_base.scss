@@ -1,5 +1,5 @@
 body {
-  background-color: var(--bg-color);
+  background-color: var(--white);
   color: var(--text-color);
   transition: color 0.6s, background-color 0.6s;
   margin: 0;
@@ -20,7 +20,7 @@ figure {
 
 img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: var(--radius);
 }
 
 svg {
@@ -40,4 +40,14 @@ button:hover {
   text-align: center;
   padding: 1rem 0 2.5rem 0;
   border-bottom: 2px solid var(--divider-color);
+}
+
+a.btn {
+  text-decoration: none;
+  display: inline-block;
+  border-radius: var(--radius);
+  background: var(--bg-code);
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: 1em;
 }
