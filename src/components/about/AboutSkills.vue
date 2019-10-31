@@ -63,7 +63,9 @@
           <a
             href="https://www.smashingmagazine.com/2019/10/guide-new-experimental-css-devtools-firefox/"
           >new DevTools</a> and security. I also have incredible respect for
-          <a href="https://jensimmons.com/">Jen Simmons</a> and the entire
+          <a
+            href="https://jensimmons.com/"
+          >Jen Simmons</a> and the entire
           <a href="https://www.youtube.com/mozilladeveloper">Mozilla Developer</a> team.
         </p>
       </div>

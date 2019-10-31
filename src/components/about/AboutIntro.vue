@@ -23,8 +23,12 @@ export default {
 <style lang="scss">
 .about {
   &__intro {
+    margin: calc(var(--spacing) / -2) 0;
+    &-headline {
+      font-size: 1.25rem;
+    }
     @include bigger-than($tablet) {
-      margin: calc(var(--spacing) / -2) calc(var(--spacing) / 2);
+      margin: 0 calc(var(--spacing) / 2);
       display: grid;
       grid-template-columns: 1.25fr 1fr;
       grid-gap: calc(var(--spacing) / 1.5);
@@ -32,9 +36,6 @@ export default {
         align-self: center;
         justify-self: center;
         font-size: 1.5rem;
-      }
-      &-headline {
-        /* font-size: 1.5rem; */
       }
       &-more {
         grid-column: span 2;

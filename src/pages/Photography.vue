@@ -26,7 +26,11 @@
           </div>
         </article>
       </photography>
-      <Pager class="photography__pagination pagination" :info="$page.photography.pageInfo" />
+      <Pager
+        class="photography__pagination pagination"
+        :info="$page.photography.pageInfo"
+        linkClass="btn"
+      />
     </main>
   </Layout>
 </template>
@@ -73,6 +77,7 @@ export default {
 <style lang="scss">
 .photography {
   &__container {
+    margin: var(--spacing) auto;
     @include bigger-than($tablet) {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -83,18 +88,16 @@ export default {
     background: var(--white);
     border-radius: var(--radius);
     margin: 1rem auto;
+    cursor: pointer;
     transition: all 0.5s;
-    box-shadow: 0px 0px 12px 2px var(--bg-code);
-
+    box-shadow: 0 0.25em 0.75em 0.25em var(--grey);
     &:hover {
-      cursor: pointer;
       transform: scale(0.95);
-      box-shadow: 0px 0px 12px 12px var(--bg-code);
+      box-shadow: 0 0.25em 0.75em 0.25em var(--bg-code);
     }
     img {
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
-      box-shadow: 0px -5px 12px 2px var(--bg-code);
     }
     &-content {
       padding: 1rem 2rem;

@@ -70,6 +70,7 @@ export default {
 <style lang="scss">
 .writing {
   &__container {
+    margin: var(--spacing) auto;
     @include bigger-than($tablet) {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -80,24 +81,22 @@ export default {
     background: var(--white);
     border-radius: var(--radius);
     margin: 1rem auto;
+    cursor: pointer;
     transition: all 0.5s;
-    box-shadow: 0px 0px 12px 2px var(--bg-code);
-
+    box-shadow: 0 0.25em 0.75em 0.25em var(--grey);
     &:hover {
-      cursor: pointer;
       transform: scale(0.95);
-      box-shadow: 0px 0px 12px 12px var(--bg-code);
+      box-shadow: 0 0.25em 0.75em 0.25em var(--bg-code);
     }
     img {
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
-      box-shadow: 0px -5px 12px 2px var(--bg-code);
     }
     &-content {
-      padding: 1rem 2rem;
-      margin-top: -2rem;
+      padding: 1em 2em;
+      margin-top: -2em;
       h2 {
-        margin-top: 2rem;
+        margin-top: 1.5em;
         margin-bottom: 0;
       }
     }

@@ -59,20 +59,27 @@ export default {
 .home {
   &__intro {
     &-container {
+      margin: calc(var(--spacing) / -2) 0;
+      p {
+        font-size: 1.5em;
+      }
+      figure {
+        margin: 0 auto;
+        max-width: calc(var(--width) / 2);
+      }
       @include bigger-than($tablet) {
         padding: calc(var(--spacing) / 2) calc(var(--spacing) / 2);
         display: grid;
         grid-template-columns: 1.25fr 1fr;
         grid-gap: calc(var(--spacing) / 1.5);
-        * {
+        p,
+        figure {
           align-self: center;
           justify-self: center;
+        }
+        p {
           font-size: 2rem;
         }
-      }
-      figure {
-        margin: 0 auto;
-        max-width: calc(var(--width) / 2);
       }
     }
   }

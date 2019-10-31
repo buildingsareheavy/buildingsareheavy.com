@@ -28,6 +28,7 @@ export default {
 <style lang="scss">
 .home {
   &__current {
+    margin: calc(var(--spacing) / -2) 0;
     h1 {
       padding: 1rem 0;
     }
