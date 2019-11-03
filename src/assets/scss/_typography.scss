@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito|Quicksand|Rubik:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Quicksand:500|Rubik:700&display=swap');
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -13,10 +13,6 @@ html {
 
 .italic {
   font-style: italic;
-}
-
-.monospace {
-  font-family: monospace;
 }
 
 .underline {
@@ -53,4 +49,18 @@ h6 {
   * {
     font-family: inherit;
   }
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+pre * {
+  font-family: monospace !important;
+}
+
+code {
+  background: var(--bg-code);
+  border-radius: calc(var(--radius) / 2);
+  padding: calc(var(--radius) / 4) calc(var(--radius) / 1);
 }
