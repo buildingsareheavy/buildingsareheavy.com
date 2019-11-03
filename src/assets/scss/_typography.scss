@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito|Quicksand:500|Rubik:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700|Roboto+Mono:400,700&display=swap');
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -25,14 +25,13 @@ html {
 
 .body-font,
 * {
-  font-family: 'Quicksand', sans-serif;
-  // font-weight: 500;
+  font-family: 'Roboto', sans-serif;
 }
 
 .heading,
 h1 {
-  font-family: 'Rubik', sans-serif;
-  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   * {
     font-family: inherit;
   }
@@ -45,18 +44,26 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   * {
     font-family: inherit;
   }
 }
 
 .monospace {
-  font-family: monospace;
+  font-family: 'Roboto Mono', cursive;
 }
 
-pre * {
-  font-family: monospace !important;
+pre *,
+code {
+  font-family: 'Roboto Mono', cursive !important;
+  font-weight: 400;
+}
+
+code {
+  font-weight: 700;
+  font-size: 0.8em; // for code outside of pre
 }
 
 code {
