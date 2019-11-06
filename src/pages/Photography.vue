@@ -2,7 +2,7 @@
   <Layout>
     <main class="photography">
       <h1 class="page-title">Photography</h1>
-      <photography class="photography__container">
+      <div class="photography__container">
         <article
           class="photography__item"
           v-for="photography in $page.photography.edges"
@@ -25,7 +25,7 @@
             </p>-->
           </div>
         </article>
-      </photography>
+      </div>
       <Pager
         class="photography__pagination pagination"
         :info="$page.photography.pageInfo"

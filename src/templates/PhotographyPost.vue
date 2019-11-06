@@ -8,6 +8,9 @@
       </div>
       <div class="photography-post__content">
         <VueRemarkContent />
+        <div class="photography-post__content-end">
+          <span>END</span>
+        </div>
       </div>
     </main>
   </Layout>
@@ -61,6 +64,19 @@ export default {
     border-bottom: 2px solid var(--divider-color);
     h1 {
       margin-bottom: 0;
+    }
+  }
+  &__content {
+    padding-top: calc(var(--spacing) / 2);
+    p {
+      padding-bottom: 1em;
+    }
+    img {
+      margin: 1em auto;
+    }
+    &-end {
+      padding-top: calc(var(--spacing) / 2);
+      text-align: center;
     }
   }
 }

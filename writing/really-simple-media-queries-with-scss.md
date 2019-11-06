@@ -9,22 +9,22 @@ tags:
 
 Ok, before we get started, I know that CSS Grid should eliminate a lot of media queries but sometimes they are still necessary. If you don't know CSS Grid yet or need a refresh, [Jen Simmons](https://jensimmons.com/) has an amazing Layoutland Youtube series explaining [CSS Grid](https://www.youtube.com/watch?v=FEnRpy9Xfes&list=PLbSquHt1VCf1x_-1ytlVMT0AMwADlWtc1).
 
-Alright, enough Ethan! Get to the simple code you talked about!
+## Let's Begin
 
-Ok, here it is:
+We are going to declare a few standard breakpoint variables to make life easy.
 
-**VARIABLES:**
-
-```css
+```scss
+// Variables
 $desktop-xl: '1200px';
 $desktop: '992px';
 $tablet: '768px';
 $mobile: '480px';
 ```
 
-**MIXINS:**
+Then we are going to write a couple of mixins.
 
-```css
+```scss
+// Mixins
 @mixin bigger-than($min-width) {
   @media only screen and (min-width: $min-width) {
     @content;
@@ -44,9 +44,11 @@ $mobile: '480px';
 }
 ```
 
+You can really pass any number you want into the arguments, but below we will be using the variables we declared.
+
 To invoke one of these `mixins`, it would look something like this:
 
-```css
+```scss
 @include between($tablet, $desktop) {
   body {
     background: red;
@@ -57,6 +59,6 @@ To invoke one of these `mixins`, it would look something like this:
 }
 ```
 
-Ok let's break this down, and clear some things up. The variable names in the **MIXINS** really don't matter, they just make it easier to remember when you reference them. The variables that are labeled in the **VARIABLES** section above are common breakpoints, but you can really pass any number you want into the arguments.
+**Boom!** We created some very useful media queries.
 
 With just `smaller-than`, `bigger-than`, and `between` you have everything you need 😇

@@ -9,19 +9,17 @@ tags:
   - accessibility
 ---
 
-<iframe height="500" style="width: 100%;" scrolling="no" title="CSS - Material Design Floating Labels" src="https://codepen.io/buildingsareheavy/embed/poopeKd?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/buildingsareheavy/pen/poopeKd'>CSS - Material Design Floating Labels</a> by Buildings Are Heavy
-  (<a href='https://codepen.io/buildingsareheavy'>@buildingsareheavy</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-<div class="text-center heading" style="padding: var(--spacing) 0;">
+<div class="text-center heading" style="padding-bottom: calc(var(--spacing) / 2);">
 <p>This is part of my ongoing "Daily Projects" series that you can view on <a href="https://github.com/buildingsareheavy/daily-projects">Github</a>.</p>
 
 <p>It is also viewable on <a href="https://codepen.io/buildingsareheavy/pen/poopeKd">Codepen</a>.</p>
 
 </div>
 
----
+<iframe height="500" style="width: 100%;" scrolling="no" title="CSS - Material Design Floating Labels" src="https://codepen.io/buildingsareheavy/embed/poopeKd?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/buildingsareheavy/pen/poopeKd'>CSS - Material Design Floating Labels</a> by Buildings Are Heavy
+  (<a href='https://codepen.io/buildingsareheavy'>@buildingsareheavy</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ## What & Why
 
@@ -33,8 +31,6 @@ Although the animations are pretty straight forward, there are few variables to 
 
 **NOTE:** I know it's not the best for refactoring, but I purposefully rewrote each example, instead of having common css. In practice I'd want to keep things dry, but I also wanted to see the code together rather than jumping back and forth.
 
----
-
 ### Using `required`, `:required`, `:valid`, and `:invalid`
 
 Adding a `required` attribute on an `input` tag adds 3 psuedo-classes to an element: `:required`, `:valid` and `:invalid`. MDN explains it all really well [here](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation#Using_built-in_form_validation) but essentially this adds the most basic HTML5 validation to your input.
@@ -45,29 +41,21 @@ Adding `required` is important because it affects the way the CSS operates. One 
 
 That's where `:placeholder-shown` comes in.
 
----
-
 ### Alternatives like `:placeholder-shown`
 
 When you don't have a `required` attribute you cannot validate the input, so you can't test against `:valid`. The only (CSS-only) solution I've found would be to test against `:placeholder-shown`. I guess you can use other attributes in the [Constraint Validation API](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation) and/or JavaScript, but that's a whole other thing. I couldn't find anything that says it's bad to have am empty placeholder, but I am going to assume it is.
 
 By using `:placeholder-shown` and `:not(:placeholder-shown)` we can effective do the same thing as `:valid` and `:invalid` for text input.
 
----
-
 ### Using `box-shadow` in place of `border`
 
 I was actually watching a [tutorial](https://www.youtube.com/watch?v=TZRSXNc0T1k) this morning that talked about how `box-shadow` is not part of the box model and therefore does not add to the dimensions of an element the way padding, margin, or border would. So, to add a `border-bottom: 1px solid black` without actually adding 1px to the dimensions, you could write something like `box-shadow: 0px 1px 0px black`. I'm usually not into hacks like this, but it seemed much easier than trying to offset it with negative margins or using transform in a transition, and I'm really not sure what negative effects it has on acessibilty tbh.
-
----
 
 ### Using `user-select: none;`
 
 Simply put, this makes text unselectable. There is some other stuff you can do with `user-select` that doesn't have full browser support yet, but `none` is fully supported. Here are the [MDN docs](https://developer.mozilla.org/en-US/docs/Web/CSS/user-select) and the [caniuse link](https://caniuse.com/#search=user-select) for more information.
 
 I felt this was important to use for the labels so users can't double click to select this text, and would only be able to select text in the input.
-
----
 
 ### General Sibling Combinator (`~`) & `:focus-within`
 
@@ -87,8 +75,8 @@ Alternatively you can nest the input inside the label and use `:focus-within`. T
 
 ```html
 <!-- This could also work -->
-<label for="regular"
-  >Regular
+<label for="regular">
+  Regular
   <input id="regular" name="regular" type="text" required />
 </label>
 ```
@@ -112,8 +100,6 @@ input:focus ~ label {
   transform: translateY(-1.5em) translateX(1em);
 }
 ```
-
----
 
 ## Conclusion
 

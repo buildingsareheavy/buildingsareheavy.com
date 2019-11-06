@@ -2,8 +2,6 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import Vue from 'vue';
-import VuePrism from 'vue-prism';
-Vue.use(VuePrism);
 import VueMq from 'vue-mq';
 Vue.use(VueMq, {
   breakpoints: {

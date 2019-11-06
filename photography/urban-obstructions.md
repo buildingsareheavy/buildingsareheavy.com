@@ -15,11 +15,7 @@ This small series broke many personal rules I’ve been holding onto since colle
 - Editing is subtractive
 - Take the subject out of context
 
----
-
 This is not a new direction, but more of a tearing down of walls. It’s not only about architecture, or desired aesthetics; it’s about everyday experience. This time returning to Mexico City, I was not focused on my identity, or discovering something new, I was there to be home; to be in the chaos and enjoy the rawness. I didn’t want it to be over-curated or polished. Somehow it still has a loose connection of allowing things to get in the way with cautionary yellows and light oranges stealing the focus. They’re still all center compositions though, deal with it.
-
----
 
 ![Postmodern house In Polanco](./images/urban-obstructions/post-modern-house.jpg)
 

@@ -2,7 +2,7 @@
   <Layout>
     <main class="writing">
       <h1 class="page-title">Writing</h1>
-      <writing class="writing__container">
+      <div class="writing__container">
         <article
           class="writing__item"
           v-for="writing in $page.writing.edges"
@@ -22,7 +22,7 @@
             </p>-->
           </div>
         </article>
-      </writing>
+      </div>
       <Pager class="writing__pagination pagination" :info="$page.writing.pageInfo" />
     </main>
   </Layout>

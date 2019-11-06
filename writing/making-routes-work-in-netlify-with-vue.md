@@ -16,7 +16,7 @@ If you're using vue-router and Netlify you need to set a [custom rewrite rule](h
 
 To fix this, create a `_redirects` file in `/public` and paste:
 
-```
+```sh
 /* /index.html 200
 /* /index.html 404
 ```

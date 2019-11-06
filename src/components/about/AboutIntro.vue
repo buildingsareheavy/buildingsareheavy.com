@@ -1,7 +1,7 @@
 <template>
   <section class="about__intro">
     <div class="about__intro-headline">
-      <p class="subheading bold">Hi I’m Ethan Bradford Barrett</p>
+      <p class="heading bold">Hi, I’m Ethan Bradford Barrett</p>
       <p>I’m a front-end web developer and designer based in Denver, CO.</p>
       <p>I specialize in custom Wordpress development and progressive web applications built in JavaScript.</p>
     </div>

@@ -1,7 +1,12 @@
 <template>
   <section class="home__intro">
     <div class="home__intro-container">
-      <p>Ethan Bradford Barrett is a Latinx user-focused designer who codes, eats korean food and loves architectural photography.</p>
+      <p>
+        <span class="heading">Ethan Bradford Barrett</span>
+        <span
+          class="subheading"
+        >A Latinx user-focused designer who codes, eats korean food and loves architectural photography.</span>
+      </p>
       <!-- TODO: FIX SVG IMPORT -->
       <!-- <object data="../assets/logo.svg" type="image/svg+xml"> -->
       <!-- <img src="@/assets/svg/logo.svg" alt /> -->
@@ -62,6 +67,13 @@ export default {
       margin: calc(var(--spacing) / -2) 0;
       p {
         font-size: 1.5em;
+        span {
+          display: block;
+        }
+        span:first-of-type {
+          font-size: 1.75rem;
+          padding-bottom: 1em;
+        }
       }
       figure {
         margin: 0 auto;
@@ -76,9 +88,6 @@ export default {
         figure {
           align-self: center;
           justify-self: center;
-        }
-        p {
-          font-size: 2rem;
         }
       }
     }

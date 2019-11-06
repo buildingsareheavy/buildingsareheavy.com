@@ -55,17 +55,3 @@ h6 {
 code {
   font-family: 'Inconsolata', monospace;
 }
-
-code {
-  font-weight: 700;
-  font-size: 0.8em; // for code outside of pre
-  background: var(--bg-code);
-  border-radius: calc(var(--radius) / 2);
-  padding: calc(var(--radius) / 4) calc(var(--radius) / 1);
-}
-
-pre *,
-pre code {
-  font-family: 'Inconsolata', monospace !important;
-  font-weight: 400; // reset
-}

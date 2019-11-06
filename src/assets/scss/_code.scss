@@ -1,3 +1,24 @@
+code {
+  font-weight: 700;
+  font-size: 0.8em; // for code outside of pre
+  background: var(--bg-code);
+  border-radius: calc(var(--radius) / 2);
+  padding: calc(var(--radius) / 4) calc(var(--radius) / 1);
+}
+
+pre *,
+pre code {
+  font-family: 'Inconsolata', monospace !important;
+  font-weight: 400; // reset
+}
+
+pre {
+  border-radius: calc(var(--radius) / 2);
+  code {
+    padding: 0;
+  }
+}
+
 /**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
@@ -71,7 +92,7 @@ code[class*='language-'] ::selection {
 
 /* Code blocks */
 pre[class*='language-'] {
-  padding: 1em;
+  padding: 2em 1.5em;
   margin: 0.5em 0;
   overflow: auto;
 }
@@ -88,15 +109,18 @@ pre[class*='language-'] {
   white-space: normal;
 }
 
+.token.doctype {
+  color: var(--code-lightest);
+}
+
 .token.comment,
 .token.prolog,
-.token.doctype,
 .token.cdata {
   color: var(--code-comment);
 }
 
 .token.punctuation {
-  color: var(--code-purple);
+  color: var(--code-light);
 }
 
 .namespace {
@@ -128,13 +152,12 @@ pre[class*='language-'] {
 .language-css .token.string,
 .style .token.string {
   color: var(--code-green);
-  // background: hsla(0, 0%, 100%, 0.5);
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-  color: var(--code-light-yellow);
+  color: var(--code-green);
 }
 
 .token.function,
@@ -160,60 +183,134 @@ pre[class*='language-'] {
   cursor: help;
 }
 
-.gridsome-code-title {
-  position: relative;
-  z-index: 100;
-  margin-bottom: -0.8em;
-  background-color: #feb; //solarized highlight lines color
-  color: red; // why not ;-)
+// New Moon Syntax Highlighting Styles
+// https://www.taniarascia.com/adding-syntax-highlighting-to-code-snippets/
+
+code[class*='language-css'],
+code[class*='language-less'],
+code[class*='language-sass'],
+code[class*='language-scss'] {
+  color: var(--code-purple);
+}
+.filename {
+  background: var(--code-purple);
+  padding: 0.5rem 1rem 0.75rem;
+  font-size: 1rem;
+  color: var(--code-lightest);
+  font-weight: 700;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin-bottom: -2.2rem;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+.token.attr-value,
+.token.string {
+  color: var(--code-green);
+}
+.token.punctuation {
+  color: var(--code-light);
+}
+.token.operator {
+  color: var(--code-beige);
+}
+.token.variable {
+  color: var(--code-red);
+}
+.token.property {
+  color: var(--code-light);
+}
+.token.boolean,
+.token.constant,
+.token.entity,
+.token.inserted,
+.token.number,
+.token.regex,
+.token.symbol,
+.token.url {
+  color: var(--code-lightest);
+}
+.token.delimiter {
+  background: #000;
+  color: var(--code-lightest);
+  padding: 1px 2px;
+}
+.token.atrule {
+  color: var(--code-aqua);
+}
+.token.keyword {
+  color: var(--code-light-yellow);
+}
+.language-autohotkey .token.selector {
+  color: var(--code-lightest);
+}
+.token.attr-name {
+  color: var(--code-yellow);
+}
+.token.function {
+  color: var(--code-aqua);
+}
+.language-php .token.function {
+  color: var(--code-lightest);
+}
+.token.class-name {
+  color: var(--code-purple);
+}
+.language-autohotkey .token.tag,
+.token.deleted {
+  color: var(--code-red);
+}
+.token.tag {
+  color: var(--code-blue);
+}
+.language-autohotkey .token.keyword {
+  color: var(--code-light-yellow);
+}
+.token.selector {
+  color: var(--code-yellow);
+}
+.token.italic {
   font-style: italic;
-  font-weight: 100;
-  text-align: center;
-  font-family: PT Mono, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono',
-    monospace;
-  line-height: 1.5;
-  border-top-left-radius: 0.3em;
-  border-top-right-radius: 0.3em;
 }
-
-/**
- * Add back the container background-color, border-radius, padding, margin
- * and overflow that we removed from <pre>.
- */
-.gridsome-highlight {
-  background-color: #fdf6e3; //for solarized theme
-  border-radius: 0.3em;
-  margin: 0.5em 0;
-  padding: 1em;
-  overflow: auto;
+pre[data-line] {
+  position: relative;
+  padding: 1rem 0;
 }
-.gridsome-highlight-code-line {
-  background-color: #feb; //for solarized theme
-  display: block;
-  margin-right: -1em;
-  margin-left: -1em;
-  padding-right: 1em;
-  padding-left: 0.75em;
-  border-left: 0.25em solid #f99;
+.line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1rem;
+  background: hsla(0, 0%, 58.8%, 0.1);
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
 }
-
-/**
- * Remove the default PrismJS theme background-color, border-radius, margin,
- * padding and overflow.
- * 1. Make the element just wide enough to fit its content.
- * 2. Always fill the visible space in .gatsby-highlight.
- * 3. Adjust the position of the line numbers
- */
-.gridsome-highlight pre[class*='language-'] {
+.line-highlight:before,
+.line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: 0.4em;
+  left: 0.6em;
+  min-width: 1em;
+  padding: 0 0.5em;
   background-color: transparent;
-  margin: 0;
-  padding: 0;
-  overflow: initial;
-  float: left; /* 1 */
-  min-width: 100%; /* 2 */
+  color: transparent;
+  font: 700 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: 0.3em;
+  border-radius: 999px;
+  text-shadow: none;
 }
-
-/* Adjust the position of the line numbers */
-.gridsome-highlight pre[class*='language-'].line-numbers {
-  padding-left: 2.8em;
+.line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: 0.4em;
+}
+.line-numbers .line-highlight:after,
+.line-numbers .line-highlight:before {
+  content: none;
 }
