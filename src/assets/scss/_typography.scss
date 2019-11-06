@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700|Roboto+Mono:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Nunito:600|Rubik:700|Inconsolata:400,700&display=swap');
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -25,12 +25,12 @@ html {
 
 .body-font,
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 .heading,
 h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 700;
   * {
     font-family: inherit;
@@ -44,30 +44,28 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
   * {
     font-family: inherit;
   }
 }
 
-.monospace {
-  font-family: 'Roboto Mono', cursive;
-}
-
-pre *,
+.monospace,
 code {
-  font-family: 'Roboto Mono', cursive !important;
-  font-weight: 400;
+  font-family: 'Inconsolata', monospace;
 }
 
 code {
   font-weight: 700;
   font-size: 0.8em; // for code outside of pre
-}
-
-code {
   background: var(--bg-code);
   border-radius: calc(var(--radius) / 2);
   padding: calc(var(--radius) / 4) calc(var(--radius) / 1);
+}
+
+pre *,
+pre code {
+  font-family: 'Inconsolata', monospace !important;
+  font-weight: 400; // reset
 }

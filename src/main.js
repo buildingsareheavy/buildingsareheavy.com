@@ -15,12 +15,8 @@ Vue.use(VueMq, {
 
 import DefaultLayout from '~/layouts/Default.vue';
 
-// dark theme
-// import 'prismjs/themes/prism-tomorrow.css';
-
-// light theme
-import 'prismjs/themes/prism.css';
-
+// Code styling is now in "_code.scss" (inside of index.scss)
+// import 'prismjs/themes/prism.css';
 import '@/assets/scss/index.scss';
 
 export default function(Vue, { router, head, isClient }) {
