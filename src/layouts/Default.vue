@@ -33,4 +33,15 @@ export default {
   padding-left: 20px;
   padding-right: 20px;
 }
+main {
+  animation: fadein 1.25s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 </style>

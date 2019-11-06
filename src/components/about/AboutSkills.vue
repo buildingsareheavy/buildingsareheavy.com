@@ -96,6 +96,9 @@ export default {
       summary {
         cursor: pointer;
         display: inline-block; // gets rid of old marker & doesn't span entire width
+        &::-webkit-details-marker {
+          display: none;
+        }
         h2 {
           &::before {
             content: "\279C";
