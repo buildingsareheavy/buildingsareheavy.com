@@ -3,10 +3,10 @@
     <div class="home__intro-container">
       <p>
         <span class="heading">Ethan Bradford Barrett</span>
-        <span class="subheading"
-          >A Latinx designer who codes, and architectural photographer, and
-          korean food evangelist.</span
-        >
+        <span class="subheading">
+          A Latinx designer who codes, architectural photographer, and
+          korean food evangelist.
+        </span>
       </p>
       <!-- TODO: FIX SVG IMPORT -->
       <!-- <object data="../assets/logo.svg" type="image/svg+xml"> -->

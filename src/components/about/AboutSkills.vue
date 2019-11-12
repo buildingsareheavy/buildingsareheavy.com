@@ -78,7 +78,7 @@
           the
           <a
             href="https://www.youtube.com/mozilladeveloper"
-          >Mozilla Developer</a> team, and the amazing people like
+          >Mozilla Developer</a> team, and the people like
           <a href="https://jensimmons.com/">Jen Simmons</a> that make Mozilla so amazing.
         </p>
       </div>
