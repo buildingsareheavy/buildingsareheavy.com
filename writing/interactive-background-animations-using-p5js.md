@@ -17,13 +17,13 @@ tags:
 
 Processing is a language and IDE for learning how to code within the context of the visual arts based in Java. It was originally built for the electronic arts, new media art, and visual design, at MIT Media Lab by two amazing dudes named [Casey Reas](https://en.wikipedia.org/wiki/Casey_Reas) and [Benjamin Fry](https://en.wikipedia.org/wiki/Ben_Fry). If you are into new media art they are worth checking out. The basic premise of Processing was to give non-programmers instant visual feedback so they could see what they are doing.
 
-Processing is also is the basis for the Arduino IDE.
+Processing is also the basis for the Arduino IDE.
 
 ![Comparison of Arduino and Processing IDEs](./images/interactive-background-animations-using-p5js/arduino-and-processing-IDEs.jpg)
 
 ### Damn It Ethan! What is Arduino?
 
-[Arduino](https://en.wikipedia.org/wiki/Arduino) is a company and IDE and lots of stuff, but basically it’s a low-cost microcontroller for building digital devices that interact in the physical world. You can connect this with pretty much anything electronic like speakers, lights, sensors, motors, etc and write code to control and interact with electronic things. Here’s a photo of one now…
+[Arduino](https://en.wikipedia.org/wiki/Arduino) is a company and an IDE, and some other things, but basically it’s a low-cost microcontroller for building digital devices that interact in the physical world. You can connect this with pretty much anything electronic like speakers, lights, sensors, motors, etc and write code to control and interact with electronic things. Here’s a photo of one now…
 
 ![Arduino Uno](./images/interactive-background-animations-using-p5js/arduino-uno.jpg)
 
@@ -31,7 +31,7 @@ Processing is also is the basis for the Arduino IDE.
 
 Ok, so I learned how to code with Processing in art school. It was really basic stuff. A few `for loops` and `if statements`, but it taught me how basic logic works. Needing to type “make the background [this] when you click on [that]” changes the way you think about stuff. When I wanted to start building websites it was simply learning the syntax of the language.
 
-At the end of the day I still think of myself as a designer, but I know that I can code a solid website using my knowledge of HTML, CSS, Javascript and PHP. All of that came from learning a tiny bit of Processing, and now here I am putting that back into my web stuff with a javascript library. I know there are better animation libraries like Two.js and Paper.js, among many many others, but these are my roots. This is how I first learned to code, and if I can take that knowledge and apply it inside a browser I think that’s pretty damn nice.
+I started as a designer, but now I can code a solid website using my knowledge of HTML, CSS, Javascript and PHP. All of that came from learning a tiny bit of Processing, and now here I am putting that back into my web stuff with a javascript library. I know there are other animation libraries like [Two.js](https://two.js.org/) and [Paper.js](http://paperjs.org/), among many others, but these are my roots. This is how I first learned to code, and if I can take that knowledge and apply it inside a browser I think that’s pretty damn nice.
 
 Ok, enough about me, keep scrolling…
 

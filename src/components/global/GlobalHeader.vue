@@ -1,6 +1,7 @@
 <template>
   <header class="header">
     <nav>
+      <!-- Desktop -->
       <mq-layout mq="lg" class="header__desktop">
         <g-link to="/" class="heading">
           Buildings Are
@@ -14,6 +15,7 @@
         <g-link to="/writing/" class="header-item">Writing</g-link>
       </mq-layout>
 
+      <!-- Mobile  -->
       <mq-layout :mq="['sm', 'md']" class="header-mobile" :class="accordionClasses">
         <div class="header__mobile-static">
           <g-link to="/" class="heading">
@@ -106,16 +108,23 @@ export default {
         display: grid;
         grid-template-columns: 250px 1fr;
         grid-template-rows: 3rem 3rem auto;
+        @include smaller-than($mobile) {
+          grid-template-columns: 155px 1fr;
+          .heading {
+            font-size: 1.25rem;
+            line-height: 1;
+            padding-top: 1.5em;
+          }
+        }
         button.header-item {
           grid-column: 2 / 3;
           grid-row: 1 / 3;
           align-self: center;
           justify-self: end;
-          border: none;
-          background: var(--bg-color);
-          padding: 0.5rem;
-          border-radius: var(--radius);
-          transition: all 0.5s;
+          border: none; // undo button styling
+          background: transparent; // undo button styling
+          padding: 0.5em;
+          transition: transform 500ms, opacity 500ms;
           &:hover,
           &:active {
             transform: scale(0.9);

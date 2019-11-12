@@ -23,11 +23,11 @@ tags:
 
 ## What & Why
 
-I've been using [Vuetify](https://vuetifyjs.com/) for a few projects and to be honest it seems to take way longer to prototype something that by scratch. However, I do love the [text field components](https://vuetifyjs.com/en/components/text-fields#text-fields) that it has for `input` and `label` tags., called _"floating labels"_. So I wanted to see if I could create my own versions, and maybe build some reuseable Vue components of my own. It turns out I can do it all in pure CSS.
+I've been using [Vuetify](https://vuetifyjs.com/) for a few projects and to be honest it seems to take way longer to prototype something than by scratch. However, I do love the [text field components](https://vuetifyjs.com/en/components/text-fields#text-fields) that it has for `input` and `label` tags., called _"floating labels"_. So I wanted to see if I could create my own versions, and maybe build some reuseable Vue components of my own. It turns out I can do it all in pure CSS.
 
 ## What I learned
 
-Although the animations are pretty straight forward, there are few variables to consider that made each example different. For example, on the `.fl-outline` example, there is no easy way to allow the focused label to break up the border without specifying the background color or doing some weird hack. I also learned and refreshed myself on a lot about acessibilty and HTML5 validation.
+Although the animations are pretty straight forward, there are few variables to consider that made each example different. For example, on the `.fl-outline` example, there is no easy way to allow the focused label to break up the border without specifying the background color or doing some weird hack. I also learned and refreshed myself on a lot about accessibility and HTML5 validation.
 
 **NOTE:** I know it's not the best for refactoring, but I purposefully rewrote each example, instead of having common css. In practice I'd want to keep things dry, but I also wanted to see the code together rather than jumping back and forth.
 
@@ -45,11 +45,11 @@ That's where `:placeholder-shown` comes in.
 
 When you don't have a `required` attribute you cannot validate the input, so you can't test against `:valid`. The only (CSS-only) solution I've found would be to test against `:placeholder-shown`. I guess you can use other attributes in the [Constraint Validation API](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation) and/or JavaScript, but that's a whole other thing. I couldn't find anything that says it's bad to have am empty placeholder, but I am going to assume it is.
 
-By using `:placeholder-shown` and `:not(:placeholder-shown)` we can effective do the same thing as `:valid` and `:invalid` for text input.
+By using `:placeholder-shown` and `:not(:placeholder-shown)` we can effectively do the same thing as `:valid` and `:invalid` for text input.
 
 ### Using `box-shadow` in place of `border`
 
-I was actually watching a [tutorial](https://www.youtube.com/watch?v=TZRSXNc0T1k) this morning that talked about how `box-shadow` is not part of the box model and therefore does not add to the dimensions of an element the way padding, margin, or border would. So, to add a `border-bottom: 1px solid black` without actually adding 1px to the dimensions, you could write something like `box-shadow: 0px 1px 0px black`. I'm usually not into hacks like this, but it seemed much easier than trying to offset it with negative margins or using transform in a transition, and I'm really not sure what negative effects it has on acessibilty tbh.
+I was actually watching a [tutorial](https://www.youtube.com/watch?v=TZRSXNc0T1k) this morning that talked about how `box-shadow` is not part of the box model and therefore does not add to the dimensions of an element the way padding, margin, or border would. So, to add a `border-bottom: 1px solid black` without actually adding 1px to the dimensions, you could write something like `box-shadow: 0px 1px 0px black`. I'm usually not into hacks like this, but it seemed much easier than trying to offset it with negative margins or using transform in a transition, and I'm really not sure what negative effects it has on accessibility tbh.
 
 ### Using `user-select: none;`
 
@@ -59,7 +59,7 @@ I felt this was important to use for the labels so users can't double click to s
 
 ### General Sibling Combinator (`~`) & `:focus-within`
 
-I realized it was pretty much impossible selecting the label while the input had focus if the label was above the input. I was wanting something like a "previous sibling selector" but it does not exist. You can mess with `flex-flow` but that isn't good for acessibility or document flow. The only thing I found were selectors to find next siblings like the [general sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator) (`~`) and [adjacent sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator) (`+`). I did however [consult the W3C](https://www.w3.org/WAI/tutorials/forms/labels/) and learned that can put the input above the label or really anywhere around, if you do it properly.
+I realized it was pretty much impossible selecting the label while the input had focus if the label was above the input. I was wanting something like a "previous sibling selector" but it does not exist. You can mess with `flex-flow` but that isn't good for accessibility or document flow. The only thing I found were selectors to find next siblings like the [general sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator) (`~`) and [adjacent sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator) (`+`). I did however [consult the W3C](https://www.w3.org/WAI/tutorials/forms/labels/) and learned that can put the input above the label or really anywhere around, if you do it properly.
 
 ```html
 <!-- This order doesn't work -->
@@ -81,7 +81,7 @@ Alternatively you can nest the input inside the label and use `:focus-within`. T
 </label>
 ```
 
-So if the input nested inside the label, I could do something like this:
+So if the input was nested inside the label, I could do something like this:
 
 ```css
 /* if any focus is detected inside of label */

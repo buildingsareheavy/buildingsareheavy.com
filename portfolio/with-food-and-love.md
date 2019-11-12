@@ -11,5 +11,5 @@ An existing client site, built in Wordpress. I was tasked to redesign, rebrand, 
 </p>
 
 <p>
-"With Food + Love" is a plant-based, gluten-free blog run by Sherrie Castellano, a contributing photographer, food writer and columnist for FEAST Magazine. She has worked with Absolut, Chobani, LaCroix, Silk, Simply Organics, Urban Outfitters, Better Homes and Gardens, and Livestrong, among others.
+"With Food + Love" is a plant-based, gluten-free blog run by Sherrie Castellano, a contributing photographer, food writer and columnist for FEAST Magazine. She has worked with Chobani, LaCroix, and Urban Outfitters among others.
 </p>

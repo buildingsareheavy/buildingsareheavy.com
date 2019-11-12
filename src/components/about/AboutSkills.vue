@@ -7,7 +7,7 @@
       </summary>
       <div class="about_skills-key">
         <h3>Front-End Web Development</h3>
-        <p>I special in an inclusive approach to web development, meaning responsive and performance-first development. I use semantic HTML and progressive enhancements in CSS and JavaScript to ensure the best experience and accessibility.</p>
+        <p>Specializing in an inclusive approach to web development, I create user-focused, responsive and performance-first websites and applications. I use semantic HTML and progressive enhancements in CSS and JavaScript to ensure the best experience and accessibility.</p>
         <h4 class="bold">What does that mean to you?</h4>
         <p
           class="about__skills-break"
@@ -48,6 +48,13 @@
             href="https://taniarascia.github.io/new-moon/"
           >New Moon</a>.
         </p>
+
+        <img
+          class="about__skills-setup--new-moon"
+          src="../../assets/new-moon-colors.jpg"
+          alt="color palette of New Moon theme"
+        />
+
         <p>
           I use
           <a href="https://app.programmingfonts.org/#dejavu">DejaVu Sans Mono</a> for my command-line font, because it has great glyph support, and
@@ -55,6 +62,11 @@
             href="https://app.programmingfonts.org/#victor-mono"
           >Victor Mono</a> for my text editor font. It supports ligatures and has a nice cursive italic font, similar to Dank Mono or Fira Code.
         </p>
+        <div class="about__skills-setup--fonts">
+          <img src="../../assets/dejavu-sans-mono.jpg" alt="DejaVu Sans Mono font example" />
+          <img src="../../assets/victor-mono.jpg" alt="Victor Mono font example" />
+        </div>
+
         <p>
           My favorite browser is
           <a
@@ -63,10 +75,11 @@
           <a
             href="https://www.smashingmagazine.com/2019/10/guide-new-experimental-css-devtools-firefox/"
           >new DevTools</a> and security. I also have incredible respect for
+          the
           <a
-            href="https://jensimmons.com/"
-          >Jen Simmons</a> and the entire
-          <a href="https://www.youtube.com/mozilladeveloper">Mozilla Developer</a> team.
+            href="https://www.youtube.com/mozilladeveloper"
+          >Mozilla Developer</a> team, and the amazing people like
+          <a href="https://jensimmons.com/">Jen Simmons</a> that make Mozilla so amazing.
         </p>
       </div>
     </details>
@@ -130,6 +143,18 @@ export default {
         background: var(--grey);
         padding: 0.75em;
         border-radius: var(--radius);
+      }
+      &--new-moon {
+        max-width: $desktop;
+        margin: 0 auto;
+        display: block;
+      }
+      &--fonts {
+        @include bigger-than($tablet) {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 1rem;
+        }
       }
     }
     details[open] {

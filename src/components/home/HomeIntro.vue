@@ -3,9 +3,10 @@
     <div class="home__intro-container">
       <p>
         <span class="heading">Ethan Bradford Barrett</span>
-        <span
-          class="subheading"
-        >A Latinx user-focused designer who codes, eats korean food and loves architectural photography.</span>
+        <span class="subheading"
+          >A Latinx designer who codes, and architectural photographer, and
+          korean food evangelist.</span
+        >
       </p>
       <!-- TODO: FIX SVG IMPORT -->
       <!-- <object data="../assets/logo.svg" type="image/svg+xml"> -->
@@ -30,22 +31,24 @@
             d="M59.9,22.469C15.813,31.204,1.597,138.939,0,191.715C0,369.15,26.356,451.044,47.92,471.518  s232.411-6.824,299.499-13.648c67.087-6.825,95.839-96.907,93.443-156.963c-2.396-60.055-43.128-244.315-64.692-278.438  C358.919-4.829,274.74-1.645,234.807,3.36C194.874,6.09,103.986,13.733,59.9,22.469z"
           />
           <rect
+            id="logo-pink"
             x="120.5"
             y="162.546"
             fill="none"
-            stroke="#FEBCBC"
+            stroke="var(--pink)"
             stroke-width="5"
-            width="175.409"
-            height="175.377"
+            width="175"
+            height="175"
           />
           <rect
-            x="144.554"
-            y="140.5"
+            id="logo-yellow"
+            x="144"
+            y="140"
             fill="none"
-            stroke="#FAD561"
+            stroke="var(--yellow)"
             stroke-width="5"
-            width="175.409"
-            height="175.377"
+            width="175"
+            height="175"
           />
         </svg>
       </figure>
@@ -58,7 +61,6 @@ export default {
   name: "home-intro"
 };
 </script>
-
 
 <style lang="scss">
 .home {
@@ -78,6 +80,20 @@ export default {
       figure {
         margin: 0 auto;
         max-width: calc(var(--width) / 2);
+        svg {
+          #logo-pink,
+          #logo-yellow {
+            transition: transform 500ms;
+          }
+          &:hover {
+            #logo-pink {
+              transform: translate(-0.25em, 0.25em) rotate(2deg);
+            }
+            #logo-yellow {
+              transform: translate(0.25em, -0.25em) rotate(-2deg);
+            }
+          }
+        }
       }
       @include bigger-than($tablet) {
         padding: calc(var(--spacing) / 2) calc(var(--spacing) / 2);

@@ -2,7 +2,9 @@
   <section class="home__connect">
     <h1 class="text-center">Connect</h1>
     <div class="home__connect-container">
-      <a v-for="link in links" :key="link.name" class="btn" :href="link.url">{{ link.name }}</a>
+      <a v-for="link in links" :key="link.name" class="btn" :href="link.url">{{
+        link.name
+      }}</a>
     </div>
   </section>
 </template>
@@ -42,7 +44,6 @@ export default {
   }
 };
 </script>
-
 
 <style lang="scss">
 .home {

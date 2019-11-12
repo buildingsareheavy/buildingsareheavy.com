@@ -4,7 +4,6 @@
       <h1 class="page-title">About</h1>
       <AboutIntro />
       <AboutSkills />
-      <!-- <AboutInterests /> -->
     </main>
   </Layout>
 </template>
@@ -12,7 +11,6 @@
 <script>
 import AboutIntro from "@/components/about/AboutIntro";
 import AboutSkills from "@/components/about/AboutSkills";
-// import AboutInterests from "@/components/about/AboutInterests";
 
 export default {
   name: "about",
@@ -22,7 +20,6 @@ export default {
   components: {
     AboutIntro,
     AboutSkills
-    // AboutInterests
   }
 };
 </script>

@@ -8,7 +8,7 @@ code {
 
 pre *,
 pre code {
-  font-family: 'Inconsolata', monospace !important;
+  font-family: "Inconsolata", monospace !important;
   font-weight: 400; // reset
 }
 
@@ -25,30 +25,11 @@ pre {
  * @author Lea Verou
  */
 
-//  Colors based on New Moon Theme
-//  https://github.com/taniarascia/new-moon
-
-:root {
-  --code-background: #2d2d2d; // Darkest
-  --code-comment: #777c85; // Comment
-  --code-light: #b3b9c5; // Light
-  --code-lightest: #ffffff; // Lightest
-  --code-red: #f2777a; // Red
-  --code-orange: #fca369; // Orange
-  --code-yellow: #ffd479; // Yellow
-  --code-light-yellow: #ffeea6; // Light Yellow
-  --code-green: #92d192; // Green
-  --code-blue: #6ab0f3; // Blue
-  --code-aqua: #76d4d6; // Aqua
-  --code-purple: #e1a6f2; // Purple
-  --code-beige: #ac8d58; // Beige
-}
-
-code[class*='language-'],
-pre[class*='language-'] {
+code[class*="language-"],
+pre[class*="language-"] {
   color: var(--code-light);
   background: none;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 1em;
   text-align: left;
   white-space: pre;
@@ -67,43 +48,43 @@ pre[class*='language-'] {
   hyphens: none;
 }
 
-pre[class*='language-']::-moz-selection,
-pre[class*='language-'] ::-moz-selection,
-code[class*='language-']::-moz-selection,
-code[class*='language-'] ::-moz-selection {
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
   text-shadow: none;
   background: var(--code-comment);
 }
 
-pre[class*='language-']::selection,
-pre[class*='language-'] ::selection,
-code[class*='language-']::selection,
-code[class*='language-'] ::selection {
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
   text-shadow: none;
   background: var(--code-comment);
 }
 
 @media print {
-  code[class*='language-'],
-  pre[class*='language-'] {
+  code[class*="language-"],
+  pre[class*="language-"] {
     text-shadow: none;
   }
 }
 
 /* Code blocks */
-pre[class*='language-'] {
+pre[class*="language-"] {
   padding: 2em 1.5em;
   margin: 0.5em 0;
   overflow: auto;
 }
 
-:not(pre) > code[class*='language-'],
-pre[class*='language-'] {
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
   background: var(--code-background);
 }
 
 /* Inline code */
-:not(pre) > code[class*='language-'] {
+:not(pre) > code[class*="language-"] {
   padding: 0.1em;
   border-radius: 0.3em;
   white-space: normal;
@@ -186,10 +167,10 @@ pre[class*='language-'] {
 // New Moon Syntax Highlighting Styles
 // https://www.taniarascia.com/adding-syntax-highlighting-to-code-snippets/
 
-code[class*='language-css'],
-code[class*='language-less'],
-code[class*='language-sass'],
-code[class*='language-scss'] {
+code[class*="language-css"],
+code[class*="language-less"],
+code[class*="language-sass"],
+code[class*="language-scss"] {
   color: var(--code-purple);
 }
 .filename {

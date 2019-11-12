@@ -1,16 +1,18 @@
 [
   {
     "title": "Plant Info",
-    "link": "https://github.com/buildingsareheavy/plant-info",
-    "desc": "Plant information, directory, and reference guide."
+    "desc": "Plant information, directory, and reference guide.",
+    "link": "https://plant-info.netlify.com/",
+    "source": "https://github.com/buildingsareheavy/plant-info"
   },
   {
     "title": "Superior Medical Solutions",
+    "desc": "A client website built with Vue and hosted on Netlify.",
     "link": "https://superior-medical-solutions.netlify.com/",
-    "desc": "A client website built with Vue and hosted on Netlify."
+    "source": "github.com/buildingsareheavy/superior-medical-solutions"
   },
   {
-    "title": "Javascript Fundamentals",
+    "title": "Writing Javascript Fundamental Tutorials",
     "desc": "Putting together a small site to explain ideas like scope, array methods, objects, events, and more."
   }
 ]

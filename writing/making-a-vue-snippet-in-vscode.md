@@ -70,6 +70,6 @@ I have configured mine to say:
 }
 ```
 
-Now my snippet "_scaffold_" will only be available in `.vue` files, and the cursor starts on the `name: ""` then tabs to the `template`, then to `script` above `export default` if I need to import anything, then stops at `style` which I have added `lang="scss"` since I always use SCSS and it got super annoying to have to add that each time I created a new component.
+Now my snippet "_scaffold_" will only be available in `.vue` files. The cursor starts on the `name: ""` then tabs to the `template`, then to `script` above `export default` if I need to import anything, then it stops at `style`. I have added `lang="scss"` since I always use SCSS and it got super annoying to have to add that each time I created a new component.
 
-Obviously you can add whatever you want in the snippet and scope it to whichever file extension(s) fit most appropriately. Enjoy 😇
+You can add whatever you want in the snippet and scope it to whichever file extension(s) fit most appropriately. Enjoy 😇
