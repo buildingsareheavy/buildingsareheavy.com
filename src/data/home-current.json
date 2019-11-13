@@ -1,18 +1,23 @@
 [
   {
-    "title": "Plant Info",
-    "desc": "Plant information, directory, and reference guide.",
-    "link": "https://plant-info.netlify.com/",
-    "source": "https://github.com/buildingsareheavy/plant-info"
+    "title": "Ando",
+    "desc": "Ando is a shell script to set up a macOS laptop for clean and simple front-end web development environment.",
+    "view": "https://ando.netlify.com/",
+    "source": "https://github.com/buildingsareheavy/ando",
+    "inProgress": false
+  },
+  {
+    "title": "Root Directory",
+    "desc": "A reference guide for house plants and how to care for them. Quickly search the directory for light, water and soil requirements, save and share your favorite plants.",
+    "view": "https://plant-info.netlify.com/",
+    "source": "https://github.com/buildingsareheavy/plant-info",
+    "inProgress": true
   },
   {
     "title": "Superior Medical Solutions",
-    "desc": "A client website built with Vue and hosted on Netlify.",
-    "link": "https://superior-medical-solutions.netlify.com/",
-    "source": "github.com/buildingsareheavy/superior-medical-solutions"
-  },
-  {
-    "title": "Writing Javascript Fundamental Tutorials",
-    "desc": "Putting together a small site to explain ideas like scope, array methods, objects, events, and more."
+    "desc": "A new client website built with Vue. Previously hosted on Wix.com, the client wished for a more performant and responsive site that would also integrate with Airtable.",
+    "view": "https://smscolorado.com/",
+    "source": "github.com/buildingsareheavy/superior-medical-solutions",
+    "inProgress": false
   }
 ]

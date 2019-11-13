@@ -41,6 +41,9 @@ button:hover {
     width: 1.25em;
     padding: 1em auto;
   }
+  a.active--exact.active {
+    background: var(--yellow);
+  }
 }
 
 .page-title {
