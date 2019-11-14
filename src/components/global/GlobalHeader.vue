@@ -74,6 +74,7 @@ export default {
       font-size: 2rem;
       line-height: 2rem;
       padding-top: 1.25rem;
+      grid-row: span 2;
     }
     .header-item {
       font-size: 1.25rem;
@@ -100,6 +101,11 @@ export default {
         &:nth-child(4) {
           align-self: end; // Move About and Photography to bottom of row
         }
+        &:nth-child(3),
+        &:nth-child(5) {
+        align-self: start; // Portfolio & Writing match :focus to only the text
+        }
+        
       }
     }
 

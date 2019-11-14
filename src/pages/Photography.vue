@@ -8,6 +8,8 @@
           v-for="photography in $page.photography.edges"
           :key="photography.node.id"
           @click="ArticlePath(photography.node.path)"
+          tabindex="0"
+          v-on:keyup.enter="ArticlePath(photography.node.path)"
         >
           <figure v-if="photography.node.cover_image">
             <g-image
@@ -89,7 +91,7 @@ export default {
     border-radius: var(--radius);
     margin: 1rem auto;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: transform 0.5s, box-shadow 0.5s;
     box-shadow: 0 0.25em 0.75em 0.25em var(--grey);
     &:hover {
       transform: scale(0.95);

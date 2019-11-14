@@ -2,6 +2,7 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import Vue from 'vue';
+import 'remove-focus-outline';
 import VueMq from 'vue-mq';
 Vue.use(VueMq, {
   breakpoints: {
