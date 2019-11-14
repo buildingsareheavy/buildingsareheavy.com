@@ -52,6 +52,9 @@
           />
         </svg>
       </figure>
+      <div class="home__intro-more">
+        <p>I take pride in detail-oriented and user-focused front-end web development. Specializing in custom Wordpress websites and JavaScript-based web applications, I also have experience in consulting, leadership, and team management.</p>
+      </div>
     </div>
   </section>
 </template>
@@ -106,6 +109,11 @@ export default {
           justify-self: center;
         }
       }
+    }
+    &-more {
+      grid-column: span 2;
+      font-size: 0.75em;
+      margin-bottom: calc(var(--spacing) / 2);
     }
   }
 }
