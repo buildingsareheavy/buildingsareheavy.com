@@ -12,12 +12,15 @@
           v-on:keyup.enter="ArticlePath(writing.node.path)"
         >
           <figure v-if="writing.node.cover_image">
-            <g-image :src="writing.node.cover_image" :alt="`Cover Image of ` + writing.node.title" />
+            <g-image
+              :src="writing.node.cover_image"
+              :alt="`Cover Image of ` + writing.node.title"
+            />
           </figure>
           <div class="writing__item-content">
-            <h2>{{writing.node.title}}</h2>
-            <small>{{writing.node.date }}</small>
-            <p>{{writing.node.excerpt }}</p>
+            <h2>{{ writing.node.title }}</h2>
+            <small>{{ writing.node.date }}</small>
+            <p>{{ writing.node.excerpt }}</p>
             <!-- <p>
             Tags:
             <span v-for="tags in writing.node.tags" :key="tags.id">{{ tags.id}}</span>
@@ -25,7 +28,10 @@
           </div>
         </article>
       </div>
-      <Pager class="writing__pagination pagination" :info="$page.writing.pageInfo" />
+      <Pager
+        class="writing__pagination pagination"
+        :info="$page.writing.pageInfo"
+      />
     </main>
   </Layout>
 </template>
