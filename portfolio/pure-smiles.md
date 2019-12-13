@@ -1,5 +1,6 @@
 ---
 order: 3
+published: false
 title: Pure Smiles
 image: ./images/pure-smiles.jpg
 link_name: puresmiles.com

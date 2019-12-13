@@ -1,5 +1,6 @@
 ---
 order: 5
+published: true
 title: With Food + Love
 image: ./images/with-food-and-love.jpg
 link_name: withfoodandlove.com

@@ -1,5 +1,6 @@
 ---
 order: 1
+published: true
 title: Matillion
 image: ./images/matillion.jpg
 link_name: matillion.com

@@ -1,5 +1,6 @@
 ---
 order: 4
+published: true
 title: IKON Pass
 image: ./images/ikon-pass.jpg
 link_name: lifted.ikonpass.com

@@ -1,5 +1,6 @@
 ---
 order: 7
+published: true
 title: Prime Dental Design
 image: ./images/prime-dental-design.jpg
 link_name: primedentaldesign.com

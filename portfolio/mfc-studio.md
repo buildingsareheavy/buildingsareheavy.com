@@ -1,5 +1,6 @@
 ---
 order: 11
+published: true
 title: MFC Studio
 image: ./images/mfc-studio.jpg
 link_name: mfcstudio.com/right-to-roam

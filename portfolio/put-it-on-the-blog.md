@@ -1,5 +1,6 @@
 ---
 order: 6
+published: true
 title: Put It On The Blog
 image: ./images/put-it-on-the-blog.jpg
 link_name: putitontheblog.co

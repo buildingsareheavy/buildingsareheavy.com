@@ -86,6 +86,8 @@ export default {
         }
         a.view {
           background: var(--code-yellow);
+          grid-column-start: 2;
+          justify-self: end;
         }
         a.btn {
           margin-bottom: 1em;

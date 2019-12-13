@@ -1,6 +1,7 @@
 ---
 order: 12
-title: 'MCA Denver: Animating Museums'
+published: true
+title: "MCA Denver: Animating Museums"
 image: ./images/animating-museums.jpg
 link_name: animatingmuseums.org
 link_url: http://animatingmuseums.org/

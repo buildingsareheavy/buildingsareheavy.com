@@ -1,5 +1,6 @@
 ---
-order: 13
+order: 3
+published: true
 title: Claremont Ranch
 image: ./images/claremont-ranch.jpg
 link_name: claremontranchvet.com

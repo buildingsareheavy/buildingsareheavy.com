@@ -1,5 +1,6 @@
 ---
 order: 9
+published: true
 title: Loop Dental
 image: ./images/loop-dental.jpg
 link_name: loopdentalmn.com

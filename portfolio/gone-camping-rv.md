@@ -1,5 +1,6 @@
 ---
 order: 10
+published: true
 title: Gone Camping RV
 image: ./images/gone-camping-rv.jpg
 link_name: gonecampingrv.com

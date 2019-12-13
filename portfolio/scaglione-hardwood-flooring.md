@@ -1,5 +1,6 @@
 ---
 order: 14
+published: true
 title: Scaglione Hardwood Flooring
 image: ./images/scaglione-hardwood-flooring.jpg
 link_name: scaglionehardwood.com

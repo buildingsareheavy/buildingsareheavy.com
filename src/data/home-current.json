@@ -1,5 +1,12 @@
 [
   {
+    "title": "Community Commons",
+    "desc": "A microsite built in Wordress, handcoded using HTML, SCSS, PHP, and vanilla JavaScript to have a consistent experience with campus computers that use older browsers including Internet Explorer.",
+    "view": "https://commons.du.edu/",
+    "source": "",
+    "inProgress": false
+  },
+  {
     "title": "Ando",
     "desc": "Ando is a shell script to set up a macOS laptop for clean and simple front-end web development environment.",
     "view": "https://ando.netlify.com/",
@@ -12,12 +19,5 @@
     "view": "https://plant-info.netlify.com/",
     "source": "https://github.com/buildingsareheavy/plant-info",
     "inProgress": true
-  },
-  {
-    "title": "Superior Medical Solutions",
-    "desc": "A new client website built with Vue. Previously hosted on Wix.com, the client wished for a more performant and responsive site that would also integrate with Airtable.",
-    "view": "https://smscolorado.com/",
-    "source": "github.com/buildingsareheavy/superior-medical-solutions",
-    "inProgress": false
   }
 ]

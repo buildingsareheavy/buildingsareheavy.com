@@ -28,7 +28,7 @@
 
 <page-query>
 query Portfolio($page: Int) {
-  portfolio: allPortfolio(sort: { by: "order", order: ASC }, perPage: 15, page: $page ) @paginate {
+  portfolio: allPortfolio(sort: { by: "order", order: ASC },  filter: { published: {eq: true} }, perPage: 15, page: $page ) @paginate {
     pageInfo {
       totalPages
       currentPage

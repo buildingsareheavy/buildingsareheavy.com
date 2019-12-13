@@ -1,5 +1,6 @@
 ---
 order: 8
+published: true
 title: Simple Youtube
 image: ./images/simple-youtube.jpg
 link_name: simpleyoutube.xyz
