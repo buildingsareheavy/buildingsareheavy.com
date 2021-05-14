@@ -18,9 +18,9 @@
             />
           </figure>
           <div class="photography__item-content">
-            <h2>{{photography.node.title}}</h2>
-            <small>{{photography.node.date }}</small>
-            <p>{{photography.node.excerpt }}</p>
+            <h2>{{ photography.node.title }}</h2>
+            <!-- <small>{{photography.node.date }}</small> -->
+            <p>{{ photography.node.excerpt }}</p>
             <!-- <p>
             Tags:
             <span v-for="tags in photography.node.tags" :key="tags.id">{{ tags.id}}</span>
@@ -66,13 +66,13 @@ import { Pager } from "gridsome";
 export default {
   name: "photography-archive",
   components: {
-    Pager
+    Pager,
   },
   methods: {
     ArticlePath(path) {
       return this.$router.push(path);
-    }
-  }
+    },
+  },
 };
 </script>
 

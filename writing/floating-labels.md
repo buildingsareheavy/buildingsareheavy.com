@@ -9,12 +9,12 @@ tags:
   - accessibility
 ---
 
-<div class="text-center heading" style="padding-bottom: calc(var(--spacing) / 2);">
+<!-- <div class="text-center heading" style="padding-bottom: calc(var(--spacing) / 2);">
 <p>This is part of my ongoing "Daily Projects" series that you can view on <a href="https://github.com/buildingsareheavy/daily-projects">Github</a>.</p>
 
 <p>It is also viewable on <a href="https://codepen.io/buildingsareheavy/pen/poopeKd">Codepen</a>.</p>
 
-</div>
+</div> -->
 
 <iframe height="500" style="width: 100%;" scrolling="no" title="CSS - Material Design Floating Labels" src="https://codepen.io/buildingsareheavy/embed/poopeKd?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/buildingsareheavy/pen/poopeKd'>CSS - Material Design Floating Labels</a> by Buildings Are Heavy

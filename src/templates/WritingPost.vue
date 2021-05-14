@@ -3,7 +3,7 @@
     <main class="writing-post">
       <div class="writing-post__header">
         <h1>{{ $page.writing.title }}</h1>
-        <small class="subheading">{{ $page.writing.date }}</small>
+        <!-- <small class="subheading">{{ $page.writing.date }}</small> -->
         <p class="subheading">{{ $page.writing.excerpt }}</p>
       </div>
       <div class="writing-post__content">
@@ -33,7 +33,7 @@ import SyntaxHighlighting from "../components/writing/SyntaxHighlighting";
 export default {
   name: "writing-post",
   components: {
-    SyntaxHighlighting
+    SyntaxHighlighting,
   },
   metaInfo() {
     return {
@@ -41,23 +41,23 @@ export default {
       meta: [
         {
           name: "description",
-          content: this.$page.writing.excerpt
+          content: this.$page.writing.excerpt,
         },
         {
           property: "og:title",
-          content: this.$page.writing.title
+          content: this.$page.writing.title,
         },
         {
           property: "og:description",
-          cotent: this.$page.writing.excerpt
+          cotent: this.$page.writing.excerpt,
         },
         {
           property: "og:image",
-          content: this.$page.writing.cover_image || ""
-        }
-      ]
+          content: this.$page.writing.cover_image || "",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

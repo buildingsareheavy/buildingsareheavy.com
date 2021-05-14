@@ -1,10 +1,10 @@
 [
   {
-    "title": "Community Commons",
-    "desc": "A microsite built in Wordress, handcoded using HTML, SCSS, PHP, and vanilla JavaScript to have a consistent experience with campus computers that use older browsers including Internet Explorer.",
-    "view": "https://commons.du.edu/",
+    "title": "Denver Arts Organized",
+    "desc": "I have recently became the new director of a website documenting local art exhibitions, news, galleries, and events in the Denver area for nearly a decade and a half. I have been restructuring the database of over 8,000 posts to build a brand new look and feel.",
+    "view": "https://denverarts.org/",
     "source": "",
-    "inProgress": false
+    "inProgress": true
   },
   {
     "title": "Ando",
@@ -12,12 +12,5 @@
     "view": "https://ando.netlify.com/",
     "source": "https://github.com/buildingsareheavy/ando",
     "inProgress": false
-  },
-  {
-    "title": "Root Directory",
-    "desc": "A reference guide for house plants and how to care for them. Quickly search the directory for light, water and soil requirements, save and share your favorite plants.",
-    "view": "https://plant-info.netlify.com/",
-    "source": "https://github.com/buildingsareheavy/plant-info",
-    "inProgress": true
   }
 ]

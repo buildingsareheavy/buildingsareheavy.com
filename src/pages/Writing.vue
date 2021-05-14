@@ -19,7 +19,7 @@
           </figure>
           <div class="writing__item-content">
             <h2>{{ writing.node.title }}</h2>
-            <small>{{ writing.node.date }}</small>
+            <!-- <small>{{ writing.node.date }}</small> -->
             <p>{{ writing.node.excerpt }}</p>
             <!-- <p>
             Tags:
