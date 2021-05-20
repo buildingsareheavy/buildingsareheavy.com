@@ -7,6 +7,13 @@
     "inProgress": true
   },
   {
+    "title": "Sounds True Publishing (Phase 2)",
+    "desc": "A blog and podcast website using a scalable and modular system of hand-coded Wordpress plugins and Elementor components to work across multiple databases including their Shopify API.",
+    "view": "https://resources.soundstrue.com/",
+    "source": "",
+    "inProgress": true
+  },
+  {
     "title": "Ando",
     "desc": "Ando is a shell script to set up a macOS laptop for clean and simple front-end web development environment.",
     "view": "https://ando.netlify.com/",
